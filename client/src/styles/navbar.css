@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+::-moz-selection {
+  color: #ffdbec;
+  background: #290111;
+}
+
+::selection {
+  color: #ffdbec;
+  background: #290111;
+}
+
+.container {
+  overflow-x: hidden;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0 100px;
+  width: 100%;
+  text-align: center;
+}
+
+.container header .logo {
+  color: #f30c9b;
+  height: 50px;
+  line-height: 50px;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.container header nav {
+  display: inline-block;
+}
+
+.container header nav ul {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container header nav ul li {
+  list-style: none;
+  position: relative;
+  display: block;
+  margin: 5px 10px;
+}
+
+.container header nav ul li .fas {
+  position: absolute;
+  top: 27%;
+  right: 3%;
+  font-size: 1.4em;
+  text-shadow: 0 1px 6px #ff7ade;
+  color: white;
+}
+
+.container header nav ul li a {
+  height: 50px;
+  line-height: 45px;
+  padding: 10px 20px;
+  color: black;
+  background-color: white;
+  text-decoration: none;
+  -webkit-box-shadow: -1px 1px 3px rgba(73, 0, 55, 0.205);
+          box-shadow: -1px 1px 3px rgba(73, 0, 55, 0.205);
+  border-radius: 20px 0 10px 0;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.container header nav ul li a:hover {
+  -webkit-box-shadow: -2px 2px 4px #a3a3a3;
+          box-shadow: -2px 2px 4px #a3a3a3;
+  cursor: pointer;
+}
+
+.container header nav ul li ul {
+  position: absolute;
+  display: block;
+  left: -58%;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: .9s ease;
+  transition: .9s ease;
+}
+
+.container header nav ul li ul li {
+  display: block;
+  width: 200px;
+  margin: 0;
+}
+
+.container header nav ul li:hover ul {
+  opacity: 1;
+  visibility: visible;
+}
+
+.container header .menu-lines {
+  position: fixed;
+  top: 1%;
+  right: 1%;
+  z-index: 99;
+  padding: 7px 3px;
+  display: none;
+  cursor: pointer;
+}
+
+.container header .menu-lines .line {
+  display: block;
+  margin-top: 4px;
+  width: 30px;
+  height: 5px;
+  background: #e205c1;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.container header .menu-lines .line.open:nth-child(1) {
+  -webkit-transform: rotate(46deg) translate(5px, 9px);
+          transform: rotate(46deg) translate(5px, 9px);
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.container header .menu-lines .line.open:nth-child(2) {
+  -webkit-transform: rotate(-50deg) translate(-3px, -2px);
+          transform: rotate(-50deg) translate(-3px, -2px);
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.container header .menu-lines .line.open:nth-child(3) {
+  display: none;
+}
+
+@media (max-width: 850px) {
+  .container header {
+    padding: 0 20px;
+  }
+  .container header .menu-lines {
+    display: block;
+  }
+  .container header nav {
+    position: absolute;
+    width: 100%;
+    height: calc(100vh - 50px);
+    background: white;
+    top: 50px;
+    left: -100%;
+    -webkit-transition: .5s;
+    transition: .5s;
+  }
+  .container header nav.active {
+    left: 0;
+  }
+  .container header nav ul li:hover ul {
+    position: relative;
+    background-color: white;
+    display: block;
+    left: 0;
+  }
+  .container header nav ul li:hover ul li {
+    margin-top: 2px;
+    border-radius: 110px;
+  }
+  .container header nav ul {
+    display: block;
+  }
+  .container header nav ul li {
+    border-bottom: 1px solid rgba(255, 80, 226, 0.1);
+    margin-top: 5%;
+  }
+  .container header nav ul li a {
+    border-radius: 0;
+    -webkit-box-shadow: 0 0 0;
+            box-shadow: 0 0 0;
+  }
+  .container header nav ul li a:hover {
+    -webkit-box-shadow: 0 0 0;
+            box-shadow: 0 0 0;
+  }
+  .container header nav ul li ul {
+    display: none;
+  }
+  .container header nav ul li ul li {
+    width: 100%;
+    border: 0;
+  }
+}
+/*# sourceMappingURL=navbar.css.map */

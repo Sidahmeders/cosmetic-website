@@ -1,0 +1,182 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::selection {
+    color: rgb(255, 219, 236);
+    background: rgb(41, 1, 17);
+  }
+
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+.container {
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+    
+    header {
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0 100px;
+        width: 100%;
+        text-align: center;
+
+        .logo {
+            color: rgb(243, 12, 155);
+            height: 50px;
+            line-height: 50px;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        nav {
+            display: inline-block;
+
+            ul {
+                margin: 0;
+                padding: 0;
+                display: flex;
+
+                li {
+                    list-style: none;
+                    position: relative;
+                    display: block;
+                    margin: 5px 10px;
+                    
+                    .fas { 
+                        position: absolute;
+                        top: 27%;
+                        right: 3%;
+                        font-size: 1.4em;
+                        text-shadow: 0 1px 6px rgb(255, 122, 222);
+                        color: rgb(255, 255, 255);
+                    }
+                    a {
+                        height: 50px;
+                        line-height: 45px;
+                        padding: 10px 20px;
+                        color: rgb(0, 0, 0);
+                        background-color: rgb(255, 255, 255);
+                        text-decoration: none;
+                        box-shadow: -1px 1px 3px rgba(73, 0, 55, 0.205);
+                        border-radius: 20px 0 10px 0;
+                        transition: .5s ease;
+
+                        &:hover {
+                            box-shadow: -2px 2px 4px rgb(163, 163, 163);
+                            cursor: pointer;
+                        }
+                    }
+                    ul {
+                        position: absolute;
+                        display: block;
+                        left: -58%;
+                        opacity: 0;
+                        visibility: hidden;
+                        transition: .9s ease;
+                        
+                        li {
+                            display: block;
+                            width: 200px;
+                            margin: 0;
+                        }
+                    }
+                    &:hover ul{
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+            }
+        }
+        .menu-lines {
+            position: fixed;
+            top: 1%;
+            right: 1%;
+            z-index: 99;
+            padding: 7px 3px;
+            display: none;
+            cursor: pointer;
+
+            .line {
+                display: block;
+                margin-top: 4px;
+                width: 30px;
+                height: 5px;
+                background: rgb(226, 5, 193);
+                transition: .5s ease;
+                
+                &.open:nth-child(1) {
+                    transform: rotate(46deg) translate(5px, 9px);
+                    transition: .5s ease;
+                }
+                &.open:nth-child(2) {
+                    transform: rotate(-50deg) translate(-3px, -2px);
+                    transition: .5s ease;
+                }
+                &.open:nth-child(3) {display: none;}
+            }
+        }
+    }
+
+
+    @media (max-width: 850px) {
+        header {
+            padding: 0 20px;
+
+            .menu-lines {
+                display: block;
+            }
+            nav {
+                position: absolute;
+                width: 100%;
+                height: calc(100vh - 50px);
+                background: rgb(255, 255, 255);
+                top: 50px;
+                left: -100%;
+                transition: .5s;
+
+                &.active {
+                    left: 0;
+                }
+                ul li:hover ul {
+                    position: relative;
+                    background-color: rgb(255, 255, 255);
+                    display: block;
+                    left: 0;
+                    li{
+                        margin-top: 2px;
+                        border-radius: 110px;
+                    }
+                }
+                ul {
+                    display: block;
+
+                    li {
+                        border-bottom: 1px solid rgba(255, 80, 226, 0.1);
+                        margin-top: 5%;
+
+                        a {
+                            border-radius: 0; 
+                            box-shadow: 0 0 0;
+
+                            &:hover {
+                                box-shadow: 0 0 0;
+                            }
+                        }
+                        ul {
+                            display: none;
+                            
+                            li {
+                            width: 100%;
+                            border: 0;
+                            } 
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
