@@ -1,36 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
 *, ::before, ::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 ::selection {
-    color: rgb(255, 219, 236);
-    background: rgb(41, 1, 17);
+    color: rgb(224, 201, 212);
+    background: rgb(78, 1, 32);
   }
 
-@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 
-.container {
+.navbar-container {
     overflow-x: hidden;
     font-family: 'Poppins', sans-serif;
     
     header {
-        position: absolute;
+        position: fixed;
         top: 0;
         left: 0;
         padding: 0 100px;
         width: 100%;
         text-align: center;
+        background-color: white;
+        z-index: 99;
 
         .logo {
-            color: rgb(243, 12, 155);
+            color: rgb(206, 0, 0);
+            text-shadow: 1px 1px 1px rgb(85, 84, 84);
+            span {color: rgb(36, 169, 202);}
             height: 50px;
             line-height: 50px;
-            font-size: 1.5em;
+            font-size: 1.8em;
             font-weight: bold;
+            letter-spacing: 3px;
+            float: left;
+            margin-top: 12px;
         }
         nav {
             display: inline-block;
+            margin-top: 10px;
 
             ul {
                 margin: 0;
@@ -48,7 +57,7 @@
                         top: 27%;
                         right: 3%;
                         font-size: 1.4em;
-                        text-shadow: 0 1px 6px rgb(255, 122, 222);
+                        text-shadow: 0 1px 6px rgb(110, 4, 84);
                         color: rgb(255, 255, 255);
                     }
                     a {
@@ -122,12 +131,17 @@
     @media (max-width: 850px) {
         header {
             padding: 0 20px;
+            z-index: 99;
+            position: fixed;
 
             .menu-lines {
                 display: block;
             }
+            .logo {
+                float: none;
+            }
             nav {
-                position: absolute;
+                position: fixed;
                 width: 100%;
                 height: calc(100vh - 50px);
                 background: rgb(255, 255, 255);

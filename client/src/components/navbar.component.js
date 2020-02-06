@@ -22,9 +22,9 @@ function Navbar() {
 
   return (
     <div>
-        <div className="container">
+        <div className="navbar-container">
             <header>
-                <div className="logo">COS<span style={{color:"#869"}}>MET</span>ICA</div>
+                <div className="logo">SID<span>AH</span>MED</div>
                 <nav id="navLinks" className="nav-links">
                     <ul>
                         <li><a href="/">Home1</a></li>

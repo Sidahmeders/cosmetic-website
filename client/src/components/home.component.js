@@ -1,26 +1,59 @@
 import React, { useState } from 'react';
 import '../styles/home.css';
-
 import Swiper from 'react-id-swiper';
 import 'swiper/css/swiper.css';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 import brushes from '../cos-img/lipstick-liq.jpg';
 import lips from '../cos-img/lips.jpg';
+import pallete from  '../cos-img/pallete.jpg';
+import varni from '../cos-img/nailpol.jpg';
+import redlipstick from '../cos-img/redlipstick.jpg';
+import perf from '../cos-img/lamis.jpg';
+import hairbrush from '../cos-img/hairbrush.jpg';
+
+import blushOne from '../cos-img/product-img/blush (5).jpg';
+import blushTwo from '../cos-img/product-img/blush (28).jpg';
+import blushThree from '../cos-img/product-img/blush (35).jpg';
+import hairOne from '../cos-img/product-img/hair (49).jpg';
+import hairTwo from '../cos-img/product-img/hair (52).jpg';
+import hairThree from '../cos-img/product-img/hair (36).jpg';
+import hairFour from '../cos-img/product-img/hair (27).jpg';
+import hairFive from '../cos-img/product-img/hair (31).jpg';
+import suncremeOne from '../cos-img/product-img/sunCreme (6).jpg';
+import makeupOne from '../cos-img/product-img/makeup (6).jpg';
+import lipOne from '../cos-img/product-img/lips (7).jpg';
+import cremeOne from '../cos-img/product-img/creme (2).jpg';
+
+
 
 
 const  Home = () => {
 
-    const [swiper, updateSwiper] = useState(null);
+    const [swiper1, updateSwiper1] = useState(null);
+    const [swiper2, updateSwiper2] = useState(null);
 
-    const goNext = () => {
-        if (swiper !== null) {
-          swiper.slideNext();
+    const next1 = () => {
+        if (swiper1 !== null) {
+          swiper1.slideNext();
         }
       };
      
-      const goPrev = () => {
-        if (swiper !== null) {
-          swiper.slidePrev();
+      const prev1 = () => {
+        if (swiper1 !== null) {
+          swiper1.slidePrev();
+        }
+      };
+
+    const next2 = () => {
+        if (swiper2 !== null) {
+          swiper2.slideNext();
+        }
+      };
+     
+      const prev2 = () => {
+        if (swiper2 !== null) {
+          swiper2.slidePrev();
         }
       };
 
@@ -29,6 +62,31 @@ const  Home = () => {
         <div className="home">
             
             <header>
+
+                <div className="head-slide-container">
+                    <div className="slider">
+                        <div className="slide slide1">
+                            <div className="undefined">
+                             
+                            </div>
+                        </div>
+                        <div className="slide slide2">
+                            <div className="undefined">
+                            </div>
+                        </div>
+                        <div className="slide slide3">
+                            <div className="undefined">
+                               
+                            </div>
+                        </div>
+                        <div className="slide slide1">
+                            <div className="undefined">
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <div className="head-intro">
                     <div className="square"></div>
                     <div className="text">
@@ -54,54 +112,237 @@ const  Home = () => {
                         </p>
                     </div>
                 </div>
+
             </header>
 
             <main>
+
                 <div className="main-products">
                     <section className="slider-section">
-                        <button className="pre" onClick={goPrev}></button>
-                        <Swiper getSwiper={updateSwiper}>
-                            <div>
-                                <div className="card">
-                                    <div className="slider-text">
-                                        
+                        <button className="pre" onClick={prev1}><i className="fa fa-angle-left"></i></button>
+                        <Swiper getSwiper={updateSwiper1}>
+                           <div className="slide">
+                               <div className="slide-item">
+                                   <div>
+                                       <a href="/">
+                                            <img src={pallete} alt="pallete"/>
+                                            <p className="pallete-text">
+                                                the bestseller in eyeshadow palettes on Amazon
+                                                <span style={{color:"#91f",fontSize:".6em"}}> 2020</span>
+                                                <br />
+                                                <span style={{color:"#777",fontSize:".8em"}}> available for only 14$</span>
+                                            </p>
+                                        </a>
                                     </div>
-                                    <div className="content">
-                                    
-                                        <a href="/">Discover more</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div className="card">
-                                    <div className="slider-text">
-                                        
-                                    </div>
-                                    <div className="content">
-                                    
-                                        <a href="/">Discover more</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div className="card">
-                                    <div className="slider-text">
-                                        
-                                    </div>
-                                    <div className="content">
-                                    
-                                        <a href="/">Discover more</a>
-                                    </div>
-                                </div>
-                            </div>
+                               </div>
+                           </div>
+                           <div className="slide">
+                               <div className="slide-item">
+                                   <div>
+                                       <a href="/">
+                                           <img src={redlipstick} alt="redlipstick"/>
+                                           <p className="red-lipstick">
+                                                Our rich, vivid, perfectly matte lip color
+                                           </p>
+                                       </a>
+                                   </div>
+                                   
+                               </div>
+                           </div>
+                           <div className="slide">
+                               <div className="slide-item">
+                                   <div>
+                                       <a href="/">
+                                        <img src={varni} alt="varni"/>
+                                        <p className="varni">
+                                            it only requires two steps from being the one, <span>Wear</span> and <span>Shine</span>
+                                        </p>
+                                       </a>
+                                   </div>
+                               </div>
+                           </div>
+                           <div className="slide">
+                               <div className="slide-item">
+                                   <div>
+                                       <a href="/">
+                                           <img src={perf} alt="perfume"/>
+                                           <p className="perf">
+                                                the one fragrance that deserve to<span> lead </span>all<span> man </span>and woman
+                                           </p>
+                                       </a>
+                                   </div>
+                               </div>
+                           </div>
+                           <div className="slide">
+                               <div className="slide-item">
+                                   <div>
+                                       <a href="/">
+                                           <img src={hairbrush} alt="hairbrush"/>
+                                           <p className="drayer">
+                                               This smart tool is perfect for refreshing your hair between shampoos
+                                           </p>
+                                       </a>
+                                   </div>
+                               </div>
+                           </div>
                         </Swiper>
-                        <button className="next" onClick={goNext}></button>
+                        <button className="next" onClick={next1}><i className="fa fa-angle-right"></i></button>
                     </section>
-                    <section className="undefined-section">
-                        <div></div>
-                        <div></div>
+
+                    <section className="whats-new-section">
+                        <h2>Discover What's New</h2>
+                        <div className="new-products">
+                            <button className="pre" onClick={prev2}><i className="fa fa-angle-left"></i></button>
+                            <Swiper getSwiper={updateSwiper2}>
+                            <div className="products-slide one">
+                                <div className="product-item">
+                                    <a href="/">
+                                        <h5>New</h5>
+                                        <img src={cremeOne} alt="cremeOne"/>
+                                        <div className="text">
+                                            <span>Night creme</span>
+                                            <p>Age perfect cell renewal for everyday use</p>
+                                            <span>85ml</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div className="product-item">
+                                    <a href="/">
+                                        <h5>try me</h5>
+                                        <img src={blushOne} alt="blushOne"/>
+                                        <div className="text">
+                                            <span>Sephora Blusher</span>
+                                            <p>the all skin type sephora blusher for highlighted cheeck</p>
+                                            <span>30ml</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div className="product-item">
+                                    <a href="/">
+                                        <h5>New</h5>
+                                        <img src={suncremeOne} alt="sunCreme"/>
+                                        <div className="text">
+                                           <span>sun protection</span>
+                                           <p>Diasaar sun creme for ultimate protection from the uva and uvb sun light</p>
+                                           <span>95ml / 135ml</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div className="product-item">
+                                    <a href="/">
+                                        <h5>grab me</h5>
+                                        <img src={hairTwo} alt="hairTwo"/>
+                                        <div className="text">
+                                            <span>shampo</span>
+                                            <p>ulra doux shampo avovado oil, argan oil & hony, green tea, flower cotton</p>
+                                            <span>250ml / 400ml</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            
+                            <div className="products-slide two">
+                                <div className="product-item">
+                                    <a href="/">
+                                        <h5>take me</h5>
+                                        <img src={hairThree} alt="hairThree" />
+                                        <div className="text">
+                                            <span>shampo</span>
+                                            <p>SYOSS for frizzy and dry to moisturize your hair and shine</p>
+                                            <span></span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div className="product-item">
+                                    <a href="/">
+                                        <h5>new</h5>
+                                        <img src={hairFour} alt="hairFour" />
+                                        <div className="text">
+                                            <span>hair oil</span>
+                                            <p>the extrordinary oil from elseve for dry tend to fall hair with the 10 essential oils</p>
+                                            <span>150ml</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div className="product-item">
+                                    <a href="/">
+                                        <h5>try me</h5>
+                                        <img src={hairFive} alt="hairFive" />
+                                        <div className="text">
+                                            <span>shampo & condtioner</span>
+                                            <p>elseve for tinted hair and coloration for long lasting and shining color</p>
+                                            <span>350ml / 300ml</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div className="product-item">
+                                    <a href="/">
+                                        <h5>new</h5>
+                                        <img src={hairOne} alt="hairone" />
+                                        <div className="text">
+                                            <span>TRESemme shampo</span>
+                                            <p>the ultra shine shampo and hairCreme for dry, damaged and colored hair</p>
+                                            <span>48ml</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div className="products-slide three">
+                                <div className="product-item">
+                                    <a href="/">
+                                        <h5>try me</h5>
+                                        <img src={makeupOne} alt="makeupOne" />
+                                        <div className="text">
+                                            <span>Hd everbeuty pallete</span>
+                                            <p> 3 hot designs and is a must-have for your makeup kit. Comes with a variety of shades</p>
+                                            <span>15 saturated color</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div className="product-item">
+                                    <a href="/">
+                                        <h5>new</h5>
+                                        <img src={lipOne} alt="lipone" />
+                                        <div className="text">
+                                            <span>Doll Lipstick</span>
+                                            <p> the Doll Beauty lipsticks are versatile, highly pigmented and lightweight</p>
+                                            <span>7g/ 12 color</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div className="product-item">
+                                    <a href="/">
+                                        <h5>new</h5>
+                                        <img src={blushTwo} alt="blushTwo" />
+                                        <div className="text">
+                                            <span>Blusher</span>
+                                            <p>blush from Dior that gives cheeks intense, ultra-pigmented color that lasts</p>
+                                            <span>30g / pink/ red/ peach</span>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div className="product-item">
+                                    <a href="/">
+                                        <h5>try me</h5>
+                                        <img src={blushThree} alt="blushTree" />
+                                        <div className="text">
+                                            <span>Fit me Blusher</span>
+                                            <p>FIT me blush the socond colloction of nude colors from FITme</p>
+                                            <span>20g / ivory / light beige</span>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            </Swiper>
+                            <button className="next" onClick={next2}><i className="fa fa-angle-right"></i></button>
+                        </div>
+                        <div className="popular-products">
+                            <h2 style={{textAlign:"center",margin:".5em 0"}}>popular Products</h2>
+                        </div>
                     </section>
                 </div>
+
             </main>
 
         </div>
