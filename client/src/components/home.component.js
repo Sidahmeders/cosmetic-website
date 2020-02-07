@@ -67,21 +67,22 @@ const  Home = () => {
                     <div className="slider">
                         <div className="slide slide1">
                             <div className="undefined">
-                             
+                                <a href=""></a>
                             </div>
                         </div>
                         <div className="slide slide2">
                             <div className="undefined">
+                                <a href=""></a>
                             </div>
                         </div>
                         <div className="slide slide3">
                             <div className="undefined">
-                               
+                               <a href="/"></a>
                             </div>
                         </div>
                         <div className="slide slide1">
                             <div className="undefined">
-                               
+                               <a href=""></a>
                             </div>
                         </div>
                     </div>

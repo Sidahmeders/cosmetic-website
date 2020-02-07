@@ -42,16 +42,19 @@ body {
 .home header .head-slide-container .slider .slide.slide1 {
   background: url("../cos-img/hand.jpg");
   background-size: cover;
+  background-position: center;
 }
 
 .home header .head-slide-container .slider .slide.slide2 {
   background: url("../cos-img/lipstick.jpg");
   background-size: cover;
+  background-position: center;
 }
 
 .home header .head-slide-container .slider .slide.slide3 {
   background: url("../cos-img/woman.jpg");
   background-size: cover;
+  background-position: center;
 }
 
 .home header .head-slide-container .slider .slide .caption {
@@ -226,6 +229,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: auto;
+  margin-top: 7vh;
 }
 
 .home main .main-products .slider-section .pre,
@@ -329,7 +333,7 @@ body {
   text-align: center;
   font-weight: 100;
   font-size: 1.7em;
-  margin: 10vh 0;
+  margin-bottom: 10vh;
 }
 
 .home main .main-products .whats-new-section h2:before, .home main .main-products .whats-new-section h2:after {
