@@ -57,6 +57,7 @@ const  Home = () => {
         }
       };
 
+
         
     return (
         <div className="home">
@@ -197,18 +198,19 @@ const  Home = () => {
                             <Swiper getSwiper={updateSwiper2}>
                             <div className="products-slide one">
                                 <div className="product-item">
-                                    <a href="/">
+                                    <a className="detail" href="/">
                                         <h5>New</h5>
                                         <img src={cremeOne} alt="cremeOne"/>
                                         <div className="text">
                                             <span>Night creme</span>
-                                            <p>Age perfect cell renewal for everyday use</p>
+                                            <p>L'OREAL Nutrition Intense, Age perfect cell renewal for everyday use</p>
                                             <span>85ml</span>
                                         </div>
                                     </a>
+                                    <h4 className="price">12.75$</h4>
                                 </div>
                                 <div className="product-item">
-                                    <a href="/">
+                                    <a className="detail" href="/">
                                         <h5>try me</h5>
                                         <img src={blushOne} alt="blushOne"/>
                                         <div className="text">
@@ -217,9 +219,10 @@ const  Home = () => {
                                             <span>30ml</span>
                                         </div>
                                     </a>
+                                    <h4 className="price">6.30$</h4>
                                 </div>
                                 <div className="product-item">
-                                    <a href="/">
+                                    <a className="detail" href="/">
                                         <h5>New</h5>
                                         <img src={suncremeOne} alt="sunCreme"/>
                                         <div className="text">
@@ -228,9 +231,10 @@ const  Home = () => {
                                            <span>95ml / 135ml</span>
                                         </div>
                                     </a>
+                                    <h5 className="price">10.50$</h5>
                                 </div>
                                 <div className="product-item">
-                                    <a href="/">
+                                    <a className="detail" href="/">
                                         <h5>grab me</h5>
                                         <img src={hairTwo} alt="hairTwo"/>
                                         <div className="text">
@@ -239,12 +243,13 @@ const  Home = () => {
                                             <span>250ml / 400ml</span>
                                         </div>
                                     </a>
+                                    <h5 className="price">5.25$</h5>
                                 </div>
                             </div>
                             
                             <div className="products-slide two">
                                 <div className="product-item">
-                                    <a href="/">
+                                    <a className="detail" href="/">
                                         <h5>take me</h5>
                                         <img src={hairThree} alt="hairThree" />
                                         <div className="text">
@@ -253,20 +258,22 @@ const  Home = () => {
                                             <span></span>
                                         </div>
                                     </a>
+                                    <h4 className="price">6.10$</h4>
                                 </div>
                                 <div className="product-item">
-                                    <a href="/">
+                                    <a className="detail" href="/">
                                         <h5>new</h5>
                                         <img src={hairFour} alt="hairFour" />
                                         <div className="text">
                                             <span>hair oil</span>
-                                            <p>the extrordinary oil from elseve for dry tend to fall hair with the 10 essential oils</p>
+                                            <p>the extrordinary oil from elseve for dry, brittle hair with the 10 essential oils</p>
                                             <span>150ml</span>
                                         </div>
                                     </a>
+                                    <h4 className="price">11.20$</h4>
                                 </div>
                                 <div className="product-item">
-                                    <a href="/">
+                                    <a className="detail" href="/">
                                         <h5>try me</h5>
                                         <img src={hairFive} alt="hairFive" />
                                         <div className="text">
@@ -275,9 +282,10 @@ const  Home = () => {
                                             <span>350ml / 300ml</span>
                                         </div>
                                     </a>
+                                    <h4 className="price">16.40$</h4>
                                 </div>
                                 <div className="product-item">
-                                    <a href="/">
+                                    <a className="detail" href="/">
                                         <h5>new</h5>
                                         <img src={hairOne} alt="hairone" />
                                         <div className="text">
@@ -286,12 +294,13 @@ const  Home = () => {
                                             <span>48ml</span>
                                         </div>
                                     </a>
+                                    <h4 className="price">10.50$</h4>
                                 </div>
                             </div>
 
                             <div className="products-slide three">
                                 <div className="product-item">
-                                    <a href="/">
+                                    <a className="detail" href="/">
                                         <h5>try me</h5>
                                         <img src={makeupOne} alt="makeupOne" />
                                         <div className="text">
@@ -300,9 +309,10 @@ const  Home = () => {
                                             <span>15 saturated color</span>
                                         </div>
                                     </a>
+                                    <h4 className="price">18.05$</h4>
                                 </div>
                                 <div className="product-item">
-                                    <a href="/">
+                                    <a className="detail" href="/">
                                         <h5>new</h5>
                                         <img src={lipOne} alt="lipone" />
                                         <div className="text">
@@ -311,9 +321,10 @@ const  Home = () => {
                                             <span>7g/ 12 color</span>
                                         </div>
                                     </a>
+                                    <h4 className="price">8.80$</h4>
                                 </div>
                                 <div className="product-item">
-                                    <a href="/">
+                                    <a className="detail" href="/">
                                         <h5>new</h5>
                                         <img src={blushTwo} alt="blushTwo" />
                                         <div className="text">
@@ -322,9 +333,10 @@ const  Home = () => {
                                             <span>30g / pink/ red/ peach</span>
                                         </div>
                                     </a>
+                                    <h4 className="price">9.15$</h4>
                                 </div>
                                 <div className="product-item">
-                                    <a href="/">
+                                    <a className="detail" href="/">
                                         <h5>try me</h5>
                                         <img src={blushThree} alt="blushTree" />
                                         <div className="text">
@@ -333,6 +345,7 @@ const  Home = () => {
                                             <span>20g / ivory / light beige</span>
                                         </div>
                                     </a>
+                                    <h4 className="price">7.60$</h4>
                                 </div>
                             </div>
                             </Swiper>

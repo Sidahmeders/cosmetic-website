@@ -398,12 +398,12 @@ body {
   width: 280px;
 }
 
-.home main .main-products .whats-new-section .new-products .products-slide .product-item a {
+.home main .main-products .whats-new-section .new-products .products-slide .product-item .detail {
   color: black;
   text-decoration: none;
 }
 
-.home main .main-products .whats-new-section .new-products .products-slide .product-item a h5 {
+.home main .main-products .whats-new-section .new-products .products-slide .product-item .detail h5 {
   border: 1px solid;
   position: absolute;
   margin: 2px 5px;
@@ -411,23 +411,33 @@ body {
   color: #0f67eb;
 }
 
-.home main .main-products .whats-new-section .new-products .products-slide .product-item a img {
+.home main .main-products .whats-new-section .new-products .products-slide .product-item .detail img {
   width: 50%;
+  height: 160px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
-.home main .main-products .whats-new-section .new-products .products-slide .product-item a .text {
+.home main .main-products .whats-new-section .new-products .products-slide .product-item .detail .text {
   width: 80%;
   display: inline-block;
+  height: 160px;
 }
 
-.home main .main-products .whats-new-section .new-products .products-slide .product-item a .text span {
+.home main .main-products .whats-new-section .new-products .products-slide .product-item .detail .text span {
   display: block;
   font-size: 14px;
   color: #201d1d;
 }
 
-.home main .main-products .whats-new-section .new-products .products-slide .product-item a .text p {
+.home main .main-products .whats-new-section .new-products .products-slide .product-item .detail .text p {
   font-size: 18px;
   text-shadow: 0px 0px 1px black;
+}
+
+.home main .main-products .whats-new-section .new-products .products-slide .product-item .price {
+  border: 1px solid #2cbd00;
+  color: #399c00;
+  letter-spacing: 2px;
 }
 /*# sourceMappingURL=home.css.map */
