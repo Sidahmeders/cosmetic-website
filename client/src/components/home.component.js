@@ -17,8 +17,8 @@ import blushTwo from '../cos-img/product-img/blush (28).jpg';
 import blushThree from '../cos-img/product-img/blush (35).jpg';
 import hairOne from '../cos-img/product-img/hair (49).jpg';
 import hairTwo from '../cos-img/product-img/hair (52).jpg';
-import hairThree from '../cos-img/product-img/hair (36).jpg';
-import hairFour from '../cos-img/product-img/hair (27).jpg';
+import hairThree from '../cos-img/product-img/hair (50).jpg';
+import hairFour from '../cos-img/product-img/hair (25).jpg';
 import hairFive from '../cos-img/product-img/hair (31).jpg';
 import suncremeOne from '../cos-img/product-img/sunCreme (6).jpg';
 import makeupOne from '../cos-img/product-img/makeup (6).jpg';
@@ -132,7 +132,7 @@ const  Home = () => {
                                                 the bestseller in eyeshadow palettes on Amazon
                                                 <span style={{color:"#91f",fontSize:".6em"}}> 2020</span>
                                                 <br />
-                                                <span style={{color:"#777",fontSize:".8em"}}> available for only 14$</span>
+                                                <span style={{color:"#777",fontSize:".7em"}}> available for only 14$</span>
                                             </p>
                                         </a>
                                     </div>
@@ -231,7 +231,7 @@ const  Home = () => {
                                            <span>95ml / 135ml</span>
                                         </div>
                                     </a>
-                                    <h5 className="price">10.50$</h5>
+                                    <h4 className="price">10.50$</h4>
                                 </div>
                                 <div className="product-item">
                                     <a className="detail" href="/">
@@ -243,30 +243,30 @@ const  Home = () => {
                                             <span>250ml / 400ml</span>
                                         </div>
                                     </a>
-                                    <h5 className="price">5.25$</h5>
+                                    <h4 className="price">5.25$</h4>
                                 </div>
                             </div>
                             
                             <div className="products-slide two">
                                 <div className="product-item">
                                     <a className="detail" href="/">
-                                        <h5>take me</h5>
+                                        <h5>new</h5>
                                         <img src={hairThree} alt="hairThree" />
                                         <div className="text">
                                             <span>shampo</span>
-                                            <p>SYOSS for frizzy and dry to moisturize your hair and shine</p>
-                                            <span></span>
+                                            <p>PROvost shampo condtioner and serum for frizzy, dry and lost colored hair </p>
+                                            <span>750ml/ 7500ml/ 300ml</span>
                                         </div>
                                     </a>
                                     <h4 className="price">6.10$</h4>
                                 </div>
                                 <div className="product-item">
                                     <a className="detail" href="/">
-                                        <h5>new</h5>
+                                        <h5>take me</h5>
                                         <img src={hairFour} alt="hairFour" />
                                         <div className="text">
-                                            <span>hair oil</span>
-                                            <p>the extrordinary oil from elseve for dry, brittle hair with the 10 essential oils</p>
+                                            <span>shampo & oil repleacement</span>
+                                            <p>the new collection from elseve for tinted, or bleached and dry hair with keratin</p>
                                             <span>150ml</span>
                                         </div>
                                     </a>

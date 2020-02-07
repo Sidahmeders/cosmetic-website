@@ -28,8 +28,8 @@ body {
   width: 400%;
   height: 100%;
   float: left;
-  -webkit-animation: slide 20s linear infinite;
-          animation: slide 20s linear infinite;
+  -webkit-animation: slide 15s linear infinite;
+          animation: slide 15s linear infinite;
 }
 
 .home header .head-slide-container .slider .slide {
@@ -229,7 +229,7 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: auto;
-  margin-top: 7vh;
+  margin-top: 3%;
 }
 
 .home main .main-products .slider-section .pre,
@@ -272,11 +272,14 @@ body {
 .home main .main-products .slider-section .slide .slide-item img {
   width: 100%;
   background-size: contain;
+  height: 85vh;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .home main .main-products .slider-section .slide .slide-item p {
   position: absolute;
-  padding: 1.5em;
+  padding: 1em;
   font-size: 1.8em;
   background: white;
   color: #222;
@@ -286,6 +289,7 @@ body {
   top: 0;
   left: 0;
   border-radius: 0 0 5em 0;
+  padding: .5em;
 }
 
 .home main .main-products .slider-section .slide .slide-item .red-lipstick {
@@ -318,7 +322,7 @@ body {
 
 .home main .main-products .slider-section .slide .slide-item .drayer {
   top: 0;
-  left: 17%;
+  right: 0;
   font-size: 1.4em;
   border-radius: 0 0 3em 3em;
   color: #47bd82;
@@ -327,6 +331,7 @@ body {
 .home main .main-products .whats-new-section {
   width: 100%;
   height: auto;
+  margin-top: 3%;
 }
 
 .home main .main-products .whats-new-section h2 {

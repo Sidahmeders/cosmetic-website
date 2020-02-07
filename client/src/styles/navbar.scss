@@ -17,13 +17,13 @@
     
     header {
         position: fixed;
+        z-index: 99;
         top: 0;
         left: 0;
         padding: 0 100px;
         width: 100%;
         text-align: center;
         background-color: white;
-        z-index: 99;
 
         .logo {
             color: rgb(206, 0, 0);
@@ -97,6 +97,35 @@
                 }
             }
         }
+        .shopping-cart {
+            float: right;
+            height: 50px;
+            line-height: 50px;
+            margin-top: 12px;
+
+            .quantity {
+                position: absolute;
+                transform: translate(36px,0);
+                color: rgb(255, 65, 106);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-shadow: 0 0 3px rgb(247, 153, 153);
+                height: 22px;
+                width: 30px;
+                border-radius: 12px 0 12px 0;
+            }
+            a {
+                color: rgb(253, 162, 174);
+                display: block;
+
+                .fa {
+                    font-size: 1.8em;
+                    margin-top: 12px;
+                }  
+            }
+           
+        }
         .menu-lines {
             position: fixed;
             top: 1%;
@@ -131,21 +160,35 @@
     @media (max-width: 850px) {
         header {
             padding: 0 20px;
-            z-index: 99;
-            position: fixed;
 
             .menu-lines {
                 display: block;
             }
             .logo {
                 float: none;
+                line-height: 35px;
+                height: 45px;
+            }
+            .shopping-cart {
+                float: none;
+                margin: 0;
+                line-height: 25px;
+                height: 35px;
+
+                .quantity {
+                    display: inline !important;
+                    margin-left: 15px !important;
+                }
+                .fa {
+                    margin-top: 0 !important;
+                }
             }
             nav {
                 position: fixed;
                 width: 100%;
-                height: calc(100vh - 50px);
+                height: calc(100vh - 75px);
                 background: rgb(255, 255, 255);
-                top: 50px;
+                top: 75px;
                 left: -100%;
                 transition: .5s;
 

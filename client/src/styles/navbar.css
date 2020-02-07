@@ -23,13 +23,13 @@
 
 .navbar-container header {
   position: fixed;
+  z-index: 99;
   top: 0;
   left: 0;
   padding: 0 100px;
   width: 100%;
   text-align: center;
   background-color: white;
-  z-index: 99;
 }
 
 .navbar-container header .logo {
@@ -118,6 +118,44 @@
   visibility: visible;
 }
 
+.navbar-container header .shopping-cart {
+  float: right;
+  height: 50px;
+  line-height: 50px;
+  margin-top: 12px;
+}
+
+.navbar-container header .shopping-cart .quantity {
+  position: absolute;
+  -webkit-transform: translate(36px, 0);
+          transform: translate(36px, 0);
+  color: #ff416a;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 0 0 3px #f79999;
+          box-shadow: 0 0 3px #f79999;
+  height: 22px;
+  width: 30px;
+  border-radius: 12px 0 12px 0;
+}
+
+.navbar-container header .shopping-cart a {
+  color: #fda2ae;
+  display: block;
+}
+
+.navbar-container header .shopping-cart a .fa {
+  font-size: 1.8em;
+  margin-top: 12px;
+}
+
 .navbar-container header .menu-lines {
   position: fixed;
   top: 1%;
@@ -159,21 +197,34 @@
 @media (max-width: 850px) {
   .navbar-container header {
     padding: 0 20px;
-    z-index: 99;
-    position: fixed;
   }
   .navbar-container header .menu-lines {
     display: block;
   }
   .navbar-container header .logo {
     float: none;
+    line-height: 35px;
+    height: 45px;
+  }
+  .navbar-container header .shopping-cart {
+    float: none;
+    margin: 0;
+    line-height: 25px;
+    height: 35px;
+  }
+  .navbar-container header .shopping-cart .quantity {
+    display: inline !important;
+    margin-left: 15px !important;
+  }
+  .navbar-container header .shopping-cart .fa {
+    margin-top: 0 !important;
   }
   .navbar-container header nav {
     position: fixed;
     width: 100%;
-    height: calc(100vh - 50px);
+    height: calc(100vh - 75px);
     background: white;
-    top: 50px;
+    top: 75px;
     left: -100%;
     -webkit-transition: .5s;
     transition: .5s;
