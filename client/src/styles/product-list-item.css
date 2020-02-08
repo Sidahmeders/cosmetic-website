@@ -1,0 +1,24 @@
+.products-list {
+  margin-top: 5em;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.products-list .products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #e7d8d8;
+}
+
+.products-list .products .product {
+  width: 27%;
+}
+/*# sourceMappingURL=product-list-item.css.map */

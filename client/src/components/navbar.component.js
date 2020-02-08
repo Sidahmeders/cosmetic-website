@@ -27,21 +27,26 @@ function Navbar() {
                 <nav id="navLinks" className="nav-links">
                     <ul>
                         <li><a href="/">Home</a></li>
-                        <li><a href="/shoppingcart">shopcart</a></li>
+                        <li><a href="/">undefined</a></li>
                         <li>
-                            <i className="fas fa-caret-down"></i>
-                            <a href="/details">details</a>
+                            
+                            <a href="/productslist">
+                                <i className="fas fa-caret-down"></i>
+                                product
+                            </a>
                             <ul>
-                                <li><a href="/">Link 1</a></li>
-                                <li><a href="/">Link 2</a></li>
-                                <li><a href="/">Link 3</a></li>
-                                <li><a href="/">Link 4</a></li>
+                                <li><a href="/">hair</a></li>
+                                <li><a href="/">makeup</a></li>
+                                <li><a href="/">creme</a></li>
+                                <li><a href="/">fragrance</a></li>
                             </ul>
                         </li>
                         <li><a href="/">Home4</a></li>
                         <li>
-                            <i className="fas fa-caret-down"></i>
-                            <a href="/">Home5</a>
+                            <a href="/">
+                                <i className="fas fa-caret-down"></i>
+                                Home5
+                            </a>
                             <ul>
                                 <li><a href="/">Link 1</a></li>
                                 <li><a href="/">Link 2</a></li>
@@ -54,7 +59,7 @@ function Navbar() {
                 </nav>
                 <div className="shopping-cart">
                     <span className="quantity">13</span>
-                   <a href="/">
+                   <a href="/shoppingcart">
                        <i className="fa fa-cart-plus"></i>
                        My-cart
                     </a>

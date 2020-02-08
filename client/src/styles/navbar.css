@@ -70,8 +70,8 @@
 
 .navbar-container header nav ul li .fas {
   position: absolute;
-  top: 27%;
-  right: 3%;
+  bottom: -10%;
+  right: 40%;
   font-size: 1.4em;
   text-shadow: 0 1px 6px #6e0454;
   color: white;
@@ -79,13 +79,13 @@
 
 .navbar-container header nav ul li a {
   height: 50px;
-  line-height: 45px;
-  padding: 10px 20px;
+  line-height: 40px;
+  padding: 6px 8px;
   color: black;
   background-color: white;
   text-decoration: none;
-  -webkit-box-shadow: -1px 1px 3px rgba(73, 0, 55, 0.205);
-          box-shadow: -1px 1px 3px rgba(73, 0, 55, 0.205);
+  -webkit-box-shadow: -1px 1px 5px rgba(73, 0, 55, 0.205);
+          box-shadow: -1px 1px 5px rgba(73, 0, 55, 0.205);
   border-radius: 20px 0 10px 0;
   -webkit-transition: .5s ease;
   transition: .5s ease;
@@ -100,11 +100,11 @@
 .navbar-container header nav ul li ul {
   position: absolute;
   display: block;
-  left: -58%;
+  left: -75%;
   opacity: 0;
   visibility: hidden;
-  -webkit-transition: .9s ease;
-  transition: .9s ease;
+  -webkit-transition: .6s ease;
+  transition: .6s ease;
 }
 
 .navbar-container header nav ul li ul li {

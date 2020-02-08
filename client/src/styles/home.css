@@ -338,7 +338,6 @@ body {
   text-align: center;
   font-weight: 100;
   font-size: 1.7em;
-  margin-bottom: 10vh;
 }
 
 .home main .main-products .whats-new-section h2:before, .home main .main-products .whats-new-section h2:after {
@@ -401,6 +400,7 @@ body {
   display: inline-block;
   text-align: center;
   width: 280px;
+  margin-top: 3em;
 }
 
 .home main .main-products .whats-new-section .new-products .products-slide .product-item .detail {
@@ -426,7 +426,7 @@ body {
 .home main .main-products .whats-new-section .new-products .products-slide .product-item .detail .text {
   width: 80%;
   display: inline-block;
-  height: 160px;
+  height: 150px;
 }
 
 .home main .main-products .whats-new-section .new-products .products-slide .product-item .detail .text span {
@@ -436,7 +436,6 @@ body {
 }
 
 .home main .main-products .whats-new-section .new-products .products-slide .product-item .detail .text p {
-  font-size: 18px;
   text-shadow: 0px 0px 1px black;
 }
 

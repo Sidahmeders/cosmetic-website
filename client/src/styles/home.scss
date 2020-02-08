@@ -248,7 +248,6 @@ body {
                     text-align: center;
                     font-weight: 100;
                     font-size: 1.7em;
-                    margin-bottom: 10vh;
 
                     &:before,
                     &:after {
@@ -289,6 +288,7 @@ body {
                             display: inline-block;
                             text-align: center;
                             width: 280px;
+                            margin-top: 3em;
 
                             .detail {
                                 color: black;
@@ -309,8 +309,7 @@ body {
                                 .text {
                                     width: 80%;
                                     display: inline-block;
-                                    height: 160px;
-                                    
+                                    height: 150px;
         
                                     span {
                                         display: block;
@@ -318,7 +317,6 @@ body {
                                         color: rgb(32, 29, 29);
                                     }
                                     p {
-                                        font-size: 18px;
                                         text-shadow: 0px 0px 1px black;
                                     }
                                 }

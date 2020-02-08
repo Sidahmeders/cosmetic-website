@@ -23,7 +23,7 @@ import hairFive from '../cos-img/product-img/hair (31).jpg';
 import suncremeOne from '../cos-img/product-img/sunCreme (6).jpg';
 import makeupOne from '../cos-img/product-img/makeup (6).jpg';
 import lipOne from '../cos-img/product-img/lips (7).jpg';
-import cremeOne from '../cos-img/product-img/creme (2).jpg';
+import faceCremeOne from '../cos-img/product-img/creme (2).jpg';
 
 
 
@@ -57,7 +57,6 @@ const  Home = () => {
         }
       };
 
-
         
     return (
         <div className="home">
@@ -68,22 +67,22 @@ const  Home = () => {
                     <div className="slider">
                         <div className="slide slide1">
                             <div className="undefined">
-                                <a href=""></a>
+                                <a href="/">x</a>
                             </div>
                         </div>
                         <div className="slide slide2">
                             <div className="undefined">
-                                <a href=""></a>
+                                <a href="/">x</a>
                             </div>
                         </div>
                         <div className="slide slide3">
                             <div className="undefined">
-                               <a href="/"></a>
+                               <a href="/">x</a>
                             </div>
                         </div>
                         <div className="slide slide1">
                             <div className="undefined">
-                               <a href=""></a>
+                               <a href="/">x</a>
                             </div>
                         </div>
                     </div>
@@ -200,7 +199,7 @@ const  Home = () => {
                                 <div className="product-item">
                                     <a className="detail" href="/">
                                         <h5>New</h5>
-                                        <img src={cremeOne} alt="cremeOne"/>
+                                        <img src={faceCremeOne} alt="cremeOne"/>
                                         <div className="text">
                                             <span>Night creme</span>
                                             <p>L'OREAL Nutrition Intense, Age perfect cell renewal for everyday use</p>
@@ -215,7 +214,7 @@ const  Home = () => {
                                         <img src={blushOne} alt="blushOne"/>
                                         <div className="text">
                                             <span>Sephora Blusher</span>
-                                            <p>the all skin type sephora blusher for highlighted cheeck</p>
+                                            <p>Whether you choose rose or peachy, blush up your cheeks with Sephora</p>
                                             <span>30ml</span>
                                         </div>
                                     </a>
@@ -239,7 +238,7 @@ const  Home = () => {
                                         <img src={hairTwo} alt="hairTwo"/>
                                         <div className="text">
                                             <span>shampo</span>
-                                            <p>ulra doux shampo avovado oil, argan oil & hony, green tea, flower cotton</p>
+                                            <p>ulraDoux shampo avovado oil, argan oil & hony, green tea, flower cotton</p>
                                             <span>250ml / 400ml</span>
                                         </div>
                                     </a>
@@ -305,7 +304,7 @@ const  Home = () => {
                                         <img src={makeupOne} alt="makeupOne" />
                                         <div className="text">
                                             <span>Hd everbeuty pallete</span>
-                                            <p> 3 hot designs and is a must-have for your makeup kit. Comes with a variety of shades</p>
+                                            <p> 3 hot designs and a makeup kit. Comes with a variety of shades</p>
                                             <span>15 saturated color</span>
                                         </div>
                                     </a>

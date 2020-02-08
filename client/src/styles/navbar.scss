@@ -54,20 +54,20 @@
                     
                     .fas { 
                         position: absolute;
-                        top: 27%;
-                        right: 3%;
+                        bottom: -10%;
+                        right: 40%;
                         font-size: 1.4em;
                         text-shadow: 0 1px 6px rgb(110, 4, 84);
                         color: rgb(255, 255, 255);
                     }
                     a {
                         height: 50px;
-                        line-height: 45px;
-                        padding: 10px 20px;
+                        line-height: 40px;
+                        padding: 6px 8px;
                         color: rgb(0, 0, 0);
                         background-color: rgb(255, 255, 255);
                         text-decoration: none;
-                        box-shadow: -1px 1px 3px rgba(73, 0, 55, 0.205);
+                        box-shadow: -1px 1px 5px rgba(73, 0, 55, 0.205);
                         border-radius: 20px 0 10px 0;
                         transition: .5s ease;
 
@@ -79,10 +79,10 @@
                     ul {
                         position: absolute;
                         display: block;
-                        left: -58%;
+                        left: -75%;
                         opacity: 0;
                         visibility: hidden;
-                        transition: .9s ease;
+                        transition: .6s ease;
                         
                         li {
                             display: block;
