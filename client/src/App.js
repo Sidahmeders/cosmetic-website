@@ -6,6 +6,7 @@ import { ProductsProvider } from './context';
 import Navbar from './components/navbar.component';
 import Home from './components/home.component';
 import ProductsList from './components/productsList.component';
+import Details from './components/details.component';
 import ShoppingCart from './components/shopping-cart.component';
 import NotFound from './components/notfound.component';
 
@@ -18,6 +19,7 @@ function App() {
           <Switch>
             <Route exact path="/" component={ Home } />
             <Route path="/productslist" component={ ProductsList } />
+            <Route path="/details" component={ Details } />
             <Route path="/shoppingcart" component={ ShoppingCart } />
             <Route component={ NotFound } />
           </Switch>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/navbar.css';
 
 function Navbar() {
@@ -26,43 +27,43 @@ function Navbar() {
                 <div className="logo">SID<span>AH</span>MED</div>
                 <nav id="navLinks" className="nav-links">
                     <ul>
-                        <li><a href="/">Home</a></li>
-                        <li><a href="/">undefined</a></li>
+                        <li><Link className="link" to="/">Home</Link></li>
+                        <li><Link className="link" to="/">undefined</Link></li>
                         <li>
                             
-                            <a href="/productslist">
+                            <Link className="link" to="/productslist">
                                 <i className="fas fa-caret-down"></i>
                                 product
-                            </a>
+                            </Link>
                             <ul>
-                                <li><a href="/">hair</a></li>
-                                <li><a href="/">makeup</a></li>
-                                <li><a href="/">creme</a></li>
-                                <li><a href="/">fragrance</a></li>
+                                <li><Link className="link" to="/">hair</Link></li>
+                                <li><Link className="link" to="/">makeup</Link></li>
+                                <li><Link className="link" to="/">creme</Link></li>
+                                <li><Link className="link" to="/">fragrance</Link></li>
                             </ul>
                         </li>
-                        <li><a href="/">Home4</a></li>
+                        <li><Link className="link" to="/details">Details</Link></li>
                         <li>
-                            <a href="/">
+                            <Link className="link" to="/">
                                 <i className="fas fa-caret-down"></i>
                                 Home5
-                            </a>
+                            </Link>
                             <ul>
-                                <li><a href="/">Link 1</a></li>
-                                <li><a href="/">Link 2</a></li>
-                                <li><a href="/">Link 3</a></li>
-                                <li><a href="/">Link 4</a></li>
+                                <li><Link className="link" to="/">Link 1</Link></li>
+                                <li><Link className="link" to="/">Link 2</Link></li>
+                                <li><Link className="link" to="/">Link 3</Link></li>
+                                <li><Link className="link" to="/">Link 4</Link></li>
                             </ul>
                         </li>
-                        <li><a href="/">Home6</a></li>
+                        <li><Link className="link" to="/">Home6</Link></li>
                     </ul>
                 </nav>
                 <div className="shopping-cart">
                     <span className="quantity">13</span>
-                   <a href="/shoppingcart">
+                   <Link className="link" to="/shoppingcart">
                        <i className="fa fa-cart-plus"></i>
                        My-cart
-                    </a>
+                    </Link>
                 </div>
                 <div className="menu-lines" onClick={toggleMenu}>
                     <span id="line" className="line"></span>
@@ -73,7 +74,7 @@ function Navbar() {
         </div>
     </div>
   );
-}
+};
 
 export default Navbar;
 

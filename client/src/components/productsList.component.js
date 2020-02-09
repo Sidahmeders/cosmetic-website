@@ -11,15 +11,16 @@ function ProductsList() {
             <h1>products List component</h1>
             <div className="products">
                 <ProductsConsumer>
-                    {(products) => {
-                        return products.productsList.map(product => {
-                            return <Product key={product.id} product={product} />
+                    {(value) => {
+                        const handleDetails = value.handleDetails;
+                        return value.productsListCopy.map(product => {
+                            return <Product key={product.id} product={product} handleDetail={handleDetails} />
                         });
                     }}
                 </ProductsConsumer>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default ProductsList;

@@ -49,9 +49,16 @@ export const productsList = [
 ];
 
 
-
-
-
+export const detailsProduct = {
+    id: 1,
+    period: "new",
+    img: faceCremeOne,
+    type: "Night creme",
+    description: "L'OREAL Nutrition Intense, Age perfect cell renewal for everyday use",
+    size: "85ml",
+    price: 12.75,
+    inCart: false
+};
 
 
 

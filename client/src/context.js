@@ -1,43 +1,54 @@
-import React, { useState } from 'react';
-import { productsList } from './productsData';
+import React, { useState, useEffect } from 'react';
+import { productsList, detailsProduct } from './productsData';
 
-const undefinedProducts = [
-    {
-        name: "kilwa",
-        age: 22,
-        legal: true,
-        props: "hunter"
-    },
-    {
-        name: "gon frekis",
-        age: 21,
-        legal: true,
-        props: "hunter"
-    },
-    {
-        name: "korabica",
-        age: 27,
-        legal: true,
-        props: "spider killer"
-    }
-];
 
 const ProductsContext = React.createContext();
 
 function ProductsProvider(props) {
 
-    const [products] = useState({
-        productsList,
-        undefinedProducts
+    const [products, setProducts] = useState({
+        productsListCopy: [],
+        detailsProduct
     });
 
-    const handleDetails = () => {
-        console.log('hello from handle details context component');
+    useEffect(() => {
+        setNewProductsList();
+    },[]);
+
+    const setNewProductsList = () => {
+        let newProductsCopy = [];
+        productsList.map(item => {
+            const productItem = {...item}
+            return newProductsCopy = [...newProductsCopy, productItem];
+        });
+        setProducts(() => {
+            return {
+                productsListCopy:newProductsCopy,
+                detailsProduct
+            }
+        });
     }
 
-    const addToCart = () => {
-        console.log('hello from add to cart context component');
+    const getItem = id => {
+        return products.productsListCopy.find(item => item.id === id);
     }
+
+    const handleDetails = (id) => {
+        const product = getItem(id);
+        setProducts(() => {
+            return {
+                productsListCopy:products.productsListCopy,
+                detailsProduct: product
+            }
+        });
+        //! remove
+        console.log(products);
+    }
+
+    const addToCart = id => {
+        console.log(`hello from add to cart ${id}`);
+    }
+
 
     return (
         <ProductsContext.Provider value={{

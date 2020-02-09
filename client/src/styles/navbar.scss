@@ -60,7 +60,7 @@
                         text-shadow: 0 1px 6px rgb(110, 4, 84);
                         color: rgb(255, 255, 255);
                     }
-                    a {
+                    .link {
                         height: 50px;
                         line-height: 40px;
                         padding: 6px 8px;
@@ -115,7 +115,7 @@
                 width: 30px;
                 border-radius: 12px 0 12px 0;
             }
-            a {
+            .link {
                 color: rgb(253, 162, 174);
                 display: block;
 
@@ -157,7 +157,7 @@
     }
 
 
-    @media (max-width: 850px) {
+    @media (max-width: 900px) {
         header {
             padding: 0 20px;
 
@@ -212,7 +212,7 @@
                         border-bottom: 1px solid rgba(255, 80, 226, 0.1);
                         margin-top: 5%;
 
-                        a {
+                        .link {
                             border-radius: 0; 
                             box-shadow: 0 0 0;
 

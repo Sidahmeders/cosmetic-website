@@ -11,7 +11,7 @@ function NotFound() {
             <h1>NOT FOUND cart component</h1>
             <h1>NOT FOUND cart component</h1>
         </div>
-    )
-}
+    );
+};
 
 export default NotFound;
