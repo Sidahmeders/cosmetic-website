@@ -9,12 +9,17 @@ function ProductsList() {
     return (
         <div className="products-list">
             <h1>products List component</h1>
-            <div className="products">
+            <div className="product">
                 <ProductsConsumer>
                     {(value) => {
                         const handleDetails = value.handleDetails;
+                        const addToCart = value.addToCart;
                         return value.productsListCopy.map(product => {
-                            return <Product key={product.id} product={product} handleDetail={handleDetails} />
+                            return <Product key={product.id} 
+                            product={product} 
+                            handleDetail={handleDetails}
+                            addToCart={addToCart} 
+                            />
                         });
                     }}
                 </ProductsConsumer>

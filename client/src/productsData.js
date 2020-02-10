@@ -14,7 +14,9 @@ export const productsList = [
         description: "L'OREAL Nutrition Intense, Age perfect cell renewal for everyday use",
         size: "85ml",
         price: 12.75,
-        inCart: false
+        inCart: false,
+        count: 0,
+        total: 0
     },
     {
         id: 2,
@@ -24,7 +26,9 @@ export const productsList = [
         description: "Whether you choose rose or peachy, blush up your cheeks with Sephora",
         size: "30ml",
         price: 6.30,
-        inCart: false
+        inCart: false,
+        count: 0,
+        total: 0
     },
     {
         id: 3,
@@ -34,7 +38,9 @@ export const productsList = [
         description: "Diasaar sun creme for ultimate protection from the uva and uvb sun light",
         size: "95ml/ 135ml",
         price: 10.50,
-        inCart: false
+        inCart: false,
+        count: 0,
+        total: 0
     },
     {
         id: 4,
@@ -44,7 +50,9 @@ export const productsList = [
         description: "ulraDoux shampo avovado oil, argan oil & hony, green tea, flower cotton",
         size: "250ml/ 400ml",
         price: 5.80,
-        inCart: false
+        inCart: false,
+        count: 0,
+        total: 0
     }
 ];
 
@@ -57,7 +65,9 @@ export const detailsProduct = {
     description: "L'OREAL Nutrition Intense, Age perfect cell renewal for everyday use",
     size: "85ml",
     price: 12.75,
-    inCart: false
+    inCart: false,
+    count: 0,
+    total: 0
 };
 
 

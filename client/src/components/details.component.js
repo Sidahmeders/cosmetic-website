@@ -10,7 +10,7 @@ function Details() {
             <ProductsConsumer>
                 {(value) => {
 
-                    const {id, period, img, type, description, size, price, inCart} = value.detailsProduct;
+                    const {id, period, img, type, description, size, price} = value.detailsProduct;
 
                     return (
                         <div className="details-product">

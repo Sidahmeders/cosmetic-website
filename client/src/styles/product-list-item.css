@@ -3,7 +3,7 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.products-list .products {
+.products-list .product {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -18,7 +18,7 @@
   background-color: #e7d8d8;
 }
 
-.products-list .products .product {
+.products-list .product .product-item {
   width: 27%;
 }
 /*# sourceMappingURL=product-list-item.css.map */

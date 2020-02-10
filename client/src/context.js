@@ -8,7 +8,8 @@ function ProductsProvider(props) {
 
     const [products, setProducts] = useState({
         productsListCopy: [],
-        detailsProduct
+        detailsProduct,
+        cart: []
     });
 
     useEffect(() => {
@@ -23,8 +24,8 @@ function ProductsProvider(props) {
         });
         setProducts(() => {
             return {
-                productsListCopy:newProductsCopy,
-                detailsProduct
+                ...products,
+                productsListCopy:newProductsCopy
             }
         });
     }
@@ -37,16 +38,24 @@ function ProductsProvider(props) {
         const product = getItem(id);
         setProducts(() => {
             return {
-                productsListCopy:products.productsListCopy,
+                ...products,
                 detailsProduct: product
             }
         });
-        //! remove
-        console.log(products);
     }
 
     const addToCart = id => {
-        console.log(`hello from add to cart ${id}`);
+        const index = products.productsListCopy.indexOf(getItem(id));
+        const productToAdd = products.productsListCopy[index];
+        productToAdd.inCart = true;
+        productToAdd.count = 1; 
+        productToAdd.total = productToAdd.price;
+        setProducts(() => {
+            return {
+                ...products,
+                cart: [...products.cart, productToAdd]
+            }
+        });
     }
 
 
