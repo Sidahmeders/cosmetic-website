@@ -1,5 +1,5 @@
 .products-list {
-  margin-top: 5em;
+  margin-top: 8em;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
@@ -15,10 +15,24 @@
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: #e7d8d8;
+  background-color: white;
 }
 
 .products-list .product .product-item {
-  width: 27%;
+  width: 24%;
+}
+
+.products-list .product .product-item .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
 }
 /*# sourceMappingURL=product-list-item.css.map */

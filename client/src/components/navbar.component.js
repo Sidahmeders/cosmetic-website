@@ -1,6 +1,8 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useLocation } from 'react-router';
 import { Link } from 'react-router-dom';
-import '../styles/navbar.css';
+import '../styles/navbar/navbar.css';
+
 
 function Navbar() {
 
@@ -19,12 +21,19 @@ function Navbar() {
         }
     }
 
+    const location = useLocation();
+    useEffect(() => {
+        toggleMenu();
+    },[location.pathname]);
 
+    
   return (
     <div>
         <div className="navbar-container">
             <header>
-                <div className="logo">SID<span>AH</span>MED</div>
+                <div className="logo">
+                    <a href="/">SID<span>AH</span>MED</a>
+                </div>
                 <nav id="navLinks" className="nav-links">
                     <ul>
                         <li><Link className="link" to="/">Home</Link></li>
@@ -33,7 +42,7 @@ function Navbar() {
                             
                             <Link className="link" to="/productslist">
                                 <i className="fas fa-caret-down"></i>
-                                product
+                                products
                             </Link>
                             <ul>
                                 <li><Link className="link" to="/">hair</Link></li>
@@ -77,5 +86,3 @@ function Navbar() {
 };
 
 export default Navbar;
-
-

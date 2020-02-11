@@ -25,8 +25,9 @@
         text-align: center;
         background-color: white;
 
-        .logo {
+        .logo a {
             color: rgb(206, 0, 0);
+            text-decoration: none;
             text-shadow: 1px 1px 1px rgb(85, 84, 84);
             span {color: rgb(36, 169, 202);}
             height: 50px;
@@ -79,14 +80,13 @@
                     ul {
                         position: absolute;
                         display: block;
-                        left: -75%;
+                        left: 0;
                         opacity: 0;
                         visibility: hidden;
                         transition: .6s ease;
                         
                         li {
                             display: block;
-                            width: 200px;
                             margin: 0;
                         }
                     }
@@ -159,12 +159,12 @@
 
     @media (max-width: 900px) {
         header {
-            padding: 0 20px;
+            padding: 3px 20px !important;
 
             .menu-lines {
                 display: block;
             }
-            .logo {
+            .logo a {
                 float: none;
                 line-height: 35px;
                 height: 45px;
@@ -186,9 +186,9 @@
             nav {
                 position: fixed;
                 width: 100%;
-                height: calc(100vh - 75px);
+                height: calc(100vh - 60px);
                 background: rgb(255, 255, 255);
-                top: 75px;
+                top: 60px;
                 left: -100%;
                 transition: .5s;
 

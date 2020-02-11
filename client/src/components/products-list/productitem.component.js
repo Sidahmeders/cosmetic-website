@@ -8,7 +8,7 @@ function Product(props) {
 
     return (
         <div className="product-item">
-            <div style={{cursor:'pointer'}} onClick={() => props.handleDetail(id)}>
+            <div className="item" style={{cursor:'pointer'}} onClick={() => props.handleDetail(id)}>
                 <h5>{period}</h5>
                 <img width="180px" src={img} alt="product"/>
                 <h4>{type}</h4>

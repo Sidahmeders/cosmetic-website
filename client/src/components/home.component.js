@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../styles/home.css';
+import '../styles/home/home.css';
 import Swiper from 'react-id-swiper';
 import 'swiper/css/swiper.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';

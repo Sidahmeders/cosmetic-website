@@ -5,7 +5,7 @@ import { ProductsConsumer } from '../context';
 function Details() {
 
     return (
-        <div className="shopping-cart">
+        <div className="details">
             <h1 style={{marginTop:"40vh"}}>Details component</h1>
             <ProductsConsumer>
                 {(value) => {
@@ -25,7 +25,7 @@ function Details() {
                                     </div>
                                 </a>
                                 <h4>{price}$</h4>
-                                <button onClick={() => value.addToCart(id)}>click to get id</button>
+                                <button onClick={() => value.addToCart(id)}>add to the cart</button>
                             </div>
                         </div>
                     );
@@ -36,8 +36,3 @@ function Details() {
 };
 
 export default Details;
-
-
-
-
-

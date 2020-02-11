@@ -1,0 +1,25 @@
+
+.products-list {
+    margin-top: 8em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+    .product {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        background-color: rgb(255, 255, 255);
+
+        .product-item {
+            width: 24%;
+            
+            .item {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    }
+}
+

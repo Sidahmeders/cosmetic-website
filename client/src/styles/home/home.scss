@@ -5,7 +5,7 @@ body {
 }
 
 .home {
-    margin-top: 4.5em;
+    margin-top: 5em;
     background: #ffffff;
     font-family: 'Poppins', sans-serif;
 
@@ -35,17 +35,17 @@ body {
                     float: left;
 
                     &.slide1 {
-                        background: url('../cos-img/hand.jpg');
+                        background: url('../../cos-img/hand.jpg');
                         background-size: cover;
                         background-position: center;
                     }
                     &.slide2 {
-                        background: url('../cos-img/lipstick.jpg');
+                        background: url('../../cos-img/lipstick.jpg');
                         background-size: cover;
                         background-position: center;
                     }
                     &.slide3 {
-                        background: url('../cos-img/woman.jpg');
+                        background: url('../../cos-img/woman.jpg');
                         background-size: cover;
                         background-position: center;
                     }

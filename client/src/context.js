@@ -9,7 +9,10 @@ function ProductsProvider(props) {
     const [products, setProducts] = useState({
         productsListCopy: [],
         detailsProduct,
-        cart: []
+        cart: [],
+        subTotal: 0,
+        cartTax: 0,
+        cartTotal: 0
     });
 
     useEffect(() => {
@@ -58,12 +61,34 @@ function ProductsProvider(props) {
         });
     }
 
+    const increment = id => {
+        console.log(`this is the increment method ${id}`);
+        
+    }
+
+    const decrement = id => {
+        console.log(`this is the decrement method ${id}`);
+
+    }
+
+    const removeItem = id => {
+        console.log(`item removed ${id}`);
+    }
+
+    const clearCart = () => {
+        console.log('cart is cleaned')
+    }
+
 
     return (
         <ProductsContext.Provider value={{
             ...products,
             handleDetails,
-            addToCart
+            addToCart,
+            increment,
+            decrement,
+            removeItem,
+            clearCart
         }}>
             {props.children}
         </ProductsContext.Provider>

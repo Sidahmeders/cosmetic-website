@@ -5,9 +5,9 @@ import { ProductsProvider } from './context';
 
 import Navbar from './components/navbar.component';
 import Home from './components/home.component';
-import ProductsList from './components/productsList.component';
+import ProductsList from './components/products-list/productsList.component';
 import Details from './components/details.component';
-import ShoppingCart from './components/shopping-cart.component';
+import ShoppingCart from './components/shoping-cart/shopping-cart.component';
 import NotFound from './components/notfound.component';
 
 function App() {
