@@ -64,7 +64,6 @@ function ProductsProvider(props) {
                 cart: [...products.cart, productToAdd]
             }
         });
-        addTotal();
     }
 
     const openModal = () => {
@@ -119,6 +118,7 @@ function ProductsProvider(props) {
             handleDetails,
             addToCart,
             openModal,
+            addTotal,
             modal,
             increment,
             decrement,

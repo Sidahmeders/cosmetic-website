@@ -12,13 +12,12 @@ function ShoppingCart() {
         <div className="shopping-cart">
             <ProductsConsumer>
                 {(value) => {
-                    console.log(value)
+                    const {cart, totalPrice} = value;
                     if (value.cart.length) {
-                        const {cart, totalPrice} = value;
                         return(
                             <div className="cart">
-                                <CartProduct value={value} products={cart} />
-                                <CartTotal totalPrice={totalPrice} />
+                                <CartProduct products={cart} value={value} />
+                                <CartTotal totalPrice={totalPrice} value={value} />
                             </div>
                         ); 
                     } else {

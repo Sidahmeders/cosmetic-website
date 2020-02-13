@@ -2,6 +2,7 @@ import React from 'react';
 
 
 function CartProduct(props) {
+    
     return(
         <div className="cart-products">
             {props.products.map(product => {
