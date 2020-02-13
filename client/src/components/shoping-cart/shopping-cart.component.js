@@ -1,23 +1,31 @@
 import React from 'react';
-import { ProductsConsumer } from '../../context';
-import CartProduct from './cart-product.component';
 import '../../styles/shopping-cart/shopping-cart.css';
+import { ProductsConsumer } from '../../context';
+import CartProduct from './cartProduct.component';
+import CartTotal from './cartTotal.component';
+import EmptyCart from './emptycart.component';
 
 
 function ShoppingCart() {
 
     return (
         <div className="shopping-cart">
-            <div className="cart-products">
-                <ProductsConsumer>
-                    {(value) => {
-                        const cartProducts = value.productsListCopy.filter(product => product.inCart === true);
-                        return cartProducts.map(cartProduct => {
-                            return <CartProduct key ={cartProduct.id} cartProduct={cartProduct} />
-                        });
-                    }}
-                </ProductsConsumer>
-            </div>
+            <ProductsConsumer>
+                {(value) => {
+                    console.log(value)
+                    if (value.cart.length) {
+                        const {cart, totalPrice} = value;
+                        return(
+                            <div className="cart">
+                                <CartProduct value={value} products={cart} />
+                                <CartTotal totalPrice={totalPrice} />
+                            </div>
+                        ); 
+                    } else {
+                        return <EmptyCart />
+                    }
+                }}
+            </ProductsConsumer>
         </div>
     );
 };

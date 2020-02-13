@@ -9,6 +9,7 @@ import ProductsList from './components/products-list/productsList.component';
 import Details from './components/details.component';
 import ShoppingCart from './components/shoping-cart/shopping-cart.component';
 import NotFound from './components/notfound.component';
+import Modal from './components/modal.component';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             <Route path="/shoppingcart" component={ ShoppingCart } />
             <Route component={ NotFound } />
           </Switch>
+          <Modal />
         </div>
       </Router>
     </ProductsProvider>

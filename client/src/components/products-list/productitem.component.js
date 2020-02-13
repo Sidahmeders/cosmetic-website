@@ -16,9 +16,8 @@ function Product(props) {
                 <h5>{size}</h5>
                 <h4>{price}$</h4>
             </div>
-            <button className="btn" disabled={inCart} onClick={() => props.addToCart(id)}>
-                {inCart ? (<p className="btn-inCart">in cart</p>) : 
-                <p className="btn-addtoCart">add to the cart</p>}   
+            <button className="btn" disabled={inCart} onClick={() => {props.addToCart(id); props.openModal();}}>
+            {inCart ? (<p>in Cart</p>) : <p>add to the Cart</p>}   
             </button>
         </div>
     );

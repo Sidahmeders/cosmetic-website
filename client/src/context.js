@@ -9,7 +9,12 @@ function ProductsProvider(props) {
     const [products, setProducts] = useState({
         productsListCopy: [],
         detailsProduct,
-        cart: [],
+        cart: []
+    });
+
+    let [modal, setModal] = useState(false);
+
+    const [totalPrice, setTotalPrice] = useState({
         subTotal: 0,
         cartTax: 0,
         cartTotal: 0
@@ -59,8 +64,16 @@ function ProductsProvider(props) {
                 cart: [...products.cart, productToAdd]
             }
         });
+        addTotal();
     }
 
+    const openModal = () => {
+        setModal(() => true);
+        setTimeout(() => {
+            setModal(() => false);
+        },3000);
+    }
+    
     const increment = id => {
         console.log(`this is the increment method ${id}`);
         
@@ -75,16 +88,38 @@ function ProductsProvider(props) {
         console.log(`item removed ${id}`);
     }
 
-    const clearCart = () => {
-        console.log('cart is cleaned')
+    const addTotal = () => {
+        let subtotal = 0;
+        products.cart.map(product => (subtotal += product.total));
+        const getTax = subtotal * 0.1;
+        const tax = parseFloat(getTax.toFixed(2));
+        const total = subtotal + tax;
+        setTotalPrice(() => {
+            return {
+                subTotal: subtotal,
+                cartTax: tax,
+                cartTotal: total
+            }
+        });
     }
 
+    const clearCart = () => {
+        setProducts(() => {
+            return {
+                ...products,
+                cart: []
+            }
+        });
+    }
 
     return (
         <ProductsContext.Provider value={{
             ...products,
+            totalPrice,
             handleDetails,
             addToCart,
+            openModal,
+            modal,
             increment,
             decrement,
             removeItem,

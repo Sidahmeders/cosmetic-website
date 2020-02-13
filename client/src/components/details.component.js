@@ -9,9 +9,7 @@ function Details() {
             <h1 style={{marginTop:"40vh"}}>Details component</h1>
             <ProductsConsumer>
                 {(value) => {
-
-                    const {id, period, img, type, description, size, price} = value.detailsProduct;
-
+                    const {id, period, img, type, description, size, price, inCart} = value.detailsProduct;
                     return (
                         <div className="details-product">
                             <div className="product-item">
@@ -25,7 +23,9 @@ function Details() {
                                     </div>
                                 </a>
                                 <h4>{price}$</h4>
-                                <button onClick={() => value.addToCart(id)}>add to the cart</button>
+                                <button disabled={inCart} onClick={() => {value.addToCart(id); value.handleDetails(id)}}>
+                                    {inCart ? (<p>in Cart</p>) : (<p>add to the Cart</p>)}
+                                </button>
                             </div>
                         </div>
                     );

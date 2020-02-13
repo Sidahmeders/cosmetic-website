@@ -68,8 +68,8 @@ function Navbar() {
                     </ul>
                 </nav>
                 <div className="shopping-cart">
-                    <span className="quantity">13</span>
                    <Link className="link" to="/shoppingcart">
+                       <span className="quantity">13</span>
                        <i className="fa fa-cart-plus"></i>
                        My-cart
                     </Link>

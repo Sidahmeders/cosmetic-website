@@ -11,13 +11,12 @@ function ProductsList() {
             <div className="product">
                 <ProductsConsumer>
                     {(value) => {
-                        const handleDetails = value.handleDetails;
-                        const addToCart = value.addToCart;
                         return value.productsListCopy.map(product => {
                             return <Product key={product.id} 
                             product={product} 
-                            handleDetail={handleDetails}
-                            addToCart={addToCart} 
+                            handleDetail={value.handleDetails}
+                            addToCart={value.addToCart}
+                            openModal={value.openModal}
                             />
                         });
                     }}

@@ -2,7 +2,7 @@
   margin-top: 8em;
 }
 
-.shopping-cart .cart-products {
+.shopping-cart .cart .cart-products {
   background-color: #e0d9d9;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -15,7 +15,7 @@
       flex-wrap: wrap;
 }
 
-.shopping-cart .cart-products .cart-product-item {
-  width: 350px;
+.shopping-cart .cart .cart-products .cart-product-item {
+  width: 300px;
 }
 /*# sourceMappingURL=shopping-cart.css.map */

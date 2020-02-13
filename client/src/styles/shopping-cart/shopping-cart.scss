@@ -2,16 +2,21 @@
 .shopping-cart {
     margin-top: 8em;
 
-    .cart-products {
-        background-color: rgb(224, 217, 217);
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        flex-wrap: wrap;
+    .cart {
 
-        .cart-product-item {
-            width: 350px;
+        .cart-products {
+            background-color: rgb(224, 217, 217);
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            flex-wrap: wrap;
+
+            .cart-product-item {
+                width: 300px;
+            }
         }
     }
+
+    
 }
 
