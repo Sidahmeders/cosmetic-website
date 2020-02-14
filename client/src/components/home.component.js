@@ -238,7 +238,7 @@ const  Home = () => {
                                         <img src={hairTwo} alt="hairTwo"/>
                                         <div className="text">
                                             <span>shampo</span>
-                                            <p>ulraDoux shampo avovado oil, argan oil & hony, green tea, flower cotton</p>
+                                            <p>ulraDoux shampo avocado oil, argan oil & hony, green tea, flower cotton</p>
                                             <span>250ml / 400ml</span>
                                         </div>
                                     </a>

@@ -47,7 +47,7 @@ export const productsList = [
         period: "grab me",
         img: shampoOne,
         type: "shampo",
-        description: "ulraDoux shampo avovado oil, argan oil & hony, green tea, flower cotton",
+        description: "ulraDoux shampo avocado oil, argan oil & hony, green tea, flower cotton",
         size: "250ml/ 400ml",
         price: 5.80,
         inCart: false,
