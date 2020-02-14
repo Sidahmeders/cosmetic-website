@@ -5,7 +5,7 @@
     .cart {
 
         .cart-products {
-            background-color: rgb(224, 217, 217);
+            background-color: rgb(255, 255, 255);
             display: flex;
             justify-content: center;
             text-align: center;
@@ -13,6 +13,15 @@
 
             .cart-product-item {
                 width: 300px;
+            }
+        }
+        .cart-Total {
+
+            .total-price {
+                font-size: 1.2em;
+            }
+            .stripe-btn {
+                margin-top: 10px;
             }
         }
     }

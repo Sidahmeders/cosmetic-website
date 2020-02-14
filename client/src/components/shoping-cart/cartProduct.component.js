@@ -4,6 +4,7 @@ import React from 'react';
 function CartProduct(props) {
 
     const {changeQuantity, removeItem} = props.value;
+    
     return(
         <div className="cart-products">
             {props.products.map(product => {

@@ -3,7 +3,7 @@
 }
 
 .shopping-cart .cart .cart-products {
-  background-color: #e0d9d9;
+  background-color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17,5 +17,13 @@
 
 .shopping-cart .cart .cart-products .cart-product-item {
   width: 300px;
+}
+
+.shopping-cart .cart .cart-Total .total-price {
+  font-size: 1.2em;
+}
+
+.shopping-cart .cart .cart-Total .stripe-btn {
+  margin-top: 10px;
 }
 /*# sourceMappingURL=shopping-cart.css.map */
