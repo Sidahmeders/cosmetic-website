@@ -46,9 +46,9 @@ function Navbar() {
                             <ul>
                                 <li><Link className="link" to="/">Home</Link></li>
                                 <li>
-                                    <Link className="link" to="/">
+                                    <a className="link">
                                         hair&Shampo<i className="fas fa-caret-down"></i>
-                                    </Link>
+                                    </a>
                                     <ul>
                                         <li>
                                         <Link className="link" to="/">
@@ -123,9 +123,9 @@ function Navbar() {
                                     </ul>
                                 </li>
                                 <li>
-                                    <Link className="link" to="/" style={{fontSize:".9em",padding:"7px 4px"}}>
-                                    Skin&faceCreme<i className="fas fa-caret-down"></i>
-                                    </Link>
+                                    <a className="link" style={{fontSize:".9em",padding:"7px 4px"}}>
+                                    Skin&FaceCreme<i className="fas fa-caret-down"></i>
+                                    </a>
                                     <ul>
                                         <li>
                                         <Link className="link" to="/">
@@ -151,7 +151,7 @@ function Navbar() {
                                         <li>
                                         <Link className="link" to="/">
                                             <span style={{letterSpacing:"2px",color:"#d0d"}}>
-                                            OE / DOVE
+                                            OE / <span style={{color:"#0d3"}}>DOVE</span>
                                             </span>
                                         </Link>
                                         </li>
@@ -193,63 +193,217 @@ function Navbar() {
                                     </ul>
                                 </li>
                                 <li>
-                                    <Link className="link" to="/">
+                                    <a className="link">
                                     Deo&Pefumes<i className="fas fa-caret-down"></i>
-                                    </Link>
+                                    </a>
                                     <ul>
                                         <li>
                                         <Link className="link" to="/">
-                                            <span style={{letterSpacing:"1px",color:"#36f"}}>
-                                            NEVIA <span style={{fontSize:".8em"}}>creme</span>
+                                            <span style={{letterSpacing:"1px",color:"#96f"}}>
+                                            10th Avenue 
                                             </span>
                                         </Link>
                                         </li>
                                         <li>
                                         <Link className="link" to="/">
-                                            <span style={{letterSpacing:"6px",color:"orange"}}>
-                                            VENUS<i className="fab fa-vuejs"></i>
+                                            <span style={{letterSpacing:"4px",color:"#25f"}}>
+                                            REXONA<i className="fa fa-check"></i>
                                             </span>
                                         </Link>
                                         </li>
                                         <li>
                                         <Link className="link" to="/">
-                                            <span style={{letterSpacing:"7px",color:"#dd0"}}>
-                                            MIXA <i className="fab fa-mixer"></i>
+                                            <span style={{letterSpacing:"3px",color:"#d18"}}>
+                                            GEPERLI <i className="fa fa-feather"></i>
                                             </span>
                                         </Link>
                                         </li>
                                         <li>
                                         <Link className="link" to="/">
-                                            <span style={{letterSpacing:"2px",color:"#d0d"}}>
-                                            OE / DOVE
+                                            <span style={{letterSpacing:"2px",color:"#d90"}}>
+                                            OE / <span style={{color:"#019"}}>DOVE</span>
                                             </span>
                                         </Link>
                                         </li>
                                         <li>
                                         <Link className="link" to="/">
-                                            <span style={{letterSpacing:"2px",color:"green"}}>
-                                            CALLIDERM
+                                            <span style={{fontSize:".9em",color:"#f80"}}>
+                                            DOLCE&GABANA
                                             </span>
                                         </Link>
                                         </li>
                                         <li>
                                         <Link className="link" to="/">
-                                            <span style={{letterSpacing:"2px",color:"#878"}}>
-                                            touch me
+                                            <span style={{color:"#099"}}>
+                                            Franck Oliver
                                             </span>
                                         </Link>
                                         </li>
                                         <li>
                                         <Link className="link" to="/">
-                                            <span style={{letterSpacing:"1px",color:"#f2d"}}>
-                                            Diadermine
+                                            <span style={{letterSpacing:"1px",color:"#d10"}}>
+                                            Axe / <span style={{color:"#1d6"}}>Nevia</span>
                                             </span>
                                         </Link>
                                         </li>
                                         <li>
                                         <Link className="link" to="/">
-                                            <span style={{letterSpacing:"1px",color:"gold"}}>
-                                            L'OREAL <span style={{color:"red",fontSize:".7em"}}>-paris</span>
+                                            <span style={{letterSpacing:"1px",color:"#124"}}>
+                                            Smart<span style={{color:"blue",fontSize:".6em"}}>collection</span>
+                                            </span>
+                                        </Link>
+                                        </li>
+                                        <li>
+                                        <Link className="link" to="/">
+                                            <span style={{letterSpacing:"1px",color:"#f6f"}}>
+                                            JOHAN_B <i className="fa fa-signature"></i>
+                                            </span>
+                                        </Link>
+                                        </li>
+                                        <li>
+                                        <Link className="link" to="/">
+                                            <span style={{letterSpacing:"2px",color:"#28f"}}>
+                                            Louis varel
+                                            </span>
+                                        </Link>
+                                        </li>
+                                        <li>
+                                        <Link className="link" to="/">
+                                            <span style={{fontSize:".9em",color:"#d82"}}>
+                                            Paco Rabanne
+                                            </span>
+                                        </Link>
+                                        </li>
+                                        <li>
+                                        <Link className="link" to="/">
+                                            <span style={{letterSpacing:"1px",color:"#364"}}>
+                                            Miss Flowers
+                                            </span>
+                                        </Link>
+                                        </li>
+                                        <li>
+                                        <Link className="link" to="/">
+                                            <span style={{letterSpacing:"2px",color:"#70f"}}>
+                                            OTHERS <i className="fa fa-diagnoses"></i>
+                                            </span>
+                                        </Link>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a className="link">
+                                    Makeup&Care<i className="fas fa-caret-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                        <Link className="link" to="/">
+                                            <span style={{letterSpacing:"1px",color:"#909"}}>
+                                            MASCARA <i className="fa fa-broom"></i>
+                                            </span>
+                                        </Link>
+                                        </li>
+                                        <li>
+                                        <Link className="link" to="/">
+                                            <span style={{letterSpacing:"2px",color:"#667"}}>
+                                            EyeLiner <i className="fa fa-pen"></i>
+                                            </span>
+                                        </Link>
+                                        </li>
+                                        <li>
+                                        <Link className="link" to="/">
+                                            <span style={{color:"#d64"}}>
+                                            Fond de Tient
+                                            </span>
+                                        </Link>
+                                        </li>
+                                        <li>
+                                        <Link className="link" to="/">
+                                            <span style={{letterSpacing:"2px",color:"#d06"}}>
+                                            BLUSHER <i className="fa fa-dot-circle"></i>
+                                            </span>
+                                        </Link>
+                                        </li>
+                                        <li>
+                                        <Link className="link" to="/">
+                                            <span style={{color:"#01d"}}>
+                                            EyeShadow <i className="fa fa-palette"></i>
+                                            </span>
+                                        </Link>
+                                        </li>
+                                        <li>
+                                        <Link className="link" to="/">
+                                            <span style={{letterSpacing:"3px",color:"#f04"}}>
+                                            LipStick <i className="fa fa-chess"></i>
+                                            </span>
+                                        </Link>
+                                        </li>
+                                        <li>
+                                        <Link className="link" to="/">
+                                            <span style={{letterSpacing:"1.5px",color:"#f83"}}>
+                                            HighLighter
+                                            </span>
+                                        </Link>
+                                        </li>
+                                        <li>
+                                        <Link className="link" to="/">
+                                            <span style={{fontSize:".95em",color:"#234"}}>
+                                            Brush&Sponge
+                                            </span>
+                                        </Link>
+                                        </li>
+                                        <li>
+                                        <Link className="link" to="/">
+                                            <span style={{letterSpacing:"1px",color:"#982"}}>
+                                            Primer&Fixer
+                                            </span>
+                                        </Link>
+                                        </li>
+                                        <li>
+                                        <Link className="link" to="/">
+                                            <span style={{color:"#088"}}>
+                                            BridalMakeup
+                                            </span>
+                                        </Link>
+                                        </li>
+                                        <li>
+                                        <Link className="link" to="/">
+                                            <span style={{letterSpacing:"2px",color:"#70f"}}>
+                                            OTHERS <i className="fa fa-diagnoses"></i>
+                                            </span>
+                                        </Link>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a className="link">
+                                    Babies & Kids<i className="fas fa-caret-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                        <Link className="link" to="/">
+                                            <span style={{letterSpacing:"1px",color:"#d90"}}>
+                                            Jhonson <i className="fa fa-baby"></i>
+                                            </span>
+                                        </Link>
+                                        </li>
+                                        <li>
+                                        <Link className="link" to="/">
+                                            <span style={{letterSpacing:"2px",color:"#d08"}}>
+                                            Mixa bebe
+                                            </span>
+                                        </Link>
+                                        </li>
+                                        <li>
+                                        <Link className="link" to="/">
+                                            <span style={{color:"#f63"}}>
+                                            Malizia bebe
+                                            </span>
+                                        </Link>
+                                        </li>
+                                        <li>
+                                        <Link className="link" to="/">
+                                            <span style={{letterSpacing:"1px",color:"#8d1"}}>
+                                            Venus bebe
                                             </span>
                                         </Link>
                                         </li>

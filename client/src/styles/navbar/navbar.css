@@ -270,10 +270,14 @@ body.hide {
     border-bottom: 1px solid rgba(255, 80, 226, 0.1);
     margin-top: 5%;
   }
+  .navbar-container header nav ul li .fas {
+    display: none;
+  }
   .navbar-container header nav ul li .link {
     border-radius: 0;
     -webkit-box-shadow: 0 0 0;
             box-shadow: 0 0 0;
+    border: 0;
   }
   .navbar-container header nav ul li .link:hover {
     -webkit-box-shadow: 0 0 0;

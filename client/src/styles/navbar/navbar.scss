@@ -232,9 +232,13 @@ body.hide {overflow-y: hidden !important;}
                         border-bottom: 1px solid rgba(255, 80, 226, 0.1);
                         margin-top: 5%;
 
+                        .fas {
+                            display: none;
+                        }
                         .link {
                             border-radius: 0; 
                             box-shadow: 0 0 0;
+                            border: 0;
 
                             &:hover {
                                 box-shadow: 0 0 0;
