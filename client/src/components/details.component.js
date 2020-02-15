@@ -10,20 +10,19 @@ function Details() {
             <ProductsConsumer>
                 {(value) => {
                     const {id, period, img, type, description, size, price, inCart} = value.detailsProduct;
+                    
                     return (
                         <div className="details-product">
                             <div className="product-item">
-                                <a className="detail" href="kings">
-                                    <h5>{period}</h5>
-                                    <img width="180px" src={img} alt="product" />
-                                    <div className="text">
-                                        <span>{type}</span>
-                                        <p>{description}</p>
-                                        <span>{size}</span>
-                                    </div>
-                                </a>
+                                <h5>{period}</h5>
+                                <img width="180px" src={img} alt="product" />
+                                <div className="text">
+                                    <span>{type}</span>
+                                    <p>{description}</p>
+                                    <span>{size}</span>
+                                </div>
                                 <h4>{price}$</h4>
-                                <button disabled={inCart} onClick={() => {value.addToCart(id); value.handleDetails(id)}}>
+                                <button disabled={inCart} onClick={() => {value.addToCart(id)}}>
                                     {inCart ? (<p>in Cart</p>) : (<p>add to the Cart</p>)}
                                 </button>
                             </div>
