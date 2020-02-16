@@ -34,8 +34,10 @@ function Navbar() {
     <div className="navbar-container">
         <ProductsConsumer>
             {(value) => {
+
                 let productsCount = 0;
                 value.cart.map(item => productsCount++);
+                const {filterPages} = value;
 
                 return (
                     <header>
@@ -46,12 +48,12 @@ function Navbar() {
                             <ul>
                                 <li><Link className="link" to="/">Home</Link></li>
                                 <li>
-                                    <a className="link">
+                                    <a className="link" href="#/">
                                         hair&Shampo<i className="fas fa-caret-down"></i>
                                     </a>
                                     <ul>
                                         <li>
-                                        <Link className="link" to="/">
+                                        <Link className="link" to="/productspage" onClick={() => filterPages("shampoo","loreal")}>
                                             <span style={{color:"gold"}}>
                                             L'OREAL <span style={{fontSize:".8em",color:"red"}}>_paris</span>
                                             </span>
@@ -123,7 +125,49 @@ function Navbar() {
                                     </ul>
                                 </li>
                                 <li>
-                                    <a className="link" style={{fontSize:".9em",padding:"7px 4px"}}>
+                                    <a className="link" href="#/">
+                                        body&Lotions<i className="fas fa-caret-down"></i>
+                                    </a>
+                                    <ul>
+                                        <li>
+                                        <Link className="link" to="/">
+                                            <span style={{letterSpacing:"4px",color:"#3f0"}}>
+                                            Vaseline
+                                            </span>
+                                        </Link>
+                                        </li>
+                                        <li>
+                                        <Link className="link" to="/">
+                                            <span style={{letterSpacing:"5px",color:"#20d"}}>
+                                            NEVIA <i className="fa fa-female"></i>
+                                            </span>
+                                        </Link>
+                                        </li>
+                                        <li>
+                                        <Link className="link" to="/">
+                                            <span style={{letterSpacing:"4px",color:"#d10"}}>
+                                            ABUSAAD
+                                            </span>
+                                        </Link>
+                                        </li>
+                                        <li>
+                                        <Link className="link" to="/">
+                                            <span style={{letterSpacing:"4px",color:"#990"}}>
+                                            VENUS<i className="fab fa-vuejs"></i>
+                                            </span>
+                                        </Link>
+                                        </li>
+                                        <li>
+                                        <Link className="link" to="/">
+                                            <span style={{letterSpacing:"2px",color:"#70f"}}>
+                                            OTHERS <i className="fa fa-diagnoses"></i>
+                                            </span>
+                                        </Link>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a className="link" style={{fontSize:".9em",padding:"7px 4px"}} href="#/">
                                     Skin&FaceCreme<i className="fas fa-caret-down"></i>
                                     </a>
                                     <ul>
@@ -193,7 +237,7 @@ function Navbar() {
                                     </ul>
                                 </li>
                                 <li>
-                                    <a className="link">
+                                    <a className="link" href="#/">
                                     Deo&Pefumes<i className="fas fa-caret-down"></i>
                                     </a>
                                     <ul>
@@ -291,7 +335,7 @@ function Navbar() {
                                     </ul>
                                 </li>
                                 <li>
-                                    <a className="link">
+                                    <a className="link" href="#/">
                                     Makeup&Care<i className="fas fa-caret-down"></i>
                                     </a>
                                     <ul>
@@ -375,7 +419,7 @@ function Navbar() {
                                     </ul>
                                 </li>
                                 <li>
-                                    <a className="link">
+                                    <a className="link" href="#/">
                                     Babies & Kids<i className="fas fa-caret-down"></i>
                                     </a>
                                     <ul>

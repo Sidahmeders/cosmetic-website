@@ -9,7 +9,8 @@ function ProductsProvider(props) {
     const [products, setProducts] = useState({
         productsListCopy: [],
         detailsProduct,
-        cart: []
+        cart: [],
+        productsPage: []
     });
 
     let [modal, setModal] = useState(false);
@@ -132,6 +133,18 @@ function ProductsProvider(props) {
         });
     }
 
+    const filterPages = (classOf, brandOf, targetOf) => {
+        const productList = products.productsListCopy;
+        const linkProducts = productList.filter(product => product.class === classOf && product.brand === brandOf);
+        console.log(linkProducts);
+        setProducts(() => {
+            return {
+                ...products,
+                productsPage: linkProducts
+            }
+        });
+    }
+
     return (
         <ProductsContext.Provider value={{
             ...products,
@@ -143,7 +156,8 @@ function ProductsProvider(props) {
             modal,
             changeQuantity,
             removeItem,
-            clearCart
+            clearCart,
+            filterPages
         }}>
             {props.children}
         </ProductsContext.Provider>
