@@ -1,27 +1,29 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import '../styles/modal/modal.css'
-import { ProductsConsumer } from '../context';
+import { ContextConsumer } from '../context';
 
 
 function Modal() {
 
+    const context = useContext(ContextConsumer);
+
     return (
-        <ProductsConsumer>
-            {(value) => {
-                if(value.modal) {
-                     return value.cart.map(product => {
-                         return (
-                             <div key={product.id} className="modal">
-                                 <h1>{product.type}</h1>
-                             </div>
-                         );
-                     });
-                } else {
-                    return  null;
-                }
-               
-            }}
-        </ProductsConsumer>
+        <div>
+            {context.modal ? 
+              (
+                context.cart.map(product => {
+                    return (
+                        <div key={product.id} className="modal">
+                            <h1>{product.type}</h1>
+                        </div>
+                    );
+                })
+              ) :
+              (
+                null
+              )
+            }
+        </div>
     );
 }
 

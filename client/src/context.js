@@ -4,7 +4,7 @@ import { productsList, detailsProduct } from './productsData';
 
 const ProductsContext = React.createContext();
 
-function ProductsProvider(props) {
+function ContextProvider(props) {
 
     const [products, setProducts] = useState({
         productsListCopy: [],
@@ -37,11 +37,11 @@ function ProductsProvider(props) {
                 productsListCopy:newProductsCopy
             }
         });
-    }
+    };
 
     const getItem = id => {
         return products.productsListCopy.find(item => item.id === id);
-    }
+    };
 
     const handleDetails = (id) => {
         const product = getItem(id);
@@ -51,7 +51,7 @@ function ProductsProvider(props) {
                 detailsProduct: product
             }
         });
-    }
+    };
 
     const addToCart = id => {
         const index = products.productsListCopy.indexOf(getItem(id));
@@ -65,14 +65,14 @@ function ProductsProvider(props) {
                 cart: [...products.cart, productToAdd]
             }
         });
-    }
+    };
 
     const openModal = () => {
         setModal(() => true);
         setTimeout(() => {
             setModal(() => false);
         },3000);
-    }
+    };
 
     const changeQuantity = (id, type) => {
         const productToChangeQuant = products.cart.find(product => product.id === id);
@@ -88,7 +88,7 @@ function ProductsProvider(props) {
         productToChangeQuant.total = productToChangeQuant.count * productToChangeQuant.price;
         addTotal();
         return;
-    }
+    };
 
     const removeItem = id => {
         const productToRemove = products.cart.find(product => product.id === id);
@@ -103,7 +103,7 @@ function ProductsProvider(props) {
             }
         });
         addTotal();
-    }
+    };
 
     const addTotal = () => {
         let subtotal = 0;
@@ -117,7 +117,7 @@ function ProductsProvider(props) {
                 cartTotal: total.toFixed(2)
             }
         });
-    }
+    };
 
     const clearCart = () => {
         products.cart.map(product => {
@@ -131,7 +131,7 @@ function ProductsProvider(props) {
                 cart: []
             }
         });
-    }
+    };
 
     const filterPages = (classOf, brandOf, targetOf) => {
         const productList = products.productsListCopy;
@@ -143,7 +143,7 @@ function ProductsProvider(props) {
                 productsPage: linkProducts
             }
         });
-    }
+    };
 
     return (
         <ProductsContext.Provider value={{
@@ -164,6 +164,6 @@ function ProductsProvider(props) {
     );
 }
 
-const ProductsConsumer = ProductsContext.Consumer;
+const ContextConsumer = ProductsContext;
 
-export { ProductsProvider, ProductsConsumer }
+export { ContextProvider, ContextConsumer }

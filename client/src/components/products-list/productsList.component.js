@@ -1,26 +1,26 @@
-import React from 'react';
-import { ProductsConsumer } from '../../context';
+import React, { useContext } from 'react';
+import { ContextConsumer } from '../../context';
 import Product from './productitem.component';
 import '../../styles/products-list/product-list-item.css';
 
 
 function ProductsList() {
 
+    const context = useContext(ContextConsumer);
+
     return (
         <div className="products-list">
             <div className="product">
-                <ProductsConsumer>
-                    {(value) => {
-                        return value.productsListCopy.map(product => {
-                            return <Product key={product.id} 
+
+                {context.productsListCopy.map(product => {
+                    return <Product key={product.id} 
                             product={product} 
-                            handleDetail={value.handleDetails}
-                            addToCart={value.addToCart}
-                            openModal={value.openModal}
+                            handleDetail={context.handleDetails}
+                            addToCart={context.addToCart}
+                            openModal={context.openModal}
                             />
-                        });
-                    }}
-                </ProductsConsumer>
+                    })
+                }
             </div>
         </div>
     );

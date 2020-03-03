@@ -1,7 +1,7 @@
 import React from 'react';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { ProductsProvider } from './context';
+import { ContextProvider } from './context';
 
 import Navbar from './components/navbar.component';
 import Home from './components/home.component';
@@ -15,7 +15,7 @@ import NotFound from './components/notfound.component';
 
 function App() {
   return (
-    <ProductsProvider>
+    <ContextProvider>
       <Router>
         <div className="App">
           <Navbar />
@@ -30,7 +30,7 @@ function App() {
           <Modal />
         </div>
       </Router>
-    </ProductsProvider>
+    </ContextProvider>
   );
 }
 

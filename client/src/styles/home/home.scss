@@ -9,11 +9,11 @@ body {
     background: #ffffff;
     font-family: 'Poppins', sans-serif;
 
-    header {
+    header, main {
         width: 100%;
         height: auto;
         
-        .head-slide-container {
+        .slide-container {
             position: relative;
             width: 100%;
             height: 60vh;
@@ -239,7 +239,7 @@ body {
                 }
             }
 
-            .whats-new-section {
+            .whats-new-section, .whats-popular-section {
                 width: 100%;
                 height: auto;
                 margin-top: 3%;
@@ -261,7 +261,7 @@ body {
                     &:before {left: 7%;}
                     &:after {right: 7%;}
                 }
-                .new-products {
+                .new-products, .popular-products {
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -330,7 +330,132 @@ body {
                     }
                 }
             }
- 
+            .main-slide-section {
+                margin-top: 3%;
+
+                h2 {
+                    text-align: center;
+                    font-weight: 200;
+                    margin: 20px 0 25px 0;
+
+                    &:before, 
+                    &:after {
+                        content: ">>>";
+                        width: 20%;
+                        height: 1px;
+                        background-color: #666;
+                        position: absolute;
+                        margin-top: 3.3vh;
+                    }
+                    &:before {left: 15%;}
+                    &:after {right: 15%;}
+                }
+                .slide-container {
+                    height: 65vh;
+
+                    .slider {
+                        animation: slide 20s linear infinite;
+                        
+                        .slide {
+                            display: flex;
+                            justify-content: space-evenly;
+                            flex-wrap: wrap;
+
+                            a {
+                                text-decoration: none;
+                                
+                                &:active {
+                                    p {
+                                        color: rgb(234, 0, 255);
+                                    }
+                                }
+                            }
+                            .poster {
+                                width: 22vw;
+                                height: 90%;
+                                margin-top: 5%;
+                                text-align: center;
+                                
+                                p {
+                                    background: rgb(0, 0, 0);
+                                    color: white;
+                                    font-size: 24px;
+                                    width: 22vw;
+                                    padding: 3px;
+                                    border-top: 2px solid rgb(234, 0, 255);
+                                    position: absolute;
+                                    bottom: 5%;
+                                    
+                                    &:hover {
+                                        background-color: rgb(234, 0, 255);
+                                    }
+                                }
+                            }
+                        
+                            &.slide1 {
+                                background: rgb(255, 255, 255);
+        
+                                .poster.one {
+                                    background: url('../../cos-img/product-img/posters/loreal_poster\ \(3\).jpg');
+                                    background-size: contain;
+                                }
+                                .poster.two {
+                                    background: url('../../cos-img/product-img/posters/Syoss_poster-696x522.jpg');
+                                    background-size: contain; 
+                                }
+                                .poster.three {
+                                    background: url('../../cos-img/product-img/posters/garnier_poster.jpg');
+                                    background-size: contain;
+                                }
+                                .poster.four {
+                                    background: url('../../cos-img/product-img/posters/tresemme_poster.jpg');
+                                    background-size: contain;
+                                }
+                            }
+                            &.slide2 {
+                                background: rgb(255, 255, 255);
+
+                                .poster.one {
+                                    background: url('../../cos-img/product-img/posters/garnier_poster\ \(2\).jpg');
+                                    background-size: contain;
+                                }
+                                .poster.two {
+                                    background: url('../../cos-img/product-img/posters/loreal_poster\ \(4\).jpg');
+                                    background-size: contain; 
+                                }
+                                .poster.three {
+                                    background: url('../../cos-img/product-img/posters/syoss_poster.jpg');
+                                    background-size: contain;
+                                }
+                                .poster.four {
+                                    background: url('../../cos-img/product-img/posters/loreal_poster\ \(1\).jpg');
+                                    background-size: contain;
+                                }
+                            }
+                            &.slide3 {
+                                background: rgb(255, 255, 255);
+                                
+                                .poster.one {
+                                    background: url('../../cos-img/product-img/posters/loreal_poster\ \(2\).jpg');
+                                    background-size: contain;
+                                }
+                                .poster.two {
+                                    background: url('../../cos-img/product-img/posters/calliderm_poster.jpg');
+                                    background-size: contain;
+                                }
+                                .poster.three {
+                                    background: url('../../cos-img/product-img/posters/nevia_poster.jpg');
+                                    background-size: contain;
+                                }
+                                .poster.four {
+                                    background: url('../../cos-img/product-img/posters/gliss_poster.jpg');
+                                    background-size: contain;
+                                }
+                            }
+                        }
+                    } 
+                }
+            }
         } 
     }
 

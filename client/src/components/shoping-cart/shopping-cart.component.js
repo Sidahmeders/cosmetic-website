@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import '../../styles/shopping-cart/shopping-cart.css';
-import { ProductsConsumer } from '../../context';
+import { ContextConsumer } from '../../context';
 import CartProduct from './cartProduct.component';
 import CartTotal from './cartTotal.component';
 import EmptyCart from './emptycart.component';
@@ -8,23 +8,23 @@ import EmptyCart from './emptycart.component';
 
 function ShoppingCart() {
 
+    const context = useContext(ContextConsumer);
+    const {cart, totalPrice} = context;
+
     return (
         <div className="shopping-cart">
-            <ProductsConsumer>
-                {(value) => {
-                    const {cart, totalPrice} = value;
-                    if (value.cart.length) {
-                        return(
-                            <div className="cart">
-                                <CartProduct products={cart} value={value} />
-                                <CartTotal totalPrice={totalPrice} value={value} />
-                            </div>
-                        ); 
-                    } else {
-                        return <EmptyCart />
-                    }
-                }}
-            </ProductsConsumer>
+            {cart.length ?
+              (
+                <div className="cart">
+                    <CartProduct products={cart} value={context} />
+                    <CartTotal totalPrice={totalPrice} value={context} />
+                </div>
+                
+              ) :
+              (
+                <EmptyCart />
+              )
+            }
         </div>
     );
 };
