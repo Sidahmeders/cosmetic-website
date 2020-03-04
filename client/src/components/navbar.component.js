@@ -50,7 +50,7 @@ function Navbar() {
                         </a>
                         <ul>
                             <li>
-                            <Link className="link" to="/productspage" onClick={() => filterPages("shampoo","loreal")}>
+                            <Link className="link" to="/productspage" onClick={() => filterPages("hair","loreal")}>
                                 <span style={{color:"gold"}}>
                                 L'OREAL <span style={{fontSize:".8em",color:"red"}}>_paris</span>
                                 </span>

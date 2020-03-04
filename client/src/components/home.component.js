@@ -13,18 +13,18 @@ import redlipstick from '../cos-img/redlipstick.jpg';
 import perf from '../cos-img/lamis.jpg';
 import hairbrush from '../cos-img/hairbrush.jpg';
 
-import blushOne from '../cos-img/product-img/blush (5).jpg';
-import blushTwo from '../cos-img/product-img/blush (28).jpg';
-import blushThree from '../cos-img/product-img/blush (35).jpg';
-import hairOne from '../cos-img/product-img/hair (49).jpg';
-import hairTwo from '../cos-img/product-img/hair (52).jpg';
-import hairThree from '../cos-img/product-img/hair (50).jpg';
-import hairFour from '../cos-img/product-img/hair (25).jpg';
-import hairFive from '../cos-img/product-img/hair (31).jpg';
-import suncremeOne from '../cos-img/product-img/sunCreme (6).jpg';
+import blushOne from '../cos-img/product-img/products/blusher/blush (5).jpg';
+import blushTwo from '../cos-img/product-img/products/blusher/blush (28).jpg';
+import blushThree from '../cos-img/product-img/products/blusher/blush (35).jpg';
+import hairOne from '../cos-img/product-img/products/shampoo/hair (49).jpg';
+import hairTwo from '../cos-img/product-img/products/shampoo/hair (52).jpg';
+import hairThree from '../cos-img/product-img/products/shampoo/hair (50).jpg';
+import hairFour from '../cos-img/product-img/products/shampoo/loreal/hair (25).jpg';
+import hairFive from '../cos-img/product-img/products/shampoo/loreal/hair (31).jpg';
+import suncremeOne from '../cos-img/product-img/products/sunCreme/sunCreme (6).jpg';
 import makeupOne from '../cos-img/product-img/makeup (6).jpg';
-import lipOne from '../cos-img/product-img/lips (7).jpg';
-import faceCremeOne from '../cos-img/product-img/creme (2).jpg';
+import lipOne from '../cos-img/product-img/products/lipStick/lips (7).jpg';
+import faceCremeOne from '../cos-img/product-img/products/faceCreme/creme (2).jpg';
 
 
 
@@ -316,7 +316,7 @@ const  Home = () => {
                                         <h5>try me</h5>
                                         <img src={makeupOne} alt="makeupOne" />
                                         <div className="text">
-                                            <span>Hd everbeuty pallete</span>
+                                            <span>Hd saturated colors</span>
                                             <p> 3 hot designs and a makeup kit. Comes with a variety of shades</p>
                                             <span>15 saturated color</span>
                                         </div>

@@ -133,9 +133,11 @@ function ContextProvider(props) {
         });
     };
 
-    const filterPages = (classOf, brandOf, targetOf) => {
+    const filterPages = (linkOf, brandOf) => {
         const productList = products.productsListCopy;
-        const linkProducts = productList.filter(product => product.class === classOf && product.brand === brandOf);
+        const linkProducts = productList.filter(p => {
+            return p.link === linkOf && p.brand === brandOf
+        });
         console.log(linkProducts);
         setProducts(() => {
             return {

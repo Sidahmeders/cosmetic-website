@@ -1,16 +1,62 @@
 
-import makeupOne from './cos-img/product-img/blush (5).jpg';
+import makeupOne from './cos-img/product-img/products/blusher/blush (5).jpg';
 import makeupTwo from './cos-img/product-img/makeup (6).jpg';
-import makeupThree from './cos-img/product-img/blush (28).jpg';
-import makeupFour from './cos-img/product-img/blush (35).jpg';
-import hairOne from './cos-img/product-img/hair (52).jpg';
-import hairTwo from './cos-img/product-img/hair (50).jpg';
-import hairThree from './cos-img/product-img/hair (25).jpg';
-import hairFour from './cos-img/product-img/hair (31).jpg';
-import hairFive from './cos-img/product-img/hair (49).jpg';
-import lipOne from './cos-img/product-img/lips (7).jpg';
-import faceCremeOne from './cos-img/product-img/creme (2).jpg';
-import sunCremeOne from './cos-img/product-img/sunCreme (6).jpg';
+import makeupThree from './cos-img/product-img/products/blusher/blush (28).jpg';
+import makeupFour from './cos-img/product-img/products/blusher/blush (35).jpg';
+
+
+import hairTwo from './cos-img/product-img/products/shampoo/hair (50).jpg';
+import hairOne from './cos-img/product-img/products/shampoo/hair (52).jpg';
+import hairThree from './cos-img/product-img/products/shampoo/loreal/hair (25).jpg';
+import hairFour from './cos-img/product-img/products/shampoo/loreal/hair (31).jpg';
+import hairFive from './cos-img/product-img/products/shampoo/hair (49).jpg';
+import hairSix from './cos-img/product-img/products/shampoo/loreal/hair (3).jpg';
+import hairSeven from './cos-img/product-img/products/shampoo/loreal/hair (19).jpg';
+import hairEight from './cos-img/product-img/products/shampoo/loreal/hair (20).jpg';
+import hairNine from './cos-img/product-img/products/shampoo/loreal/hair (21).jpg';
+import hairTen from './cos-img/product-img/products/shampoo/loreal/hair (24).jpg';
+import hair11 from './cos-img/product-img/products/shampoo/loreal/hair (26).jpg';
+import hair12 from './cos-img/product-img/products/shampoo/loreal/hair (27).jpg';
+import hair13 from './cos-img/product-img/products/shampoo/loreal/hair (32).jpg';
+import hair14 from './cos-img/product-img/products/shampoo/loreal/hair (33).jpg';
+import hair15 from './cos-img/product-img/products/shampoo/loreal/hair (34).jpg';
+import hair16 from './cos-img/product-img/products/shampoo/loreal/hair (35).jpg';
+import hair17 from './cos-img/product-img/products/shampoo/loreal/hair (39).jpg';
+import hair18 from './cos-img/product-img/products/shampoo/loreal/hair (43).jpg';
+import hair19 from './cos-img/product-img/products/shampoo/loreal/hair (44).jpg';
+import hair20 from './cos-img/product-img/products/shampoo/loreal/hair (54).jpg';
+import hair21 from './cos-img/product-img/products/shampoo/loreal/hair (53).jpg';
+import hair22 from './cos-img/product-img/products/shampoo/loreal/hair (55).jpg';
+import hair23 from './cos-img/product-img/products/shampoo/loreal/hair (56).jpg';
+import hair24 from './cos-img/product-img/products/shampoo/loreal/hair (57).jpg';
+import hair25 from './cos-img/product-img/products/shampoo/loreal/hair (58).jpg';
+import hair26 from './cos-img/product-img/products/shampoo/loreal/hair (59).jpg';
+import hair27 from './cos-img/product-img/products/shampoo/loreal/hair (60).jpg';
+import hair28 from './cos-img/product-img/products/shampoo/loreal/hair (61).jpg';
+import hair29 from './cos-img/product-img/products/shampoo/loreal/hair (62).jpg';
+import hair30 from './cos-img/product-img/products/shampoo/loreal/hair (63).jpg';
+import hair31 from './cos-img/product-img/products/shampoo/loreal/hair (64).jpg';
+import hair32 from './cos-img/product-img/products/shampoo/loreal/hair (65).jpg';
+import hair33 from './cos-img/product-img/products/shampoo/loreal/hair (66).jpg';
+import hairG1 from './cos-img/product-img/products/shampoo/garnier/hair (1).jpg';
+
+
+
+
+
+ 
+import lipOne from './cos-img/product-img/products/lipStick/lips (7).jpg';
+
+
+import faceCremeOne from './cos-img/product-img/products/faceCreme/creme (2).jpg';
+import sunCremeOne from './cos-img/product-img/products/sunCreme/sunCreme (1).jpg';
+import sunCremeTwo from './cos-img/product-img/products/sunCreme/sunCreme (2).jpg';
+import sunCremeThree from './cos-img/product-img/products/sunCreme/sunCreme (3).jpg';
+import sunCremeFour from './cos-img/product-img/products/sunCreme/sunCreme (4).jpg';
+import sunCremeFive from './cos-img/product-img/products/sunCreme/sunCreme (5).jpg';
+import sunCremeSix from './cos-img/product-img/products/sunCreme/sunCreme (6).jpg';
+import sunCremeSeven from './cos-img/product-img/products/sunCreme/sunCreme (7).jpg';
+import sunCremeEight from './cos-img/product-img/products/sunCreme/sunCreme (8).jpg';
 
 
 export const productsList = [
@@ -19,9 +65,11 @@ export const productsList = [
         period: "new",
         img: faceCremeOne,
         type: "Night creme",
-        class: "creme",
+        class: "face creme",
+        link: "creme",
         brand: "loreal",
         target:"woman",
+        rank: "new",
         description: "L'OREAL Nutrition Intense, Age perfect cell renewal for everyday use",
         size: "85ml",
         price: 12.75,
@@ -35,8 +83,10 @@ export const productsList = [
         img: makeupOne,
         type: "Sephora Blusher",
         class: "blusher",
+        link: "makeup",
         brand: "sephora",
         target:"woman",
+        rank: "new",
         description: "Whether you choose rose or peachy, blush up your cheeks with Sephora",
         size: "30ml",
         price: 6.30,
@@ -47,11 +97,13 @@ export const productsList = [
     {
         id: 3,
         period: "new",
-        img: sunCremeOne,
+        img: sunCremeSix,
         type: "sun creme",
-        class: "creme",
+        class: "face creme",
+        link: "creme",
         brand: "Diasaar",
         target:"woman",
+        rank: "new",
         description: "Diasaar sun creme for ultimate protection from the uva and uvb sun light",
         size: "95ml/ 135ml",
         price: 10.50,
@@ -65,8 +117,10 @@ export const productsList = [
         img: hairOne,
         type: "Garnier shampo",
         class: "shampoo",
+        link: "hair",
         brand: "garnier",
         target:"woman",
+        rank: "new",
         description: "ulraDoux shampo avocado oil, argan oil & hony, green tea, flower cotton",
         size: "250ml/ 400ml",
         price: 5.80,
@@ -78,10 +132,12 @@ export const productsList = [
         id: 5,
         period: "try me",
         img: makeupTwo,
-        type: "Hd everbeuty pallete",
-        class: "eyeshadow",
+        type: "Hd staurated colors",
+        class: "bridal makeUp",
+        link: "makeup",
         brand: "everbeuty",
         target:"woman",
+        rank: "new",
         description: "3 hot designs and a makeup kit. Comes with a variety of shades",
         size: "15 saturated color",
         price: 18.05,
@@ -95,8 +151,10 @@ export const productsList = [
         img: makeupThree,
         type: "Dior Blusher",
         class: "blusher",
+        link: "makeup",
         brand: "dior",
         target:"woman",
+        rank: "new",
         description: "blush from Dior that gives cheeks intense, ultra-pigmented color that lasts",
         size: "30g / pink/ red/ peach",
         price: 9.15,
@@ -110,9 +168,11 @@ export const productsList = [
         img: makeupFour,
         type: "Fit me Blusher",
         class: "blusher",
+        link: "makeup",
         brand: "fitme",
         target:"woman",
-        description: "FIT me blush the socond colloction of nude colors from FITme",
+        rank: "new",
+        description: "FIT me blush the second colloction of nude colors from FITme",
         size: "20g / ivory / light beige",
         price: 7.60,
         inCart: false,
@@ -125,8 +185,10 @@ export const productsList = [
         img: lipOne ,
         type: "Doll Lipstick ",
         class: "lipstick",
+        link: "makeup",
         brand: "doll",
         target:"woman",
+        rank: "new",
         description: "the Doll Beauty lipsticks are versatile, highly pigmented and lightweight",
         size: "7g/ 12 color",
         price: 8.80,
@@ -139,9 +201,11 @@ export const productsList = [
         period: "take me",
         img: hairThree,
         type: "shampo & oil repleacement",
-        class: "shampoo",
+        class: "collection",
+        link: "hair",
         brand: "loreal",
         target:"woman",
+        rank: "new",
         description: "the new collection from elseve for tinted, or bleached and dry hair with keratin",
         size: "300ml/ 110ml",
         price: 5.80,
@@ -154,9 +218,11 @@ export const productsList = [
         period: "try me",
         img: hairFour,
         type: "shampo & condtioner",
-        class: "shampoo",
+        class: "collection",
+        link: "hair",
         brand: "loreal",
         target:"woman",
+        rank: "new",
         description: "Elseve for tinted hair and coloration for long lasting and shining color",
         size: "350ml / 300ml",
         price: 13.40,
@@ -170,8 +236,10 @@ export const productsList = [
         img: hairFive,
         type: "TRESemme shampo",
         class: "shampoo",
+        link: "hair",
         brand: "tresemme",
         target:"woman",
+        rank: "new",
         description: "the ultra shine shampo and hairCreme for dry, damaged and colored hair",
         size: "480ml/ 200ml",
         price: 10.50,
@@ -185,11 +253,608 @@ export const productsList = [
         img: hairTwo,
         type: "Shampo & oil repleacement",
         class: "shampoo",
+        link: "hair",
         brand: "provost",
         target:"woman",
+        rank: "new",
         description: "PROvost shampo condtioner and serum for frizzy, dry and lost colored hair",
         size: "750ml/ 7500ml/ 300ml",
         price: 11.20 ,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 13,
+        period: "try me",
+        img: sunCremeOne,
+        type: "sun creme",
+        class: "face creme",
+        link: "creme",
+        brand: "Eucerin",
+        target:"woman",
+        rank: "new",
+        description: "Eucerin the new sunCreme for senstive skin to chellange the sun",
+        size: "110ml/50+&90-SPF",
+        price: 8.90,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 14,
+        period: "new",
+        img: sunCremeTwo,
+        type: "sun creme",
+        class: "face creme",
+        link: "creme",
+        brand: "Dermagor",
+        target:"woman",
+        rank: "new",
+        description: "the for greasy and all skine type Dermagor sunCreme for vibrating summer",
+        size: "110ml/50+&90-SPF",
+        price: 10.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 15,
+        period: "new",
+        img: sunCremeThree,
+        type: "sun creme",
+        class: "face creme",
+        link: "creme",
+        brand: "Bonjour",
+        target:"woman",
+        rank: "new",
+        description: "Bonjour for every hot morning to be the last one standing",
+        size: "90ml/ 60&90SPF",
+        price: 4.75,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 16,
+        period: "try me",
+        img: sunCremeFour,
+        type: "sun creme",
+        class: "face creme",
+        link: "creme",
+        brand: "Clarins",
+        target:"woman",
+        rank: "new",
+        description: "the ultimate protection from the sun with our new sunCreme for long exposure",
+        size: "105ml/ 60&90SPF",
+        price: 14.05,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 17,
+        period: "take me",
+        img: sunCremeFive,
+        type: "sun creme",
+        class: "face creme",
+        link: "creme",
+        brand: "Leopard",
+        target:"woman",
+        rank: "new",
+        description: "leopard sunCreme for long lasting sun protection and hydration",
+        size: "90ml/ 40&50+SPF",
+        price: 7.25,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 18,
+        period: "new",
+        img: sunCremeSeven,
+        type: "sun creme",
+        class: "face creme",
+        link: "creme",
+        brand: "Attitude",
+        target:"kids",
+        rank: "new",
+        description: "the soft and protective sunCreme for your little angle",
+        size: "75ml/ 60&50+&SPF",
+        price: 6.95,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 19,
+        period: "try me",
+        img: sunCremeEight,
+        type: "sun creme",
+        class: "face creme",
+        link: "creme",
+        brand: "Attitude",
+        target:"woman",
+        rank: "new",
+        description: "the soft and protective sunCreme with our new Alovera formula",
+        size: "95ml/ 60&90&SPF",
+        price: 9.15,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 20,
+        period: "new",
+        img: hairSix,
+        type: "Elseve gold collection",
+        class: "shampoo",
+        link: "hair",
+        brand: "loreal",
+        target:"woman",
+        rank: "best-seller",
+        description: "the ever eveloving gold hair collection from loreal paris",
+        size: "380ml/200ml/150ml",
+        price: 24.75,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 21,
+        period: "new",
+        img: hairSeven,
+        type: "Elseve shampo",
+        class: "shampoo",
+        link: "hair",
+        brand: "loreal",
+        target:"woman",
+        rank: "new",
+        description: "the ultra shine shampo for long and dry, damaged and brittle hair",
+        size: "380ml",
+        price: 6.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 22,
+        period: "try me",
+        img: hairEight,
+        type: "Elseve conditioner",
+        class: "hair mask",
+        link: "hair",
+        brand: "loreal",
+        target:"woman",
+        rank: "new",
+        description: "the ultra shine conditioner hairCreme for dry, damaged and colored hair",
+        size: "380ml",
+        price: 5.95,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 23,
+        period: "take me",
+        img: hairNine,
+        type: "Elseve shampo",
+        class: "shampoo",
+        link: "hair",
+        brand: "loreal",
+        target:"woman",
+        rank: "new",
+        description: "elseve hair shampo for dry, ,lost color and long brittle hair",
+        size: "380ml",
+        price: 6.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 24,
+        period: "take me",
+        img: hairTen,
+        type: "Elsve shampo",
+        class: "hair mask",
+        link: "hair",
+        brand: "loreal",
+        target:"woman",
+        rank: "new",
+        description: "the old school shampo from elesve for greasy and oily hair",
+        size: "380ml",
+        price: 6.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 25,
+        period: "take me",
+        img: hair11,
+        type: "Elsve shampo",
+        class: "hair mask",
+        link: "hair",
+        brand: "loreal",
+        target:"woman",
+        rank: "new",
+        description: "the old school shampo from elesve for greasy and oily hair",
+        size: "380ml",
+        price: 6.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 26,
+        period: "take me",
+        img: hair12,
+        type: "Elsve shampo",
+        class: "shampoo",
+        link: "hair",
+        brand: "loreal",
+        target:"woman",
+        rank: "new",
+        description: "the old school shampo from elesve for greasy and oily hair",
+        size: "380ml",
+        price: 6.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 27,
+        period: "take me",
+        img: hair13,
+        type: "Elsve shampo",
+        class: "shampoo",
+        link: "hair",
+        brand: "loreal",
+        target:"woman",
+        rank: "new",
+        description: "the old school shampo from elesve for greasy and oily hair",
+        size: "380ml",
+        price: 6.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 28,
+        period: "try me",
+        img: hair14,
+        type: "Elsve shampo",
+        class: "shampoo",
+        link: "hair",
+        brand: "loreal",
+        target:"woman",
+        rank: "new",
+        description: "the old school shampo from elesve for greasy and oily hair",
+        size: "380ml",
+        price: 6.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 29,
+        period: "try me",
+        img: hair15,
+        type: "Elsve shampo",
+        class: "shampoo",
+        link: "hair",
+        brand: "loreal",
+        target:"woman",
+        rank: "new",
+        description: "the old school shampo from elesve for greasy and oily hair",
+        size: "380ml",
+        price: 6.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 30,
+        period: "try me",
+        img: hair16,
+        type: "Elsve shampo",
+        class: "shampoo",
+        link: "hair",
+        brand: "loreal",
+        target:"woman",
+        rank: "new",
+        description: "the old school shampo from elesve for greasy and oily hair",
+        size: "380ml",
+        price: 6.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 31,
+        period: "try me",
+        img: hair17,
+        type: "Elsve shampo",
+        class: "shampoo",
+        link: "hair",
+        brand: "loreal",
+        target:"woman",
+        rank: "new",
+        description: "the old school shampo from elesve for greasy and oily hair",
+        size: "380ml",
+        price: 6.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 32,
+        period: "try me",
+        img: hair18,
+        type: "Elsve shampo",
+        class: "collection",
+        link: "hair",
+        brand: "loreal",
+        target:"woman",
+        rank: "new",
+        description: "the old school shampo from elesve for greasy and oily hair",
+        size: "380ml",
+        price: 6.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 33,
+        period: "try me",
+        img: hair19,
+        type: "Elsve shampo",
+        class: "collection",
+        link: "hair",
+        brand: "loreal",
+        target:"woman",
+        rank: "new",
+        description: "the old school shampo from elesve for greasy and oily hair",
+        size: "380ml",
+        price: 6.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 34,
+        period: "try me",
+        img: hair20,
+        type: "Elsve shampo",
+        class: "shampoo",
+        link: "hair",
+        brand: "loreal",
+        target:"woman",
+        rank: "new",
+        description: "the old school shampo from elesve for greasy and oily hair",
+        size: "380ml",
+        price: 6.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 35,
+        period: "try me",
+        img: hair21,
+        type: "Elsve shampo",
+        class: "shampoo",
+        link: "hair",
+        brand: "loreal",
+        target:"woman",
+        rank: "new",
+        description: "the old school shampo from elesve for greasy and oily hair",
+        size: "380ml",
+        price: 6.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 36,
+        period: "try me",
+        img: hair22,
+        type: "Elsve shampo",
+        class: "shampoo",
+        link: "hair",
+        brand: "loreal",
+        target:"woman",
+        rank: "new",
+        description: "the old school shampo from elesve for greasy and oily hair",
+        size: "380ml",
+        price: 6.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 37,
+        period: "try me",
+        img: hair23,
+        type: "Elsve shampo",
+        class: "shampoo",
+        link: "hair",
+        brand: "loreal",
+        target:"woman",
+        rank: "new",
+        description: "the old school shampo from elesve for greasy and oily hair",
+        size: "380ml",
+        price: 6.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 38,
+        period: "try me",
+        img: hair24,
+        type: "Elsve shampo",
+        class: "shampoo",
+        link: "hair",
+        brand: "loreal",
+        target:"woman",
+        rank: "new",
+        description: "the old school shampo from elesve for greasy and oily hair",
+        size: "380ml",
+        price: 6.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 39,
+        period: "try me",
+        img: hair25,
+        type: "Elsve shampo",
+        class: "shampoo",
+        link: "hair",
+        brand: "loreal",
+        target:"woman",
+        rank: "new",
+        description: "the old school shampo from elesve for greasy and oily hair",
+        size: "380ml",
+        price: 6.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 40,
+        period: "try me",
+        img: hair26,
+        type: "Elsve shampo",
+        class: "collection",
+        link: "hair",
+        brand: "loreal",
+        target:"woman",
+        rank: "new",
+        description: "the old school shampo from elesve for greasy and oily hair",
+        size: "380ml",
+        price: 6.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 41,
+        period: "try me",
+        img: hair27,
+        type: "Elsve shampo",
+        class: "shampoo",
+        link: "hair",
+        brand: "loreal",
+        target:"woman",
+        rank: "new",
+        description: "the old school shampo from elesve for greasy and oily hair",
+        size: "380ml",
+        price: 6.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 42,
+        period: "try me",
+        img: hair28,
+        type: "Elsve shampo",
+        class: "collection",
+        link: "hair",
+        brand: "loreal",
+        target:"woman",
+        rank: "new",
+        description: "the old school shampo from elesve for greasy and oily hair",
+        size: "380ml",
+        price: 6.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 43,
+        period: "try me",
+        img: hair29,
+        type: "Elsve shampo",
+        class: "collection",
+        link: "hair",
+        brand: "loreal",
+        target:"woman",
+        rank: "new",
+        description: "the old school shampo from elesve for greasy and oily hair",
+        size: "380ml",
+        price: 6.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 44,
+        period: "try me",
+        img: hair30,
+        type: "Elsve shampo",
+        class: "conditioner",
+        link: "hair",
+        brand: "loreal",
+        target:"woman",
+        rank: "new",
+        description: "the old school shampo from elesve for greasy and oily hair",
+        size: "380ml",
+        price: 6.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 45,
+        period: "try me",
+        img: hair31,
+        type: "Elsve shampo",
+        class: "conditioner",
+        link: "hair",
+        brand: "loreal",
+        target:"woman",
+        rank: "new",
+        description: "the old school shampo from elesve for greasy and oily hair",
+        size: "380ml",
+        price: 6.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 46,
+        period: "try me",
+        img: hair32,
+        type: "Elsve shampo",
+        class: "conditioner",
+        link: "hair",
+        brand: "loreal",
+        target:"woman",
+        rank: "new",
+        description: "the old school shampo from elesve for greasy and oily hair",
+        size: "380ml",
+        price: 6.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 47,
+        period: "try me",
+        img: hair33,
+        type: "Elsve shampo",
+        class: "conditioner",
+        link: "hair",
+        brand: "loreal",
+        target:"woman",
+        rank: "new",
+        description: "the old school shampo from elesve for greasy and oily hair",
+        size: "380ml",
+        price: 6.50,
         inCart: false,
         count: 0,
         total: 0
@@ -209,9 +874,4 @@ export const detailsProduct = {
     count: 0,
     total: 0
 };
-
-
-
-
-
 
