@@ -4,12 +4,11 @@ import makeupTwo from './cos-img/product-img/makeup (6).jpg';
 import makeupThree from './cos-img/product-img/products/blusher/blush (28).jpg';
 import makeupFour from './cos-img/product-img/products/blusher/blush (35).jpg';
 
-
-import hairTwo from './cos-img/product-img/products/shampoo/hair (50).jpg';
 import hairOne from './cos-img/product-img/products/shampoo/hair (52).jpg';
+import hairTwo from './cos-img/product-img/products/shampoo/hair (50).jpg';
 import hairThree from './cos-img/product-img/products/shampoo/loreal/hair (25).jpg';
 import hairFour from './cos-img/product-img/products/shampoo/loreal/hair (31).jpg';
-import hairFive from './cos-img/product-img/products/shampoo/hair (49).jpg';
+import hairFive from './cos-img/product-img/products/shampoo/TRESemme/hair (1).jpg';
 import hairSix from './cos-img/product-img/products/shampoo/loreal/hair (3).jpg';
 import hairSeven from './cos-img/product-img/products/shampoo/loreal/hair (19).jpg';
 import hairEight from './cos-img/product-img/products/shampoo/loreal/hair (20).jpg';
@@ -38,9 +37,42 @@ import hair30 from './cos-img/product-img/products/shampoo/loreal/hair (63).jpg'
 import hair31 from './cos-img/product-img/products/shampoo/loreal/hair (64).jpg';
 import hair32 from './cos-img/product-img/products/shampoo/loreal/hair (65).jpg';
 import hair33 from './cos-img/product-img/products/shampoo/loreal/hair (66).jpg';
-import hairG1 from './cos-img/product-img/products/shampoo/garnier/hair (1).jpg';
-
-
+import hair34 from './cos-img/product-img/products/shampoo/garnier/hair (1).jpg';
+import hair35 from './cos-img/product-img/products/shampoo/garnier/hair (2).jpg';
+import hair36 from './cos-img/product-img/products/shampoo/garnier/hair (3).jpg';
+import hair37 from './cos-img/product-img/products/shampoo/garnier/hair (4).jpg';
+import hair38 from './cos-img/product-img/products/shampoo/garnier/hair (5).jpg';
+import hair39 from './cos-img/product-img/products/shampoo/garnier/hair (6).jpg';
+import hair40 from './cos-img/product-img/products/shampoo/garnier/hair (7).jpg';
+import hair41 from './cos-img/product-img/products/shampoo/garnier/hair (8).jpg';
+import hair42 from './cos-img/product-img/products/shampoo/garnier/hair (9).jpg';
+import hair43 from './cos-img/product-img/products/shampoo/garnier/hair (10).jpg';
+import hair44 from './cos-img/product-img/products/shampoo/garnier/hair (11).jpg';
+import hair45 from './cos-img/product-img/products/shampoo/garnier/hair (12).jpg';
+import hair46 from './cos-img/product-img/products/shampoo/garnier/hair (13).jpg';
+import hair47 from './cos-img/product-img/products/shampoo/garnier/hair (14).jpg';
+import hair48 from './cos-img/product-img/products/shampoo/garnier/hair (15).jpg';
+import hair49 from './cos-img/product-img/products/shampoo/garnier/hair (16).jpg';
+import hair50 from './cos-img/product-img/products/shampoo/garnier/hair (17).jpg';
+import hair51 from './cos-img/product-img/products/shampoo/garnier/hair (18).jpg';
+import hair52 from './cos-img/product-img/products/shampoo/garnier/hair (19).jpg';
+import hair53 from './cos-img/product-img/products/shampoo/garnier/hair (20).jpg';
+import hair54 from './cos-img/product-img/products/shampoo/garnier/hair (21).jpg';
+import hair55 from './cos-img/product-img/products/shampoo/garnier/hair (22).jpg';
+import hair56 from './cos-img/product-img/products/shampoo/garnier/hair (23).jpg';
+import hair57 from './cos-img/product-img/products/shampoo/garnier/hair (24).jpg';
+import hair58 from './cos-img/product-img/products/shampoo/garnier/hair (25).jpg';
+import hair59 from './cos-img/product-img/products/shampoo/garnier/hair (26).jpg';
+import hair60 from './cos-img/product-img/products/shampoo/garnier/hair (27).jpg';
+import hair61 from './cos-img/product-img/products/shampoo/garnier/hair (28).jpg';
+import hair62 from './cos-img/product-img/products/shampoo/garnier/hair (29).jpg';
+import hair63 from './cos-img/product-img/products/shampoo/garnier/hair (30).jpg';
+import hair64 from './cos-img/product-img/products/shampoo/garnier/hair (31).jpg';
+import hair65 from './cos-img/product-img/products/shampoo/garnier/hair (32).jpg';
+import hair66 from './cos-img/product-img/products/shampoo/garnier/hair (33).jpg';
+import hair67 from './cos-img/product-img/products/shampoo/garnier/hair (34).jpg';
+import hair68 from './cos-img/product-img/products/shampoo/garnier/hair (35).jpg';
+import hair69 from './cos-img/product-img/products/shampoo/garnier/hair (36).jpg';
 
 
 
@@ -234,8 +266,8 @@ export const productsList = [
         id: 11,
         period: "new",
         img: hairFive,
-        type: "TRESemme shampo",
-        class: "shampoo",
+        type: "TRESemme shampo & hairMask",
+        class: "collection",
         link: "hair",
         brand: "tresemme",
         target:"woman",
@@ -858,7 +890,619 @@ export const productsList = [
         inCart: false,
         count: 0,
         total: 0
-    }
+    },
+    {
+        id: 48,
+        period: "try me",
+        img: hair34,
+        type: "Garnier shampo",
+        class: "shampoo",
+        link: "hair",
+        brand: "garnier",
+        target:"woman",
+        rank: "new",
+        description: "the ultimate repair for all hair types, dry and damaged from garnier",
+        size: "300ml",
+        price: 6.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 49,
+        period: "try me",
+        img: hair35,
+        type: "Garnier shampo",
+        class: "shampoo",
+        link: "hair",
+        brand: "garnier",
+        target:"woman",
+        rank: "new",
+        description: "the ultimate repair for all hair types, dry and damaged from garnier",
+        size: "300ml",
+        price: 6.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 50,
+        period: "try me",
+        img: hair36,
+        type: "Garnier shampo",
+        class: "shampoo",
+        link: "hair",
+        brand: "garnier",
+        target:"woman",
+        rank: "new",
+        description: "the ultimate repair for all hair types, dry and damaged from garnier",
+        size: "300ml",
+        price: 6.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 51,
+        period: "try me",
+        img: hair37,
+        type: "Garnier shampo",
+        class: "shampoo",
+        link: "hair",
+        brand: "garnier",
+        target:"woman",
+        rank: "new",
+        description: "the ultimate repair for all hair types, dry and damaged from garnier",
+        size: "300ml",
+        price: 6.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 52,
+        period: "try me",
+        img: hair38,
+        type: "Garnier shampo",
+        class: "shampoo",
+        link: "hair",
+        brand: "garnier",
+        target:"woman",
+        rank: "new",
+        description: "the ultimate repair for all hair types, dry and damaged from garnier",
+        size: "300ml",
+        price: 6.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 53,
+        period: "try me",
+        img: hair39,
+        type: "Garnier shampo",
+        class: "shampoo",
+        link: "hair",
+        brand: "garnier",
+        target:"woman",
+        rank: "new",
+        description: "the ultimate repair for all hair types, dry and damaged from garnier",
+        size: "300ml",
+        price: 6.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 54,
+        period: "try me",
+        img: hair40,
+        type: "Garnier shampo",
+        class: "shampoo",
+        link: "hair",
+        brand: "garnier",
+        target:"woman",
+        rank: "new",
+        description: "the ultimate repair for all hair types, dry and damaged from garnier",
+        size: "300ml",
+        price: 6.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 55,
+        period: "try me",
+        img: hair41,
+        type: "Garnier shampo conditioner",
+        class: "collection",
+        link: "hair",
+        brand: "garnier",
+        target:"woman",
+        rank: "new",
+        description: "the ultimate repair for all hair types, dry and damaged from garnier",
+        size: "300ml",
+        price: 6.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 56,
+        period: "try me",
+        img: hair42,
+        type: "Garnier shampo",
+        class: "shampoo",
+        link: "hair",
+        brand: "garnier",
+        target:"woman",
+        rank: "new",
+        description: "the ultimate repair for all hair types, dry and damaged from garnier",
+        size: "300ml",
+        price: 6.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 57,
+        period: "try me",
+        img: hair43,
+        type: "Garnier shampo",
+        class: "shampoo",
+        link: "hair",
+        brand: "garnier",
+        target:"woman",
+        rank: "new",
+        description: "the ultimate repair for all hair types, dry and damaged from garnier",
+        size: "300ml",
+        price: 6.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 58,
+        period: "try me",
+        img: hair44,
+        type: "Garnier shampo",
+        class: "shampoo",
+        link: "hair",
+        brand: "garnier",
+        target:"woman",
+        rank: "new",
+        description: "the ultimate repair for all hair types, dry and damaged from garnier",
+        size: "300ml",
+        price: 6.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 59,
+        period: "try me",
+        img: hair45,
+        type: "Garnier shampo",
+        class: "shampoo",
+        link: "hair",
+        brand: "garnier",
+        target:"woman",
+        rank: "new",
+        description: "the ultimate repair for all hair types, dry and damaged from garnier",
+        size: "300ml",
+        price: 6.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 60,
+        period: "try me",
+        img: hair46,
+        type: "Garnier conditioner",
+        class: "conditioner",
+        link: "hair",
+        brand: "garnier",
+        target:"woman",
+        rank: "new",
+        description: "the ultimate repair for all hair types, dry and damaged from garnier",
+        size: "300ml",
+        price: 6.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 61,
+        period: "try me",
+        img: hair47,
+        type: "Garnier conditioner",
+        class: "conditioner",
+        link: "hair",
+        brand: "garnier",
+        target:"woman",
+        rank: "new",
+        description: "the ultimate repair for all hair types, dry and damaged from garnier",
+        size: "300ml",
+        price: 6.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 62,
+        period: "try me",
+        img: hair48,
+        type: "Garnier conditioner",
+        class: "conditioner",
+        link: "hair",
+        brand: "garnier",
+        target:"woman",
+        rank: "new",
+        description: "the ultimate repair for all hair types, dry and damaged from garnier",
+        size: "300ml",
+        price: 6.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 63,
+        period: "try me",
+        img: hair49,
+        type: "Garnier conditioner",
+        class: "conditioner",
+        link: "hair",
+        brand: "garnier",
+        target:"woman",
+        rank: "new",
+        description: "the ultimate repair for all hair types, dry and damaged from garnier",
+        size: "300ml",
+        price: 6.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 64,
+        period: "try me",
+        img: hair50,
+        type: "Garnier hair mask",
+        class: "hair mask",
+        link: "hair",
+        brand: "garnier",
+        target:"woman",
+        rank: "new",
+        description: "the ultimate repair for all hair types, dry and damaged from garnier",
+        size: "300ml",
+        price: 6.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 65,
+        period: "try me",
+        img: hair51,
+        type: "Garnier hair mask",
+        class: "hair mask",
+        link: "hair",
+        brand: "garnier",
+        target:"woman",
+        rank: "new",
+        description: "the ultimate repair for all hair types, dry and damaged from garnier",
+        size: "300ml",
+        price: 6.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 66,
+        period: "try me",
+        img: hair52,
+        type: "Garnier hair mask",
+        class: "hair mask",
+        link: "hair",
+        brand: "garnier",
+        target:"woman",
+        rank: "new",
+        description: "the ultimate repair for all hair types, dry and damaged from garnier",
+        size: "300ml",
+        price: 6.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 67,
+        period: "try me",
+        img: hair53,
+        type: "Garnier conditioner",
+        class: "conditioner",
+        link: "hair",
+        brand: "garnier",
+        target:"woman",
+        rank: "new",
+        description: "the ultimate repair for all hair types, dry and damaged from garnier",
+        size: "300ml",
+        price: 6.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 68,
+        period: "try me",
+        img: hair54,
+        type: "Garnier conditioner",
+        class: "conditioner",
+        link: "hair",
+        brand: "garnier",
+        target:"woman",
+        rank: "new",
+        description: "the ultimate repair for all hair types, dry and damaged from garnier",
+        size: "300ml",
+        price: 6.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 69,
+        period: "try me",
+        img: hair55,
+        type: "Garnier conditioner",
+        class: "conditioner",
+        link: "hair",
+        brand: "garnier",
+        target:"woman",
+        rank: "new",
+        description: "the ultimate repair for all hair types, dry and damaged from garnier",
+        size: "300ml",
+        price: 6.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 70,
+        period: "try me",
+        img: hair56,
+        type: "Garnier conditioner",
+        class: "conditioner",
+        link: "hair",
+        brand: "garnier",
+        target:"woman",
+        rank: "new",
+        description: "the ultimate repair for all hair types, dry and damaged from garnier",
+        size: "300ml",
+        price: 6.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 71,
+        period: "try me",
+        img: hair57,
+        type: "Garnier conditioner",
+        class: "conditioner",
+        link: "hair",
+        brand: "garnier",
+        target:"woman",
+        rank: "new",
+        description: "the ultimate repair for all hair types, dry and damaged from garnier",
+        size: "300ml",
+        price: 6.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 72,
+        period: "try me",
+        img: hair58,
+        type: "Garnier conditioner",
+        class: "conditioner",
+        link: "hair",
+        brand: "garnier",
+        target:"woman",
+        rank: "new",
+        description: "the ultimate repair for all hair types, dry and damaged from garnier",
+        size: "300ml",
+        price: 6.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 73,
+        period: "try me",
+        img: hair59,
+        type: "Garnier conditioner",
+        class: "conditioner",
+        link: "hair",
+        brand: "garnier",
+        target:"woman",
+        rank: "new",
+        description: "the ultimate repair for all hair types, dry and damaged from garnier",
+        size: "300ml",
+        price: 6.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 74,
+        period: "try me",
+        img: hair60,
+        type: "Garnier shampo",
+        class: "shampoo",
+        link: "hair",
+        brand: "garnier",
+        target:"woman",
+        rank: "new",
+        description: "the ultimate repair for all hair types, dry and damaged from garnier",
+        size: "300ml",
+        price: 6.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 75,
+        period: "try me",
+        img: hair61,
+        type: "shampo conditioner&creme",
+        class: "collection",
+        link: "hair",
+        brand: "garnier",
+        target:"woman",
+        rank: "new",
+        description: "the ultimate repair for all hair types, dry and damaged from garnier",
+        size: "300ml",
+        price: 6.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 76,
+        period: "try me",
+        img: hair62,
+        type: "Garnier shampo",
+        class: "collection",
+        link: "hair",
+        brand: "garnier",
+        target:"woman",
+        rank: "new",
+        description: "the ultimate repair for all hair types, dry and damaged from garnier",
+        size: "300ml",
+        price: 6.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 77,
+        period: "try me",
+        img: hair63,
+        type: "Garnier super Package",
+        class: "collection",
+        link: "hair",
+        brand: "garnier",
+        target:"woman",
+        rank: "new",
+        description: "the ultimate repair for all hair types, dry and damaged from garnier",
+        size: "300ml",
+        price: 6.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 78,
+        period: "try me",
+        img: hair64,
+        type: "Garnier hair mask",
+        class: "hair mask",
+        link: "hair",
+        brand: "garnier",
+        target:"woman",
+        rank: "new",
+        description: "the ultimate repair for all hair types, dry and damaged from garnier",
+        size: "300ml",
+        price: 6.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 79,
+        period: "try me",
+        img: hair65,
+        type: "Garnier hair mask",
+        class: "hair mask",
+        link: "hair",
+        brand: "garnier",
+        target:"woman",
+        rank: "new",
+        description: "the ultimate repair for all hair types, dry and damaged from garnier",
+        size: "300ml",
+        price: 6.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 80,
+        period: "try me",
+        img: hair66,
+        type: "Garnier hair mask",
+        class: "hair mask",
+        link: "hair",
+        brand: "garnier",
+        target:"woman",
+        rank: "new",
+        description: "the ultimate repair for all hair types, dry and damaged from garnier",
+        size: "300ml",
+        price: 6.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 81,
+        period: "try me",
+        img: hair67,
+        type: "Garnier hair mask",
+        class: "hair mask",
+        link: "hair",
+        brand: "garnier",
+        target:"woman",
+        rank: "new",
+        description: "the ultimate repair for all hair types, dry and damaged from garnier",
+        size: "300ml",
+        price: 6.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 82,
+        period: "try me",
+        img: hair68,
+        type: "Garnier hair mask",
+        class: "hair mask",
+        link: "hair",
+        brand: "garnier",
+        target:"woman",
+        rank: "new",
+        description: "the ultimate repair for all hair types, dry and damaged from garnier",
+        size: "300ml",
+        price: 6.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 83,
+        period: "try me",
+        img: hair69,
+        type: "Garnier  shampo",
+        class: "shampoo",
+        link: "hair",
+        brand: "garnier",
+        target:"woman",
+        rank: "new",
+        description: "the ultimate repair for all hair types, dry and damaged from garnier",
+        size: "300ml",
+        price: 6.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
 ];
 
 

@@ -1,0 +1,88 @@
+.products-link-page {
+  background: white;
+}
+
+.products-link-page .multi-range-slider {
+  position: relative;
+  width: 30%;
+  max-width: 300px;
+  height: 200px;
+}
+
+.products-link-page .multi-range-slider .slider {
+  position: relative;
+  z-index: 1;
+  height: 2px;
+}
+
+.products-link-page .multi-range-slider .slider .track {
+  position: absolute;
+  width: 100%;
+  height: 1.5px;
+  z-index: 1;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 5px;
+  background-color: #f777b2;
+}
+
+.products-link-page .multi-range-slider .slider .range {
+  position: absolute;
+  z-index: 1;
+  left: 1%;
+  right: 1%;
+  top: 0;
+  bottom: 0;
+  border-radius: 5px;
+  background-color: #bebebe;
+}
+
+.products-link-page .multi-range-slider .slider .thumb {
+  position: absolute;
+  z-index: 3;
+  width: 15px;
+  height: 15px;
+  background-color: #bebebe;
+  border-radius: 50%;
+  margin-top: 4px;
+}
+
+.products-link-page .multi-range-slider .slider .thumb.left {
+  left: 1%;
+  -webkit-transform: translate(-5px, -10px);
+          transform: translate(-5px, -10px);
+}
+
+.products-link-page .multi-range-slider .slider .thumb.left span {
+  position: absolute;
+  top: 90%;
+}
+
+.products-link-page .multi-range-slider .slider .thumb.right {
+  right: 1%;
+  -webkit-transform: translate(5px, -10px);
+          transform: translate(5px, -10px);
+}
+
+.products-link-page .multi-range-slider .slider .thumb.right span {
+  position: absolute;
+  bottom: 90%;
+}
+
+.products-link-page .multi-range-slider input[type=range] {
+  position: absolute;
+  pointer-events: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  z-index: 2;
+  height: 3px;
+  width: 100%;
+  opacity: 0;
+}
+
+.products-link-page .multi-range-slider input[type=range]::-webkit-slider-thumb {
+  pointer-events: all;
+}
+/*# sourceMappingURL=productsLinkPage.css.map */

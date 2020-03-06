@@ -133,6 +133,11 @@ function ContextProvider(props) {
         });
     };
 
+    const [priceFilter, setPriceFilter] = useState({
+        minPrice: 1,
+        maxPrice: 100
+    });
+
     const filterPages = (linkOf, brandOf) => {
         const productList = products.productsListCopy;
         const linkProducts = productList.filter(p => {
@@ -147,6 +152,10 @@ function ContextProvider(props) {
         });
     };
 
+    const filterPrice = () => {
+        console.log('git commit')
+    }
+
     return (
         <ProductsContext.Provider value={{
             ...products,
@@ -159,7 +168,9 @@ function ContextProvider(props) {
             changeQuantity,
             removeItem,
             clearCart,
-            filterPages
+            filterPages,
+            priceFilter,
+            setPriceFilter
         }}>
             {props.children}
         </ProductsContext.Provider>

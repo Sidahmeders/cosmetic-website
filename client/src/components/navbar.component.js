@@ -57,7 +57,7 @@ function Navbar() {
                             </Link>
                             </li>
                             <li>
-                            <Link className="link" to="/">
+                            <Link className="link" to="/productspage" onClick={() => filterPages("hair","garnier")}>
                                 <span style={{letterSpacing:"2px",color:"green"}}>
                                 GARNIER <i className="fab fa-envira"></i>
                                 </span>

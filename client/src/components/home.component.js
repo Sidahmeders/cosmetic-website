@@ -16,7 +16,7 @@ import hairbrush from '../cos-img/hairbrush.jpg';
 import blushOne from '../cos-img/product-img/products/blusher/blush (5).jpg';
 import blushTwo from '../cos-img/product-img/products/blusher/blush (28).jpg';
 import blushThree from '../cos-img/product-img/products/blusher/blush (35).jpg';
-import hairOne from '../cos-img/product-img/products/shampoo/hair (49).jpg';
+import hairOne from '../cos-img/product-img/products/shampoo/TRESemme/hair (1).jpg';
 import hairTwo from '../cos-img/product-img/products/shampoo/hair (52).jpg';
 import hairThree from '../cos-img/product-img/products/shampoo/hair (50).jpg';
 import hairFour from '../cos-img/product-img/products/shampoo/loreal/hair (25).jpg';
