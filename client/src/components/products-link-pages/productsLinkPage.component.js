@@ -6,8 +6,7 @@ import { ContextConsumer } from '../../context';
 function ProductsLinkPage() {
 
     const context = useContext(ContextConsumer);
-    const { filterPages, onTypeChange } = context;
-    const productsList = JSON.parse(localStorage.getItem('productsList'));
+    const { filterPages, onTypeChange, productType, pageProducts } = context;
     const { linkOf, brandOf } = JSON.parse(localStorage.getItem('pageLink'));
 
     const range = document.querySelector('.range');
@@ -41,13 +40,12 @@ function ProductsLinkPage() {
 
     let minPrice;
     let maxPrice;
-    productsList.map(p => minPrice = p.price >= minPrice ? minPrice : p.price);
-    productsList.map(p => maxPrice = p.price <= maxPrice ? maxPrice : p.price);
+    pageProducts.map(p => minPrice = p.price >= minPrice ? minPrice : p.price);
+    pageProducts.map(p => maxPrice = p.price <= maxPrice ? maxPrice : p.price);
     
     useEffect(() => { 
-        return () =>  filterPages(linkOf, brandOf, price.minPrice, price.maxPrice);
-    }, [onTypeChange]);
-
+        filterPages(linkOf, brandOf, price.minPrice, price.maxPrice, productType);
+    }, [productType]);
 
     return(
         <div className="products-link-page">
@@ -97,7 +95,7 @@ function ProductsLinkPage() {
                 <h1>{brandOf}</h1>
             </div>
             <div className="products-list">
-                {productsList.length ? productsList.map(product => {
+                {pageProducts.length ? pageProducts.map(product => {
                     return (
                         <div key={product.id} className="products-list-item">
                             <p>{product.type}</p>

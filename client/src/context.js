@@ -9,7 +9,8 @@ function ContextProvider(props) {
     const [products, setProducts] = useState({
         productsListCopy: [],
         detailsProduct,
-        cart: []
+        cart: [],
+        pageProducts: []
     });
 
     let [modal, setModal] = useState(false);
@@ -160,37 +161,24 @@ function ContextProvider(props) {
         }
     };
 
-    useEffect(() => {
-        filterByType(productType);
-    }, [productType]);
-    
-    const filterByType = classOf => {
-        const {shampoo, conditioner, hairMask} = classOf;
-        console.log(shampoo, conditioner, hairMask);
-        const productsCopy = productsList.map(product => {
-            return {...product};
-        });
-        const filteredProducts = productsCopy.filter(p => {
-            return p.class === shampoo || p.class === conditioner || p.class === hairMask;
-        });
-        setProducts(() => {
-            return {
-                ...products,
-                productsListCopy: filteredProducts
-            }
-        });
-    };
-
-    const filterPages = (linkOf, brandOf, minPrice = 1, maxPrice = 100) => {
+    const filterPages = (linkOf, brandOf, minPrice = 1, maxPrice = 100, classOf = productType) => {
         const linkProducts = products.productsListCopy.filter(p => {
             return p.link === linkOf && p.brand === brandOf
             && p.price > minPrice/3 && p.price < maxPrice/3;
         });
+        const {shampoo, conditioner, hairMask} = classOf;
+        const filteredProducts = linkProducts.filter(p => {
+            return p.class === shampoo || p.class === conditioner || p.class === hairMask;
+        });
 
-        const productsToSave = JSON.stringify(linkProducts);
-        localStorage.setItem('productsList', productsToSave);
         const pageLink = JSON.stringify({linkOf, brandOf});
         localStorage.setItem('pageLink', pageLink);
+        setProducts(() => {
+            return {
+                ...products,
+                pageProducts: filteredProducts
+            }
+        });
     };
     
     return (
@@ -206,7 +194,8 @@ function ContextProvider(props) {
             removeItem,
             clearCart,
             filterPages,
-            onTypeChange
+            onTypeChange,
+            productType
         }}>
             {props.children}
         </ProductsContext.Provider>
