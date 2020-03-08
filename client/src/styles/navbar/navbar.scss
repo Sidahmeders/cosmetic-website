@@ -4,17 +4,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 ::selection {
-    color: rgb(224, 201, 212);
-    background: rgb(78, 1, 32);
+    color: rgb(243, 243, 243);
+    background: rgb(139, 98, 115);
   }
 
 body.hide {overflow-y: hidden !important;}
 
 .navbar-container {
     overflow-x: hidden;
-    font-family: 'Poppins', sans-serif;
     z-index: 99;
     
     header {

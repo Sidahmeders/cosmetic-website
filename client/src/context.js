@@ -9,8 +9,7 @@ function ContextProvider(props) {
     const [products, setProducts] = useState({
         productsListCopy: [],
         detailsProduct,
-        cart: [],
-        productsPage: []
+        cart: []
     });
 
     let [modal, setModal] = useState(false);
@@ -133,29 +132,67 @@ function ContextProvider(props) {
         });
     };
 
-    const [priceFilter, setPriceFilter] = useState({
-        minPrice: 1,
-        maxPrice: 100
+    const [productType, setProductType] = useState({
+        shampoo: "shampoo",
+        conditioner: "conditioner",
+        hairMask: "hair mask"
     });
 
-    const filterPages = (linkOf, brandOf) => {
-        const productList = products.productsListCopy;
-        const linkProducts = productList.filter(p => {
-            return p.link === linkOf && p.brand === brandOf
+    const onTypeChange = e => {
+        let isChecked = e.target.checked;
+        let typeValue = e.target.value;
+        let typeName = e.target.id;
+
+        if(!isChecked) {
+            setProductType(() => {
+                return {
+                    ...productType,
+                    [typeName]: typeValue
+                }
+            });
+        } else {
+            setProductType(() => {
+                return {
+                    ...productType,
+                    [typeName]: null
+                }
+            });
+        }
+    };
+
+    useEffect(() => {
+        filterByType(productType);
+    }, [productType]);
+    
+    const filterByType = classOf => {
+        const {shampoo, conditioner, hairMask} = classOf;
+        console.log(shampoo, conditioner, hairMask);
+        const productsCopy = productsList.map(product => {
+            return {...product};
         });
-        console.log(linkProducts);
+        const filteredProducts = productsCopy.filter(p => {
+            return p.class === shampoo || p.class === conditioner || p.class === hairMask;
+        });
         setProducts(() => {
             return {
                 ...products,
-                productsPage: linkProducts
+                productsListCopy: filteredProducts
             }
         });
     };
 
-    const filterPrice = () => {
-        console.log('git commit')
-    }
+    const filterPages = (linkOf, brandOf, minPrice = 1, maxPrice = 100) => {
+        const linkProducts = products.productsListCopy.filter(p => {
+            return p.link === linkOf && p.brand === brandOf
+            && p.price > minPrice/3 && p.price < maxPrice/3;
+        });
 
+        const productsToSave = JSON.stringify(linkProducts);
+        localStorage.setItem('productsList', productsToSave);
+        const pageLink = JSON.stringify({linkOf, brandOf});
+        localStorage.setItem('pageLink', pageLink);
+    };
+    
     return (
         <ProductsContext.Provider value={{
             ...products,
@@ -169,8 +206,7 @@ function ContextProvider(props) {
             removeItem,
             clearCart,
             filterPages,
-            priceFilter,
-            setPriceFilter
+            onTypeChange
         }}>
             {props.children}
         </ProductsContext.Provider>

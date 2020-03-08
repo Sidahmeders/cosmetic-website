@@ -4,16 +4,17 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 ::-moz-selection {
-  color: #e0c9d4;
-  background: #4e0120;
+  color: #f3f3f3;
+  background: #8b6273;
 }
 
 ::selection {
-  color: #e0c9d4;
-  background: #4e0120;
+  color: #f3f3f3;
+  background: #8b6273;
 }
 
 body.hide {
@@ -22,7 +23,6 @@ body.hide {
 
 .navbar-container {
   overflow-x: hidden;
-  font-family: 'Poppins', sans-serif;
   z-index: 99;
 }
 

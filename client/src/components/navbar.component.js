@@ -27,7 +27,7 @@ function Navbar() {
           navLinks.classList.remove('active');
           document.body.classList.remove('hide');
         }
-    }
+    };
 
     const location = useLocation();
     useEffect(() => {
@@ -50,14 +50,14 @@ function Navbar() {
                         </a>
                         <ul>
                             <li>
-                            <Link className="link" to="/productspage" onClick={() => filterPages("hair","loreal")}>
+                            <Link className="link" to="/productspage" onClick={() => {filterPages("hair","loreal"); toggleMenu()}}>
                                 <span style={{color:"gold"}}>
                                 L'OREAL <span style={{fontSize:".8em",color:"red"}}>_paris</span>
                                 </span>
                             </Link>
                             </li>
                             <li>
-                            <Link className="link" to="/productspage" onClick={() => filterPages("hair","garnier")}>
+                            <Link className="link" to="/productspage" onClick={() => {filterPages("hair","garnier"); toggleMenu();}}>
                                 <span style={{letterSpacing:"2px",color:"green"}}>
                                 GARNIER <i className="fab fa-envira"></i>
                                 </span>
