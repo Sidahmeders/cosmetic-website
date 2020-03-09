@@ -10,7 +10,7 @@ function ContextProvider(props) {
         productsListCopy: [],
         detailsProduct,
         cart: [],
-        pageProducts: []
+        productsLinkPage: []
     });
 
     let [modal, setModal] = useState(false);
@@ -134,41 +134,55 @@ function ContextProvider(props) {
     };
 
     const [productType, setProductType] = useState({
-        shampoo: "shampoo",
-        conditioner: "conditioner",
-        hairMask: "hair mask"
+        hair: {
+            one: "shampoo",
+            two: "conditioner",
+            three: "hair mask",
+        },
+        creme: {
+            one: "face creme",
+            two: "scrub&mask",
+            three: "face lotion"
+        }
     });
 
     const onTypeChange = e => {
         let isChecked = e.target.checked;
         let typeValue = e.target.value;
         let typeName = e.target.id;
+        const { linkOf } = JSON.parse(localStorage.getItem('pageLink'));
 
         if(!isChecked) {
             setProductType(() => {
                 return {
                     ...productType,
-                    [typeName]: typeValue
+                    [linkOf]: {
+                        ...productType[linkOf],
+                        [typeName]: typeValue
+                    }
                 }
             });
         } else {
             setProductType(() => {
                 return {
                     ...productType,
-                    [typeName]: null
+                    [linkOf]: {
+                        ...productType[linkOf],
+                        [typeName]: undefined
+                    } 
                 }
             });
         }
     };
 
-    const filterPages = (linkOf, brandOf, minPrice = 1, maxPrice = 100, classOf = productType, rank = 'new') => {
+    const filterPages = (linkOf = 'hair', brandOf, minPrice = 1, maxPrice = 100, classOf = productType, rank = 'new') => {
         const linkProducts = products.productsListCopy.filter(p => {
             return p.link === linkOf && p.brand === brandOf
             && p.price > minPrice/3 && p.price < maxPrice/3;
         });
-        const {shampoo, conditioner, hairMask} = classOf;
+        const {one, two, three} = classOf[linkOf];
         const filteredProducts = linkProducts.filter(p => {
-            return p.class === shampoo || p.class === conditioner || p.class === hairMask;
+            return p.class === one || p.class === two || p.class === three;
         });
         const rankedProducts = filteredProducts.sort((a, b) => {
             return (a.rank && b.rank === rank) ? 1 : -1 ;
@@ -179,7 +193,7 @@ function ContextProvider(props) {
         setProducts(() => {
             return {
                 ...products,
-                pageProducts: rankedProducts
+                productsLinkPage: rankedProducts
             }
         });
     };

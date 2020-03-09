@@ -6,8 +6,9 @@ import { ContextConsumer } from '../../context';
 function ProductsLinkPage() {
 
     const context = useContext(ContextConsumer);
-    const { filterPages, onTypeChange, productType, pageProducts } = context;
+    const { filterPages, onTypeChange, productType, productsLinkPage } = context;
     const { linkOf, brandOf } = JSON.parse(localStorage.getItem('pageLink'));
+    const {one, two, three } = productType[linkOf];
 
     const range = document.querySelector('.range');
     const leftThumb = document.querySelector('.thumb.left');
@@ -40,8 +41,8 @@ function ProductsLinkPage() {
 
     let minPrice;
     let maxPrice;
-    pageProducts.map(p => minPrice = p.price >= minPrice ? minPrice : p.price);
-    pageProducts.map(p => maxPrice = p.price <= maxPrice ? maxPrice : p.price);
+    productsLinkPage.map(p => minPrice = p.price >= minPrice ? minPrice : p.price);
+    productsLinkPage.map(p => maxPrice = p.price <= maxPrice ? maxPrice : p.price);
     
     useEffect(() => { 
         filterPages(linkOf, brandOf, price.minPrice, price.maxPrice, productType);
@@ -85,23 +86,23 @@ function ProductsLinkPage() {
                 <div className="check-boxes">
                     <h3>Filter by Type</h3>
                     <p>
-                      <input id="shampoo" type="checkbox" value="shampoo" onChange={onTypeChange} />
-                      <label htmlFor="shampoo">shampoo</label>
+                        <input type="checkbox" id="one" value={one} onChange={onTypeChange} />
+                        <label htmlFor="one">{one ? one : "add back"}</label>
                     </p>
                     <p>
-                      <input id="conditioner" type="checkbox" value="conditioner" onChange={onTypeChange} />
-                      <label htmlFor="conditioner">conditioner</label>
-                    </p> 
+                        <input type="checkbox" id="two" value={two} onChange={onTypeChange} />
+                        <label htmlFor="two">{two ? two : "add back"}</label>
+                    </p>
                     <p>
-                      <input id="hairMask" type="checkbox" value="hair mask" onChange={onTypeChange} />
-                      <label htmlFor="hairMask">hair mask</label>
+                        <input type="checkbox" id="three" value={three} onChange={onTypeChange} />
+                        <label htmlFor="three">{three ? three : "add back"}</label>
                     </p>
                 </div>
                 <h1>{brandOf}</h1>
             </div>
 
             <div className="products-list">
-                {pageProducts.length ? pageProducts.map(product => {
+                {productsLinkPage.length ? productsLinkPage.map(product => {
                     return (
                         <div key={product.id} className="products-list-item">
                             <p>{product.type}</p>
