@@ -47,12 +47,24 @@ function ProductsLinkPage() {
         filterPages(linkOf, brandOf, price.minPrice, price.maxPrice, productType);
     }, [productType]);
 
+    const onRankChange = e => {
+        filterPages(linkOf, brandOf, price.minPrice, price.maxPrice, productType, e.target.value);
+    };
+
+
     return(
         <div className="products-link-page">
-            
             <div className="side-bar">
+                <div className="select-box">
+                    <h3>Rank by status</h3>
+                    <select onChange={onRankChange}>
+                        <option value="new">the latest</option>
+                        <option value="best seller">the best Seller</option>
+                        <option value="popular">the most popular</option>
+                    </select>
+                </div>
                 <div className="multi-range-slider">
-                    <h2 style={{margin:"10px", letterSpacing:"3px"}}>Price</h2>
+                    <h3>Price</h3>
                     <input type="range" min="1" max="100" value={price.minPrice} 
                     id="input-left" onChange={setLeftValue} />
                     <input type="range" min="1" max="100" value={price.maxPrice} 
@@ -85,15 +97,9 @@ function ProductsLinkPage() {
                       <label htmlFor="hairMask">hair mask</label>
                     </p>
                 </div>
-                <div className="select-box">
-                    <select>
-                        <option>the latest</option>
-                        <option>the best Seller</option>
-                        <option>the most popular</option>
-                    </select>
-                </div>
                 <h1>{brandOf}</h1>
             </div>
+
             <div className="products-list">
                 {pageProducts.length ? pageProducts.map(product => {
                     return (

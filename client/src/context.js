@@ -161,7 +161,7 @@ function ContextProvider(props) {
         }
     };
 
-    const filterPages = (linkOf, brandOf, minPrice = 1, maxPrice = 100, classOf = productType) => {
+    const filterPages = (linkOf, brandOf, minPrice = 1, maxPrice = 100, classOf = productType, rank = 'new') => {
         const linkProducts = products.productsListCopy.filter(p => {
             return p.link === linkOf && p.brand === brandOf
             && p.price > minPrice/3 && p.price < maxPrice/3;
@@ -170,13 +170,16 @@ function ContextProvider(props) {
         const filteredProducts = linkProducts.filter(p => {
             return p.class === shampoo || p.class === conditioner || p.class === hairMask;
         });
+        const rankedProducts = filteredProducts.sort((a, b) => {
+            return (a.rank && b.rank === rank) ? 1 : -1 ;
+        });
 
         const pageLink = JSON.stringify({linkOf, brandOf});
         localStorage.setItem('pageLink', pageLink);
         setProducts(() => {
             return {
                 ...products,
-                pageProducts: filteredProducts
+                pageProducts: rankedProducts
             }
         });
     };
@@ -200,7 +203,7 @@ function ContextProvider(props) {
             {props.children}
         </ProductsContext.Provider>
     );
-}
+};
 
 const ContextConsumer = ProductsContext;
 
