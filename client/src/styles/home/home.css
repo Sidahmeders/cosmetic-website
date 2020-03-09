@@ -328,19 +328,23 @@ body {
   color: #47bd82;
 }
 
-.home main .main-products .whats-new-section, .home main .main-products .whats-popular-section {
+.home main .main-products .whats-new-section,
+.home main .main-products .whats-popular-section {
   width: 100%;
   height: auto;
   margin-top: 3%;
 }
 
-.home main .main-products .whats-new-section h2, .home main .main-products .whats-popular-section h2 {
+.home main .main-products .whats-new-section h2,
+.home main .main-products .whats-popular-section h2 {
   text-align: center;
   font-weight: 100;
   font-size: 1.7em;
 }
 
-.home main .main-products .whats-new-section h2:before, .home main .main-products .whats-new-section h2:after, .home main .main-products .whats-popular-section h2:before, .home main .main-products .whats-popular-section h2:after {
+.home main .main-products .whats-new-section h2:before, .home main .main-products .whats-new-section h2:after,
+.home main .main-products .whats-popular-section h2:before,
+.home main .main-products .whats-popular-section h2:after {
   content: "";
   width: 30%;
   height: 1px;
@@ -349,15 +353,20 @@ body {
   margin-top: 3.3vh;
 }
 
-.home main .main-products .whats-new-section h2:before, .home main .main-products .whats-popular-section h2:before {
+.home main .main-products .whats-new-section h2:before,
+.home main .main-products .whats-popular-section h2:before {
   left: 7%;
 }
 
-.home main .main-products .whats-new-section h2:after, .home main .main-products .whats-popular-section h2:after {
+.home main .main-products .whats-new-section h2:after,
+.home main .main-products .whats-popular-section h2:after {
   right: 7%;
 }
 
-.home main .main-products .whats-new-section .new-products, .home main .main-products .whats-new-section .popular-products, .home main .main-products .whats-popular-section .new-products, .home main .main-products .whats-popular-section .popular-products {
+.home main .main-products .whats-new-section .new-products,
+.home main .main-products .whats-new-section .popular-products,
+.home main .main-products .whats-popular-section .new-products,
+.home main .main-products .whats-popular-section .popular-products {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -369,19 +378,28 @@ body {
           align-items: center;
 }
 
-.home main .main-products .whats-new-section .new-products button, .home main .main-products .whats-new-section .popular-products button, .home main .main-products .whats-popular-section .new-products button, .home main .main-products .whats-popular-section .popular-products button {
+.home main .main-products .whats-new-section .new-products button,
+.home main .main-products .whats-new-section .popular-products button,
+.home main .main-products .whats-popular-section .new-products button,
+.home main .main-products .whats-popular-section .popular-products button {
   font-size: 4em;
   background: transparent;
   border: 0;
   color: black;
 }
 
-.home main .main-products .whats-new-section .new-products button:hover, .home main .main-products .whats-new-section .popular-products button:hover, .home main .main-products .whats-popular-section .new-products button:hover, .home main .main-products .whats-popular-section .popular-products button:hover {
+.home main .main-products .whats-new-section .new-products button:hover,
+.home main .main-products .whats-new-section .popular-products button:hover,
+.home main .main-products .whats-popular-section .new-products button:hover,
+.home main .main-products .whats-popular-section .popular-products button:hover {
   cursor: pointer;
   color: #5f072b;
 }
 
-.home main .main-products .whats-new-section .new-products .products-slide, .home main .main-products .whats-new-section .popular-products .products-slide, .home main .main-products .whats-popular-section .new-products .products-slide, .home main .main-products .whats-popular-section .popular-products .products-slide {
+.home main .main-products .whats-new-section .new-products .products-slide,
+.home main .main-products .whats-new-section .popular-products .products-slide,
+.home main .main-products .whats-popular-section .new-products .products-slide,
+.home main .main-products .whats-popular-section .popular-products .products-slide {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -396,19 +414,28 @@ body {
   text-align: center;
 }
 
-.home main .main-products .whats-new-section .new-products .products-slide .product-item, .home main .main-products .whats-new-section .popular-products .products-slide .product-item, .home main .main-products .whats-popular-section .new-products .products-slide .product-item, .home main .main-products .whats-popular-section .popular-products .products-slide .product-item {
+.home main .main-products .whats-new-section .new-products .products-slide .product-item,
+.home main .main-products .whats-new-section .popular-products .products-slide .product-item,
+.home main .main-products .whats-popular-section .new-products .products-slide .product-item,
+.home main .main-products .whats-popular-section .popular-products .products-slide .product-item {
   display: inline-block;
   text-align: center;
   width: 280px;
   margin-top: 3em;
 }
 
-.home main .main-products .whats-new-section .new-products .products-slide .product-item .detail, .home main .main-products .whats-new-section .popular-products .products-slide .product-item .detail, .home main .main-products .whats-popular-section .new-products .products-slide .product-item .detail, .home main .main-products .whats-popular-section .popular-products .products-slide .product-item .detail {
+.home main .main-products .whats-new-section .new-products .products-slide .product-item .detail,
+.home main .main-products .whats-new-section .popular-products .products-slide .product-item .detail,
+.home main .main-products .whats-popular-section .new-products .products-slide .product-item .detail,
+.home main .main-products .whats-popular-section .popular-products .products-slide .product-item .detail {
   color: black;
   text-decoration: none;
 }
 
-.home main .main-products .whats-new-section .new-products .products-slide .product-item .detail h5, .home main .main-products .whats-new-section .popular-products .products-slide .product-item .detail h5, .home main .main-products .whats-popular-section .new-products .products-slide .product-item .detail h5, .home main .main-products .whats-popular-section .popular-products .products-slide .product-item .detail h5 {
+.home main .main-products .whats-new-section .new-products .products-slide .product-item .detail h5,
+.home main .main-products .whats-new-section .popular-products .products-slide .product-item .detail h5,
+.home main .main-products .whats-popular-section .new-products .products-slide .product-item .detail h5,
+.home main .main-products .whats-popular-section .popular-products .products-slide .product-item .detail h5 {
   border: 1px solid;
   position: absolute;
   margin: 2px 5px;
@@ -416,30 +443,45 @@ body {
   color: #0f67eb;
 }
 
-.home main .main-products .whats-new-section .new-products .products-slide .product-item .detail img, .home main .main-products .whats-new-section .popular-products .products-slide .product-item .detail img, .home main .main-products .whats-popular-section .new-products .products-slide .product-item .detail img, .home main .main-products .whats-popular-section .popular-products .products-slide .product-item .detail img {
+.home main .main-products .whats-new-section .new-products .products-slide .product-item .detail img,
+.home main .main-products .whats-new-section .popular-products .products-slide .product-item .detail img,
+.home main .main-products .whats-popular-section .new-products .products-slide .product-item .detail img,
+.home main .main-products .whats-popular-section .popular-products .products-slide .product-item .detail img {
   width: 50%;
   height: 160px;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.home main .main-products .whats-new-section .new-products .products-slide .product-item .detail .text, .home main .main-products .whats-new-section .popular-products .products-slide .product-item .detail .text, .home main .main-products .whats-popular-section .new-products .products-slide .product-item .detail .text, .home main .main-products .whats-popular-section .popular-products .products-slide .product-item .detail .text {
+.home main .main-products .whats-new-section .new-products .products-slide .product-item .detail .text,
+.home main .main-products .whats-new-section .popular-products .products-slide .product-item .detail .text,
+.home main .main-products .whats-popular-section .new-products .products-slide .product-item .detail .text,
+.home main .main-products .whats-popular-section .popular-products .products-slide .product-item .detail .text {
   width: 80%;
   display: inline-block;
   height: 150px;
 }
 
-.home main .main-products .whats-new-section .new-products .products-slide .product-item .detail .text span, .home main .main-products .whats-new-section .popular-products .products-slide .product-item .detail .text span, .home main .main-products .whats-popular-section .new-products .products-slide .product-item .detail .text span, .home main .main-products .whats-popular-section .popular-products .products-slide .product-item .detail .text span {
+.home main .main-products .whats-new-section .new-products .products-slide .product-item .detail .text span,
+.home main .main-products .whats-new-section .popular-products .products-slide .product-item .detail .text span,
+.home main .main-products .whats-popular-section .new-products .products-slide .product-item .detail .text span,
+.home main .main-products .whats-popular-section .popular-products .products-slide .product-item .detail .text span {
   display: block;
   font-size: 14px;
   color: #201d1d;
 }
 
-.home main .main-products .whats-new-section .new-products .products-slide .product-item .detail .text p, .home main .main-products .whats-new-section .popular-products .products-slide .product-item .detail .text p, .home main .main-products .whats-popular-section .new-products .products-slide .product-item .detail .text p, .home main .main-products .whats-popular-section .popular-products .products-slide .product-item .detail .text p {
+.home main .main-products .whats-new-section .new-products .products-slide .product-item .detail .text p,
+.home main .main-products .whats-new-section .popular-products .products-slide .product-item .detail .text p,
+.home main .main-products .whats-popular-section .new-products .products-slide .product-item .detail .text p,
+.home main .main-products .whats-popular-section .popular-products .products-slide .product-item .detail .text p {
   text-shadow: 0px 0px 1px black;
 }
 
-.home main .main-products .whats-new-section .new-products .products-slide .product-item .price, .home main .main-products .whats-new-section .popular-products .products-slide .product-item .price, .home main .main-products .whats-popular-section .new-products .products-slide .product-item .price, .home main .main-products .whats-popular-section .popular-products .products-slide .product-item .price {
+.home main .main-products .whats-new-section .new-products .products-slide .product-item .price,
+.home main .main-products .whats-new-section .popular-products .products-slide .product-item .price,
+.home main .main-products .whats-popular-section .new-products .products-slide .product-item .price,
+.home main .main-products .whats-popular-section .popular-products .products-slide .product-item .price {
   border: 1px solid #2cbd00;
   color: #399c00;
   letter-spacing: 2px;

@@ -1,4 +1,5 @@
 import React, { useState, useContext, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import '../../styles/products-linkPage/productsLinkPage.css'
 import { ContextConsumer } from '../../context';
 
@@ -6,7 +7,7 @@ import { ContextConsumer } from '../../context';
 function ProductsLinkPage() {
 
     const context = useContext(ContextConsumer);
-    const { filterPages, onTypeChange, productType, productsLinkPage } = context;
+    const { filterPages, onTypeChange, productType, productsLinkPage, handleDetails } = context;
     const { linkOf, brandOf } = JSON.parse(localStorage.getItem('pageLink'));
     const {one, two, three } = productType[linkOf];
 
@@ -103,10 +104,19 @@ function ProductsLinkPage() {
 
             <div className="products-list">
                 {productsLinkPage.length ? productsLinkPage.map(product => {
+                    const {id, brand, img, type, description, size, price} = product;
                     return (
                         <div key={product.id} className="products-list-item">
-                            <p>{product.type}</p>
-                            <img src={product.img} alt="product"></img>
+                            <Link className="detail" onClick={() => handleDetails(id)} to="/details">
+                                <h5>{brand}</h5>
+                                <img src={img} alt="product"></img>
+                                <div className="text">
+                                    <span>{type}</span>
+                                    <p>{description}</p>
+                                    <span>{size}</span>
+                                </div>
+                            </Link>
+                            <h4 className="price">{price.toFixed(2)}$</h4>
                         </div>
                     );
                 }) :

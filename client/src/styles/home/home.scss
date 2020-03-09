@@ -239,7 +239,8 @@ body {
                 }
             }
 
-            .whats-new-section, .whats-popular-section {
+            .whats-new-section, 
+            .whats-popular-section {
                 width: 100%;
                 height: auto;
                 margin-top: 3%;
@@ -261,7 +262,8 @@ body {
                     &:before {left: 7%;}
                     &:after {right: 7%;}
                 }
-                .new-products, .popular-products {
+                .new-products, 
+                .popular-products {
                     display: flex;
                     justify-content: center;
                     align-items: center;
