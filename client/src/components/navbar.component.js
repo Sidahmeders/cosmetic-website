@@ -8,8 +8,10 @@ import { Link } from 'react-router-dom';
 function Navbar() {
 
     const context = useContext(ContextConsumer);
+    const { cart } = context;
+
     let productsCount = 0;
-    context.cart.map(item => productsCount++);
+    cart.map(item => productsCount++);
     const {filterPages} = context;
 
     let isTrue = false;
@@ -33,6 +35,7 @@ function Navbar() {
     useEffect(() => {
         toggleMenu();
     },[location.pathname]);
+
     
   return (
     <div className="navbar-container">
@@ -50,14 +53,20 @@ function Navbar() {
                         </a>
                         <ul>
                             <li>
-                            <Link className="link" to="/productspage" onClick={() => {filterPages("hair","loreal"); toggleMenu()}}>
+                            <Link className="link" to="/productspage" onClick={() => {
+                                filterPages("hair","loreal"); 
+                                toggleMenu();
+                            }}>
                                 <span style={{color:"gold"}}>
                                 L'OREAL <span style={{fontSize:".8em",color:"red"}}>_paris</span>
                                 </span>
                             </Link>
                             </li>
                             <li>
-                            <Link className="link" to="/productspage" onClick={() => {filterPages("hair","garnier"); toggleMenu();}}>
+                            <Link className="link" to="/productspage" onClick={() => {
+                                filterPages("hair","garnier"); 
+                                toggleMenu();
+                                }}>
                                 <span style={{letterSpacing:"2px",color:"green"}}>
                                 GARNIER <i className="fab fa-envira"></i>
                                 </span>
@@ -127,21 +136,30 @@ function Navbar() {
                         </a>
                         <ul>
                             <li>
-                            <Link className="link" to="/productspage" onClick={() => {filterPages("body","vasline"); toggleMenu()}}>
+                            <Link className="link" to="/productspage" onClick={() => {
+                                filterPages("body","vasline"); 
+                                toggleMenu();
+                                }}>
                                 <span style={{letterSpacing:"4px",color:"#3f0"}}>
                                 Vaseline
                                 </span>
                             </Link>
                             </li>
                             <li>
-                            <Link className="link" to="/productspage" onClick={() => {filterPages("body","nivea"); toggleMenu()}}>
+                            <Link className="link" to="/productspage" onClick={() => {
+                                filterPages("body","nivea");
+                                toggleMenu();
+                                }}>
                                 <span style={{letterSpacing:"5px",color:"#18f"}}>
                                 NIVEA <i className="fa fa-female"></i> <i className="fa fa-male"></i>
                                 </span>
                             </Link>
                             </li>
                             <li>
-                            <Link className="link" to="/productspage" onClick={() => {filterPages("body","enchanteur"); toggleMenu()}}>
+                            <Link className="link" to="/productspage" onClick={() => {
+                                filterPages("body","enchanteur"); 
+                                toggleMenu();
+                                }}>
                                 <span style={{letterSpacing:"1px",color:"#d10"}}>
                                 enchanteur
                                 </span>

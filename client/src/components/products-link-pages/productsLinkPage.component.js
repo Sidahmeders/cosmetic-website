@@ -52,8 +52,7 @@ function ProductsLinkPage() {
     const onRankChange = e => {
         filterPages(linkOf, brandOf, price.minPrice, price.maxPrice, productType, e.target.value);
     };
-
-
+    
     return(
         <div className="products-link-page">
             <div className="side-bar">
@@ -65,45 +64,54 @@ function ProductsLinkPage() {
                         <option value="popular">the most popular</option>
                     </select>
                 </div>
+                
                 <div className="multi-range-slider">
-                    <h3>Price</h3>
-                    <input type="range" min="1" max="100" value={price.minPrice} 
-                    id="input-left" onChange={setLeftValue} />
-                    <input type="range" min="1" max="100" value={price.maxPrice} 
-                    id="input-right" onChange={setRightValue} /> 
-
-                    <div className="slider">
-                        <div className="track"></div>
-                        <div className="range"></div>
-                        <div className="thumb left">
-                            <span>{minPrice ? minPrice : 0}$</span>
+                    <div className="items">
+                        <h3>Price</h3>
+                        <div className="input">
+                            <input type="range" min="1" max="100" value={price.minPrice} 
+                            id="input-left" onChange={setLeftValue} />
+                            <input type="range" min="1" max="100" value={price.maxPrice} 
+                            id="input-right" onChange={setRightValue} /> 
                         </div>
-                        <div className="thumb right">
-                            <span>{maxPrice ? maxPrice : 0}$</span>
+                        <div className="slider">
+                            <div className="track"></div>
+                            <div className="range"></div>
+                            <div className="thumb left">
+                                <span>{minPrice ? minPrice : 0}$</span>
+                            </div>
+                            <div className="thumb right">
+                                <span>{maxPrice ? maxPrice : 0}$</span>
+                            </div>
                         </div>
                     </div>
                 </div>
 
                 <div className="check-boxes">
                     <h3>Filter by Type</h3>
-                    <p>
-                        <input type="checkbox" id="one" value={one} onChange={onTypeChange} />
-                        <label htmlFor="one">{one ? one : "add back"}</label>
-                    </p>
-                    <p>
-                        <input type="checkbox" id="two" value={two} onChange={onTypeChange} />
-                        <label htmlFor="two">{two ? two : "add back"}</label>
-                    </p>
-                    <p>
-                        <input type="checkbox" id="three" value={three} onChange={onTypeChange} />
-                        <label htmlFor="three">{three ? three : "add back"}</label>
-                    </p>
-                    <p>
-                        <input type="checkbox" id="four" value={four} onChange={onTypeChange} />
-                        <label htmlFor="four">{four ? four : "add back"}</label>
-                    </p>
+                    <div className="items">
+                        <p>
+                            <input type="checkbox" id="one" value={one} onChange={onTypeChange} />
+                            <label htmlFor="one">{one ? one : "add back"}</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="two" value={two} onChange={onTypeChange} />
+                            <label htmlFor="two">{two ? two : "add back"}</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="three" value={three} onChange={onTypeChange} />
+                            <label htmlFor="three">{three ? three : "add back"}</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" id="four" value={four} onChange={onTypeChange} />
+                            <label htmlFor="four">{four ? four : "add back"}</label>
+                        </p>
+                    </div>
                 </div>
-                <h1>{brandOf}</h1>
+                <div className="brand-of">
+                    <h1>{brandOf}</h1>
+                </div>
+                
             </div>
 
             <div className="products-list">
@@ -125,8 +133,8 @@ function ProductsLinkPage() {
                         </div>
                     );
                 }) :
-                (<div>
-                    <h1 style={{position:"absolute",left:"40%",top:"50%"}}>no products has been selected</h1>
+                (<div className="no-products">
+                    <h1>no products has been selected</h1>
                 </div>)
                 }
             </div>
