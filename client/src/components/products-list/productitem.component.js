@@ -5,7 +5,8 @@ import { Link } from 'react-router-dom';
 
 function Product(props) {
 
-    const {id, period, img, type, description, size, price, inCart} = props.product;
+    const {id, period, img, type, description, size, price, inCart, brand} = props.product;
+    const classof = props.product.class;
 
     return (
         <div className="product-item">
@@ -17,6 +18,8 @@ function Product(props) {
                     <p>{description}</p>
                     <h5>{size}</h5>
                     <h4>{price}$</h4>
+                    <h3>{brand}</h3>
+                    <h4>{classof}</h4>
                 </Link>
             </div>
             <button className="btn" disabled={inCart} onClick={() => {props.addToCart(id); props.openModal();}}>

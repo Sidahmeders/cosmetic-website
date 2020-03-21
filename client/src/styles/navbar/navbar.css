@@ -77,13 +77,12 @@ body.hide {
   margin: 5px 10px;
 }
 
-.navbar-container header nav ul li .fas {
+.navbar-container header nav ul li #fa {
   position: absolute;
-  bottom: -12%;
+  bottom: -18%;
   right: 45%;
   font-size: 1.4em;
-  text-shadow: 0 1px 6px #6e0454;
-  color: white;
+  color: gray;
 }
 
 .navbar-container header nav ul li .link {
@@ -168,7 +167,7 @@ body.hide {
   display: block;
 }
 
-.navbar-container header .shopping-cart .link .fa {
+.navbar-container header .shopping-cart .link #fa {
   font-size: 1.8em;
   margin-top: 12px;
 }
@@ -236,7 +235,7 @@ body.hide {
     display: inline !important;
     margin-left: 62px !important;
   }
-  .navbar-container header .shopping-cart .fa {
+  .navbar-container header .shopping-cart #fa {
     margin-top: 0 !important;
   }
   .navbar-container header nav {
@@ -270,7 +269,7 @@ body.hide {
     border-bottom: 1px solid rgba(255, 80, 226, 0.1);
     margin-top: 5%;
   }
-  .navbar-container header nav ul li .fas {
+  .navbar-container header nav ul li #fa {
     display: none;
   }
   .navbar-container header nav ul li .link {

@@ -9,7 +9,7 @@ function ProductsLinkPage() {
     const context = useContext(ContextConsumer);
     const { filterPages, onTypeChange, productType, productsLinkPage, handleDetails } = context;
     const { linkOf, brandOf } = JSON.parse(localStorage.getItem('pageLink'));
-    const {one, two, three } = productType[linkOf];
+    const {one, two, three, four } = productType[linkOf];
 
     const range = document.querySelector('.range');
     const leftThumb = document.querySelector('.thumb.left');
@@ -98,17 +98,22 @@ function ProductsLinkPage() {
                         <input type="checkbox" id="three" value={three} onChange={onTypeChange} />
                         <label htmlFor="three">{three ? three : "add back"}</label>
                     </p>
+                    <p>
+                        <input type="checkbox" id="four" value={four} onChange={onTypeChange} />
+                        <label htmlFor="four">{four ? four : "add back"}</label>
+                    </p>
                 </div>
                 <h1>{brandOf}</h1>
             </div>
 
             <div className="products-list">
                 {productsLinkPage.length ? productsLinkPage.map(product => {
-                    const {id, brand, img, type, description, size, price} = product;
+                    const {id, img, type, description, size, price} = product;
+                    const classOf = product.class;
                     return (
                         <div key={product.id} className="products-list-item">
                             <Link className="detail" onClick={() => handleDetails(id)} to="/details">
-                                <h5>{brand}</h5>
+                                <h5>{classOf}</h5>
                                 <img src={img} alt="product"></img>
                                 <div className="text">
                                     <span>{type}</span>

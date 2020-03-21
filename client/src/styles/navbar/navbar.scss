@@ -31,7 +31,9 @@ body.hide {overflow-y: hidden !important;}
             color: rgb(206, 0, 0);
             text-decoration: none;
             text-shadow: 1px 1px 1px rgb(85, 84, 84);
-            span {color: rgb(36, 169, 202);}
+            span {
+                color: rgb(36, 169, 202);
+            }
             height: 50px;
             line-height: 50px;
             font-size: 1.8em;
@@ -57,13 +59,12 @@ body.hide {overflow-y: hidden !important;}
                     display: block;
                     margin: 5px 10px;
                     
-                    .fas { 
+                    #fa { 
                         position: absolute;
-                        bottom: -12%;
+                        bottom: -18%;
                         right: 45%;
                         font-size: 1.4em;
-                        text-shadow: 0 1px 6px rgb(110, 4, 84);
-                        color: rgb(255, 255, 255);
+                        color: rgb(128, 128, 128);
                     }
                     .link {
                         height: 50px;
@@ -132,7 +133,7 @@ body.hide {overflow-y: hidden !important;}
                 color: rgb(253, 162, 174);
                 display: block;
 
-                .fa {
+                #fa {
                     font-size: 1.8em;
                     margin-top: 12px;
                 }  
@@ -195,7 +196,7 @@ body.hide {overflow-y: hidden !important;}
                     display: inline !important;
                     margin-left: 62px !important;
                 }
-                .fa {
+                #fa {
                     margin-top: 0 !important;
                 }
             }
@@ -231,7 +232,7 @@ body.hide {overflow-y: hidden !important;}
                         border-bottom: 1px solid rgba(255, 80, 226, 0.1);
                         margin-top: 5%;
 
-                        .fas {
+                        #fa {
                             display: none;
                         }
                         .link {

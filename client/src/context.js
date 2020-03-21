@@ -138,11 +138,19 @@ function ContextProvider(props) {
             one: "shampoo",
             two: "conditioner",
             three: "hair mask",
+            four: "collection"
+        },
+        body: {
+            one: "showerGel",
+            two: "bodyLotion",
+            three: "Vasline",
+            four: "OTHERS"
         },
         creme: {
-            one: "face creme",
+            one: "beauty creme",
             two: "scrub&mask",
-            three: "face lotion"
+            three: "face lotion",
+            four: "sun creme"
         }
     });
 
@@ -178,11 +186,12 @@ function ContextProvider(props) {
     const filterPages = (linkOf = 'hair', brandOf, minPrice = 1, maxPrice = 100, classOf = productType, rank = 'new') => {
         const linkProducts = products.productsListCopy.filter(p => {
             return p.link === linkOf && p.brand === brandOf
-            && p.price > minPrice/3 && p.price < maxPrice/3;
+            && p.price > minPrice/2 && p.price < maxPrice/2;
         });
-        const {one, two, three} = classOf[linkOf];
+
+        const {one, two, three, four} = classOf[linkOf];
         const filteredProducts = linkProducts.filter(p => {
-            return p.class === one || p.class === two || p.class === three;
+            return p.class === one || p.class === two || p.class === three || p.class === four;
         });
         const rankedProducts = filteredProducts.sort((a, b) => {
             return (a.rank && b.rank === rank) ? 1 : -1 ;

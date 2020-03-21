@@ -32,7 +32,7 @@
                 position: relative;
                 z-index: 1;
                 height: 2px;
-    
+                
                 .track {
                     position: absolute;
                     width: 100%;
@@ -62,7 +62,6 @@
                     background-color: rgb(190, 190, 190);
                     border-radius: 50%;
                     margin-top: 4px;
-    
                 }
                 .thumb.left {
                     left: 1%;
@@ -108,6 +107,7 @@
                     margin-left: 5px;
                     font-size: 18px;
                     letter-spacing: 1px;
+                    &:hover {cursor: pointer;}
                 }
                 input[type=checkbox] {
                     position: relative;
@@ -117,6 +117,7 @@
                     outline: none;
                     border: 1px solid grey;
                     border-radius: 5px;
+                    &:hover {cursor: pointer;}
                 }
                 input[type=checkbox]:checked:before {
                    content: "X";
@@ -139,6 +140,7 @@
                 font-size: 14px;
                 appearance: none;
                 padding: 3px 10px;
+                &:hover {cursor: pointer;}
             }
         }
         h1 {
@@ -168,9 +170,14 @@
                 
                 h5 {
                     position: absolute;
+                    font-size: 12px;
+                    font-weight: 100;
                     margin: 2px 5px;
-                    padding: 3px 7px;
-                    color: rgb(46, 104, 51);
+                    padding: 1px 3px;
+                    color: rgb(116, 112, 94);
+                    border: 1px solid rgb(180, 160, 136);
+                    border-radius: 4px;
+                    background-color: white;
                 }
                 img {
                     width: 55%;

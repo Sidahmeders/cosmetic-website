@@ -1,11 +1,11 @@
 
-import makeupOne from './cos-img/product-img/products/blusher/blush (5).jpg';
-import makeupTwo from './cos-img/product-img/makeup (6).jpg';
-import makeupThree from './cos-img/product-img/products/blusher/blush (28).jpg';
-import makeupFour from './cos-img/product-img/products/blusher/blush (35).jpg';
+import makeupOne from './cos-img/product-img/products/makeup/blusher/blush (5).jpg';
+import makeupTwo from './cos-img/product-img/products/makeup/bridal-makeup/makeup (6).jpg';
+import makeupThree from './cos-img/product-img/products/makeup/blusher/blush (28).jpg';
+import makeupFour from './cos-img/product-img/products/makeup/blusher/blush (35).jpg';
 
-import hairOne from './cos-img/product-img/products/shampoo/hair (52).jpg';
-import hairTwo from './cos-img/product-img/products/shampoo/hair (50).jpg';
+import hairOne from './cos-img/product-img/products/shampoo/garnier/hair (37).jpg';
+import hairTwo from './cos-img/product-img/products/shampoo/provost/hair (1).jpg';
 import hairThree from './cos-img/product-img/products/shampoo/loreal/hair (25).jpg';
 import hairFour from './cos-img/product-img/products/shampoo/loreal/hair (31).jpg';
 import hairFive from './cos-img/product-img/products/shampoo/TRESemme/hair (1).jpg';
@@ -75,20 +75,47 @@ import hair68 from './cos-img/product-img/products/shampoo/garnier/hair (35).jpg
 import hair69 from './cos-img/product-img/products/shampoo/garnier/hair (36).jpg';
 
 
+import bodyOne from './cos-img/product-img/products/body/enchanteur/body (1).jpg';
+import bodyTwo from './cos-img/product-img/products/body/enchanteur/body (2).jpg';
+import bodyThree from './cos-img/product-img/products/body/enchanteur/body (3).jpg';
+import bodyFour from './cos-img/product-img/products/body/enchanteur/body (4).jpg';
+import bodyFive from './cos-img/product-img/products/body/enchanteur/body (5).jpg';
+import bodySix from './cos-img/product-img/products/body/enchanteur/body (6).jpg';
+import bodySeven from './cos-img/product-img/products/body/enchanteur/body (7).jpg';
+import bodyEight from './cos-img/product-img/products/body/enchanteur/body (8).jpg';
+import bodyNine from './cos-img/product-img/products/body/enchanteur/body (9).jpg';
+import bodyTen from './cos-img/product-img/products/body/enchanteur/body (10).jpg';
+import body11 from './cos-img/product-img/products/body/enchanteur/body (11).jpg';
+import body12 from './cos-img/product-img/products/body/enchanteur/body (12).jpg';
+import body13 from './cos-img/product-img/products/body/enchanteur/body (13).jpg';
+import body14 from './cos-img/product-img/products/body/enchanteur/body (14).jpg';
+import body15 from './cos-img/product-img/products/body/enchanteur/body (15).jpg';
+import body16 from './cos-img/product-img/products/body/enchanteur/body (16).jpg';
+import body17 from './cos-img/product-img/products/body/enchanteur/body (17).jpg';
+import body18 from './cos-img/product-img/products/body/enchanteur/body (18).jpg';
+import body19 from './cos-img/product-img/products/body/enchanteur/body (19).jpg';
+import body20 from './cos-img/product-img/products/body/enchanteur/body (20).jpg';
+import body21 from './cos-img/product-img/products/body/enchanteur/body (21).jpg';
+import body22 from './cos-img/product-img/products/body/enchanteur/body (22).jpg';
+import body23 from './cos-img/product-img/products/body/enchanteur/body (23).jpg';
+import body24 from './cos-img/product-img/products/body/enchanteur/body (24).jpg';
+import body25 from './cos-img/product-img/products/body/enchanteur/body (25).jpg';
+
+
 
  
-import lipOne from './cos-img/product-img/products/lipStick/lips (7).jpg';
+import lipOne from './cos-img/product-img/products/makeup/lipStick/lips (7).jpg';
 
 
-import faceCremeOne from './cos-img/product-img/products/faceCreme/creme (2).jpg';
-import sunCremeOne from './cos-img/product-img/products/sunCreme/sunCreme (1).jpg';
-import sunCremeTwo from './cos-img/product-img/products/sunCreme/sunCreme (2).jpg';
-import sunCremeThree from './cos-img/product-img/products/sunCreme/sunCreme (3).jpg';
-import sunCremeFour from './cos-img/product-img/products/sunCreme/sunCreme (4).jpg';
-import sunCremeFive from './cos-img/product-img/products/sunCreme/sunCreme (5).jpg';
-import sunCremeSix from './cos-img/product-img/products/sunCreme/sunCreme (6).jpg';
-import sunCremeSeven from './cos-img/product-img/products/sunCreme/sunCreme (7).jpg';
-import sunCremeEight from './cos-img/product-img/products/sunCreme/sunCreme (8).jpg';
+import faceCremeOne from './cos-img/product-img/products/faceCreme/face-creme/creme (2).jpg';
+import sunCremeOne from './cos-img/product-img/products/faceCreme/sun-creme/sunCreme (1).jpg';
+import sunCremeTwo from './cos-img/product-img/products/faceCreme/sun-creme/sunCreme (2).jpg';
+import sunCremeThree from './cos-img/product-img/products/faceCreme/sun-creme/sunCreme (3).jpg';
+import sunCremeFour from './cos-img/product-img/products/faceCreme/sun-creme/sunCreme (4).jpg';
+import sunCremeFive from './cos-img/product-img/products/faceCreme/sun-creme/sunCreme (5).jpg';
+import sunCremeSix from './cos-img/product-img/products/faceCreme/sun-creme/sunCreme (6).jpg';
+import sunCremeSeven from './cos-img/product-img/products/faceCreme/sun-creme/sunCreme (7).jpg';
+import sunCremeEight from './cos-img/product-img/products/faceCreme/sun-creme/sunCreme (8).jpg';
 
 
 export const productsList = [
@@ -155,7 +182,7 @@ export const productsList = [
         rank: "new",
         description: "ulraDoux shampo avocado oil, argan oil & hony, green tea, flower cotton",
         size: "250ml/ 400ml",
-        price: 5.80,
+        price: 7.80,
         inCart: false,
         count: 0,
         total: 0
@@ -240,7 +267,7 @@ export const productsList = [
         rank: "new",
         description: "the new collection from elseve for tinted, or bleached and dry hair with keratin",
         size: "300ml/ 110ml",
-        price: 5.80,
+        price: 21.90,
         inCart: false,
         count: 0,
         total: 0
@@ -257,7 +284,7 @@ export const productsList = [
         rank: "new",
         description: "Elseve for tinted hair and coloration for long lasting and shining color",
         size: "350ml / 300ml",
-        price: 13.40,
+        price: 15.40,
         inCart: false,
         count: 0,
         total: 0
@@ -274,7 +301,7 @@ export const productsList = [
         rank: "new",
         description: "the ultra shine shampo and hairCreme for dry, damaged and colored hair",
         size: "480ml/ 200ml",
-        price: 10.50,
+        price: 11.50,
         inCart: false,
         count: 0,
         total: 0
@@ -291,7 +318,7 @@ export const productsList = [
         rank: "new",
         description: "PROvost shampo condtioner and serum for frizzy, dry and lost colored hair",
         size: "750ml/ 7500ml/ 300ml",
-        price: 11.20 ,
+        price: 9.80 ,
         inCart: false,
         count: 0,
         total: 0
@@ -420,14 +447,14 @@ export const productsList = [
         period: "new",
         img: hairSix,
         type: "Elseve gold collection",
-        class: "shampoo",
+        class: "collection",
         link: "hair",
         brand: "loreal",
         target:"woman",
         rank: "best-seller",
         description: "the ever eveloving gold hair collection from loreal paris",
         size: "380ml/200ml/150ml",
-        price: 24.75,
+        price: 32.75,
         inCart: false,
         count: 0,
         total: 0
@@ -444,7 +471,7 @@ export const productsList = [
         rank: "new",
         description: "the ultra shine shampo for long and dry, damaged and brittle hair",
         size: "380ml",
-        price: 6.50,
+        price: 7.80,
         inCart: false,
         count: 0,
         total: 0
@@ -454,7 +481,7 @@ export const productsList = [
         period: "try me",
         img: hairEight,
         type: "Elseve conditioner",
-        class: "hair mask",
+        class: "conditioner",
         link: "hair",
         brand: "loreal",
         target:"woman",
@@ -488,14 +515,14 @@ export const productsList = [
         period: "take me",
         img: hairTen,
         type: "Elsve shampo",
-        class: "hair mask",
+        class: "shampoo",
         link: "hair",
         brand: "loreal",
         target:"woman",
         rank: "new",
         description: "the old school shampo from elesve for greasy and oily hair",
         size: "380ml",
-        price: 6.50,
+        price: 7.50,
         inCart: false,
         count: 0,
         total: 0
@@ -505,7 +532,7 @@ export const productsList = [
         period: "take me",
         img: hair11,
         type: "Elsve shampo",
-        class: "hair mask",
+        class: "conditioner",
         link: "hair",
         brand: "loreal",
         target:"woman",
@@ -522,14 +549,14 @@ export const productsList = [
         period: "take me",
         img: hair12,
         type: "Elsve shampo",
-        class: "shampoo",
+        class: "conditioner",
         link: "hair",
         brand: "loreal",
         target:"woman",
         rank: "new",
         description: "the old school shampo from elesve for greasy and oily hair",
         size: "380ml",
-        price: 6.50,
+        price: 8.70,
         inCart: false,
         count: 0,
         total: 0
@@ -546,7 +573,7 @@ export const productsList = [
         rank: "new",
         description: "the old school shampo from elesve for greasy and oily hair",
         size: "380ml",
-        price: 6.50,
+        price: 9.50,
         inCart: false,
         count: 0,
         total: 0
@@ -563,7 +590,7 @@ export const productsList = [
         rank: "new",
         description: "the old school shampo from elesve for greasy and oily hair",
         size: "380ml",
-        price: 6.50,
+        price: 9.50,
         inCart: false,
         count: 0,
         total: 0
@@ -580,7 +607,7 @@ export const productsList = [
         rank: "new",
         description: "the old school shampo from elesve for greasy and oily hair",
         size: "380ml",
-        price: 6.50,
+        price: 9.50,
         inCart: false,
         count: 0,
         total: 0
@@ -597,7 +624,7 @@ export const productsList = [
         rank: "new",
         description: "the old school shampo from elesve for greasy and oily hair",
         size: "380ml",
-        price: 6.50,
+        price: 11.50,
         inCart: false,
         count: 0,
         total: 0
@@ -614,7 +641,7 @@ export const productsList = [
         rank: "new",
         description: "the old school shampo from elesve for greasy and oily hair",
         size: "380ml",
-        price: 6.50,
+        price: 9.25,
         inCart: false,
         count: 0,
         total: 0
@@ -631,7 +658,7 @@ export const productsList = [
         rank: "new",
         description: "the old school shampo from elesve for greasy and oily hair",
         size: "380ml",
-        price: 6.50,
+        price: 19.60,
         inCart: false,
         count: 0,
         total: 0
@@ -648,7 +675,7 @@ export const productsList = [
         rank: "new",
         description: "the old school shampo from elesve for greasy and oily hair",
         size: "380ml",
-        price: 6.50,
+        price: 10.00,
         inCart: false,
         count: 0,
         total: 0
@@ -665,7 +692,7 @@ export const productsList = [
         rank: "new",
         description: "the old school shampo from elesve for greasy and oily hair",
         size: "380ml",
-        price: 6.50,
+        price: 7.10,
         inCart: false,
         count: 0,
         total: 0
@@ -682,7 +709,7 @@ export const productsList = [
         rank: "best seller",
         description: "the old school shampo from elesve for greasy and oily hair",
         size: "380ml",
-        price: 6.50,
+        price: 9.60,
         inCart: false,
         count: 0,
         total: 0
@@ -691,15 +718,15 @@ export const productsList = [
         id: 36,
         period: "try me",
         img: hair22,
-        type: "Elsve shampo",
-        class: "shampoo",
+        type: "Elsve mask",
+        class: "hair mask",
         link: "hair",
         brand: "loreal",
         target:"woman",
         rank: "best seller",
         description: "the old school shampo from elesve for greasy and oily hair",
         size: "380ml",
-        price: 6.50,
+        price: 13.60,
         inCart: false,
         count: 0,
         total: 0
@@ -708,7 +735,7 @@ export const productsList = [
         id: 37,
         period: "try me",
         img: hair23,
-        type: "Elsve shampo",
+        type: "Elsve mask",
         class: "shampoo",
         link: "hair",
         brand: "loreal",
@@ -716,7 +743,7 @@ export const productsList = [
         rank: "new",
         description: "the old school shampo from elesve for greasy and oily hair",
         size: "380ml",
-        price: 6.50,
+        price: 16.20,
         inCart: false,
         count: 0,
         total: 0
@@ -726,14 +753,14 @@ export const productsList = [
         period: "try me",
         img: hair24,
         type: "Elsve shampo",
-        class: "shampoo",
+        class: "hair mask",
         link: "hair",
         brand: "loreal",
         target:"woman",
         rank: "best seller",
         description: "the old school shampo from elesve for greasy and oily hair",
         size: "380ml",
-        price: 6.50,
+        price: 12.50,
         inCart: false,
         count: 0,
         total: 0
@@ -743,14 +770,14 @@ export const productsList = [
         period: "try me",
         img: hair25,
         type: "Elsve shampo",
-        class: "shampoo",
+        class: "hair mask",
         link: "hair",
         brand: "loreal",
         target:"woman",
         rank: "best seller",
         description: "the old school shampo from elesve for greasy and oily hair",
         size: "380ml",
-        price: 6.50,
+        price: 12.50,
         inCart: false,
         count: 0,
         total: 0
@@ -767,7 +794,7 @@ export const productsList = [
         rank: "new",
         description: "the old school shampo from elesve for greasy and oily hair",
         size: "380ml",
-        price: 6.50,
+        price: 11.80,
         inCart: false,
         count: 0,
         total: 0
@@ -777,14 +804,14 @@ export const productsList = [
         period: "try me",
         img: hair27,
         type: "Elsve shampo",
-        class: "shampoo",
+        class: "hair mask",
         link: "hair",
         brand: "loreal",
         target:"woman",
         rank: "best seller",
         description: "the old school shampo from elesve for greasy and oily hair",
         size: "380ml",
-        price: 6.50,
+        price: 10.50,
         inCart: false,
         count: 0,
         total: 0
@@ -801,7 +828,7 @@ export const productsList = [
         rank: "best seller",
         description: "the old school shampo from elesve for greasy and oily hair",
         size: "380ml",
-        price: 6.50,
+        price: 35.80,
         inCart: false,
         count: 0,
         total: 0
@@ -818,7 +845,7 @@ export const productsList = [
         rank: "new",
         description: "the old school shampo from elesve for greasy and oily hair",
         size: "380ml",
-        price: 6.50,
+        price: 38.50,
         inCart: false,
         count: 0,
         total: 0
@@ -835,7 +862,7 @@ export const productsList = [
         rank: "new",
         description: "the old school shampo from elesve for greasy and oily hair",
         size: "380ml",
-        price: 6.50,
+        price: 8.10,
         inCart: false,
         count: 0,
         total: 0
@@ -852,7 +879,7 @@ export const productsList = [
         rank: "new",
         description: "the old school shampo from elesve for greasy and oily hair",
         size: "380ml",
-        price: 6.50,
+        price: 7.80,
         inCart: false,
         count: 0,
         total: 0
@@ -869,7 +896,7 @@ export const productsList = [
         rank: "new",
         description: "the old school shampo from elesve for greasy and oily hair",
         size: "380ml",
-        price: 6.50,
+        price: 7.50,
         inCart: false,
         count: 0,
         total: 0
@@ -886,7 +913,7 @@ export const productsList = [
         rank: "new",
         description: "the old school shampo from elesve for greasy and oily hair",
         size: "380ml",
-        price: 6.50,
+        price: 8.10,
         inCart: false,
         count: 0,
         total: 0
@@ -903,7 +930,7 @@ export const productsList = [
         rank: "best seller",
         description: "the ultimate repair for all hair types, dry and damaged from garnier",
         size: "300ml",
-        price: 6.50,
+        price: 7.60,
         inCart: false,
         count: 0,
         total: 0
@@ -920,7 +947,7 @@ export const productsList = [
         rank: "new",
         description: "the ultimate repair for all hair types, dry and damaged from garnier",
         size: "300ml",
-        price: 6.50,
+        price: 7.50,
         inCart: false,
         count: 0,
         total: 0
@@ -954,7 +981,7 @@ export const productsList = [
         rank: "new",
         description: "the ultimate repair for all hair types, dry and damaged from garnier",
         size: "300ml",
-        price: 6.50,
+        price: 8.10,
         inCart: false,
         count: 0,
         total: 0
@@ -971,7 +998,7 @@ export const productsList = [
         rank: "new",
         description: "the ultimate repair for all hair types, dry and damaged from garnier",
         size: "300ml",
-        price: 6.50,
+        price: 7.20,
         inCart: false,
         count: 0,
         total: 0
@@ -988,7 +1015,7 @@ export const productsList = [
         rank: "best seller",
         description: "the ultimate repair for all hair types, dry and damaged from garnier",
         size: "300ml",
-        price: 6.50,
+        price: 6.80,
         inCart: false,
         count: 0,
         total: 0
@@ -1005,7 +1032,7 @@ export const productsList = [
         rank: "new",
         description: "the ultimate repair for all hair types, dry and damaged from garnier",
         size: "300ml",
-        price: 6.50,
+        price: 8.50,
         inCart: false,
         count: 0,
         total: 0
@@ -1022,7 +1049,7 @@ export const productsList = [
         rank: "popular",
         description: "the ultimate repair for all hair types, dry and damaged from garnier",
         size: "300ml",
-        price: 6.50,
+        price: 12.25,
         inCart: false,
         count: 0,
         total: 0
@@ -1039,7 +1066,7 @@ export const productsList = [
         rank: "new",
         description: "the ultimate repair for all hair types, dry and damaged from garnier",
         size: "300ml",
-        price: 6.50,
+        price: 7.50,
         inCart: false,
         count: 0,
         total: 0
@@ -1056,7 +1083,7 @@ export const productsList = [
         rank: "new",
         description: "the ultimate repair for all hair types, dry and damaged from garnier",
         size: "300ml",
-        price: 6.50,
+        price: 7.50,
         inCart: false,
         count: 0,
         total: 0
@@ -1073,7 +1100,7 @@ export const productsList = [
         rank: "popular",
         description: "the ultimate repair for all hair types, dry and damaged from garnier",
         size: "300ml",
-        price: 6.50,
+        price: 7.50,
         inCart: false,
         count: 0,
         total: 0
@@ -1090,7 +1117,7 @@ export const productsList = [
         rank: "new",
         description: "the ultimate repair for all hair types, dry and damaged from garnier",
         size: "300ml",
-        price: 6.50,
+        price: 7.20,
         inCart: false,
         count: 0,
         total: 0
@@ -1107,7 +1134,7 @@ export const productsList = [
         rank: "best seller",
         description: "the ultimate repair for all hair types, dry and damaged from garnier",
         size: "300ml",
-        price: 6.50,
+        price: 8.20,
         inCart: false,
         count: 0,
         total: 0
@@ -1124,7 +1151,7 @@ export const productsList = [
         rank: "new",
         description: "the ultimate repair for all hair types, dry and damaged from garnier",
         size: "300ml",
-        price: 6.50,
+        price: 7.30,
         inCart: false,
         count: 0,
         total: 0
@@ -1141,7 +1168,7 @@ export const productsList = [
         rank: "new",
         description: "the ultimate repair for all hair types, dry and damaged from garnier",
         size: "300ml",
-        price: 6.50,
+        price: 9.00,
         inCart: false,
         count: 0,
         total: 0
@@ -1260,7 +1287,7 @@ export const productsList = [
         rank: "new",
         description: "the ultimate repair for all hair types, dry and damaged from garnier",
         size: "300ml",
-        price: 6.50,
+        price: 7.25,
         inCart: false,
         count: 0,
         total: 0
@@ -1277,7 +1304,7 @@ export const productsList = [
         rank: "new",
         description: "the ultimate repair for all hair types, dry and damaged from garnier",
         size: "300ml",
-        price: 6.50,
+        price: 7.05,
         inCart: false,
         count: 0,
         total: 0
@@ -1294,7 +1321,7 @@ export const productsList = [
         rank: "new",
         description: "the ultimate repair for all hair types, dry and damaged from garnier",
         size: "300ml",
-        price: 6.50,
+        price: 8.00,
         inCart: false,
         count: 0,
         total: 0
@@ -1311,7 +1338,7 @@ export const productsList = [
         rank: "popular",
         description: "the ultimate repair for all hair types, dry and damaged from garnier",
         size: "300ml",
-        price: 6.50,
+        price: 7.30,
         inCart: false,
         count: 0,
         total: 0
@@ -1328,7 +1355,7 @@ export const productsList = [
         rank: "new",
         description: "the ultimate repair for all hair types, dry and damaged from garnier",
         size: "300ml",
-        price: 6.50,
+        price: 8.10,
         inCart: false,
         count: 0,
         total: 0
@@ -1345,7 +1372,7 @@ export const productsList = [
         rank: "new",
         description: "the ultimate repair for all hair types, dry and damaged from garnier",
         size: "300ml",
-        price: 6.50,
+        price: 7.50,
         inCart: false,
         count: 0,
         total: 0
@@ -1362,7 +1389,7 @@ export const productsList = [
         rank: "popular",
         description: "the ultimate repair for all hair types, dry and damaged from garnier",
         size: "300ml",
-        price: 6.50,
+        price: 16.10,
         inCart: false,
         count: 0,
         total: 0
@@ -1379,7 +1406,7 @@ export const productsList = [
         rank: "popular",
         description: "the ultimate repair for all hair types, dry and damaged from garnier",
         size: "300ml",
-        price: 6.50,
+        price: 9.50,
         inCart: false,
         count: 0,
         total: 0
@@ -1396,7 +1423,7 @@ export const productsList = [
         rank: "popular",
         description: "the ultimate repair for all hair types, dry and damaged from garnier",
         size: "300ml",
-        price: 6.50,
+        price: 28.75,
         inCart: false,
         count: 0,
         total: 0
@@ -1413,7 +1440,7 @@ export const productsList = [
         rank: "new",
         description: "the ultimate repair for all hair types, dry and damaged from garnier",
         size: "300ml",
-        price: 6.50,
+        price: 9.50,
         inCart: false,
         count: 0,
         total: 0
@@ -1430,7 +1457,7 @@ export const productsList = [
         rank: "new",
         description: "the ultimate repair for all hair types, dry and damaged from garnier",
         size: "300ml",
-        price: 6.50,
+        price: 10.60,
         inCart: false,
         count: 0,
         total: 0
@@ -1447,7 +1474,7 @@ export const productsList = [
         rank: "new",
         description: "the ultimate repair for all hair types, dry and damaged from garnier",
         size: "300ml",
-        price: 6.50,
+        price: 11.05,
         inCart: false,
         count: 0,
         total: 0
@@ -1464,7 +1491,7 @@ export const productsList = [
         rank: "popular",
         description: "the ultimate repair for all hair types, dry and damaged from garnier",
         size: "300ml",
-        price: 6.50,
+        price: 9.80,
         inCart: false,
         count: 0,
         total: 0
@@ -1481,7 +1508,7 @@ export const productsList = [
         rank: "best seller",
         description: "the ultimate repair for all hair types, dry and damaged from garnier",
         size: "300ml",
-        price: 6.50,
+        price: 9.80,
         inCart: false,
         count: 0,
         total: 0
@@ -1490,7 +1517,7 @@ export const productsList = [
         id: 83,
         period: "try me",
         img: hair69,
-        type: "Garnier  shampo",
+        type: "Garnier shampo",
         class: "shampoo",
         link: "hair",
         brand: "garnier",
@@ -1498,12 +1525,442 @@ export const productsList = [
         rank: "popular",
         description: "the ultimate repair for all hair types, dry and damaged from garnier",
         size: "300ml",
-        price: 6.50,
+        price: 9.75,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 84,
+        period: "try me",
+        img: bodyOne,
+        type: "enchanteur Talc",
+        class: "OTHERS",
+        link: "body",
+        brand: "enchanteur",
+        target:"woman",
+        rank: "popular",
+        description: "the ultimate repair for all skin types, dry and damaged from enchanteur",
+        size: "180ml",
+        price: 7.25,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 85,
+        period: "try me",
+        img: bodyTwo,
+        type: "enchanteur shower gel",
+        class: "showerGel",
+        link: "body",
+        brand: "enchanteur",
+        target:"woman",
+        rank: "popular",
+        description: "the ultimate repair for all skin types, dry and damaged from enchanteur",
+        size: "380ml",
+        price: 13.75,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 86,
+        period: "try me",
+        img: bodyThree,
+        type: "shower gel & lotion",
+        class: "bodyLotion",
+        link: "body",
+        brand: "enchanteur",
+        target:"woman",
+        rank: "popular",
+        description: "the ultimate repair for all skin types, dry and damaged from enchanteur",
+        size: "350ml/380ml",
+        price: 24.15,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 87,
+        period: "try me",
+        img: bodyFour,
+        type: "enchanteur Talc",
+        class: "OTHERS",
+        link: "body",
+        brand: "enchanteur",
+        target:"woman",
+        rank: "popular",
+        description: "the ultimate repair for all skin types, dry and damaged from enchanteur",
+        size: "300ml",
+        price: 12.30,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 88,
+        period: "try me",
+        img: bodyFive,
+        type: "enchanteur Talc",
+        class: "OTHERS",
+        link: "body",
+        brand: "enchanteur",
+        target:"woman",
+        rank: "popular",
+        description: "the ultimate repair for all skin types, dry and damaged from enchanteur",
+        size: "180ml",
+        price: 7.30,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 89,
+        period: "try me",
+        img: bodySix,
+        type: "enchanteur Talc",
+        class: "OTHERS",
+        link: "body",
+        brand: "enchanteur",
+        target:"woman",
+        rank: "popular",
+        description: "the ultimate repair for all skin types, dry and damaged from enchanteur",
+        size: "300ml",
+        price: 12.30,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 90,
+        period: "try me",
+        img: bodySeven,
+        type: "enchanteur Talc",
+        class: "OTHERS",
+        link: "body",
+        brand: "enchanteur",
+        target:"woman",
+        rank: "popular",
+        description: "the ultimate repair for all skin types, dry and damaged from enchanteur",
+        size: "200ml",
+        price: 8.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 91,
+        period: "try me",
+        img: bodyEight,
+        type: "enchanteur Lotion",
+        class: "bodyLotion",
+        link: "body",
+        brand: "enchanteur",
+        target:"woman",
+        rank: "popular",
+        description: "the ultimate repair for all skin types, dry and damaged from enchanteur",
+        size: "300ml",
+        price: 14.25,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 92,
+        period: "try me",
+        img: bodyNine,
+        type: "enchanteur Lotion",
+        class: "bodyLotion",
+        link: "body",
+        brand: "enchanteur",
+        target:"woman",
+        rank: "popular",
+        description: "the ultimate repair for all skin types, dry and damaged from enchanteur",
+        size: "360ml",
+        price: 15.10,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 93,
+        period: "try me",
+        img: bodyTen,
+        type: "enchanteur Lotion",
+        class: "bodyLotion",
+        link: "body",
+        brand: "enchanteur",
+        target:"woman",
+        rank: "popular",
+        description: "the ultimate repair for all skin types, dry and damaged from enchanteur",
+        size: "300ml",
+        price: 13.30,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 94,
+        period: "try me",
+        img: body11,
+        type: "enchanteur Lotion",
+        class: "bodyLotion",
+        link: "body",
+        brand: "enchanteur",
+        target:"woman",
+        rank: "popular",
+        description: "the ultimate repair for all skin types, dry and damaged from enchanteur",
+        size: "360ml",
+        price: 16.60,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 95,
+        period: "try me",
+        img: body12,
+        type: "enchanteur Lotion",
+        class: "bodyLotion",
+        link: "body",
+        brand: "enchanteur",
+        target:"woman",
+        rank: "popular",
+        description: "the ultimate repair for all skin types, dry and damaged from enchanteur",
+        size: "360ml",
+        price: 15.80,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 96,
+        period: "try me",
+        img: body13,
+        type: "enchanteur Lotion",
+        class: "bodyLotion",
+        link: "body",
+        brand: "enchanteur",
+        target:"woman",
+        rank: "popular",
+        description: "the ultimate repair for all skin types, dry and damaged from enchanteur",
+        size: "300ml",
+        price: 13.25,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 97,
+        period: "try me",
+        img: body14,
+        type: "enchanteur Lotion",
+        class: "bodyLotion",
+        link: "body",
+        brand: "enchanteur",
+        target:"woman",
+        rank: "popular",
+        description: "the ultimate repair for all skin types, dry and damaged from enchanteur",
+        size: "300ml",
+        price: 13.25,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 98,
+        period: "try me",
+        img: body15,
+        type: "enchanteur Lotion",
+        class: "bodyLotion",
+        link: "body",
+        brand: "enchanteur",
+        target:"woman",
+        rank: "popular",
+        description: "the ultimate repair for all skin types, dry and damaged from enchanteur",
+        size: "360ml",
+        price: 14.60,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 99,
+        period: "try me",
+        img: body16,
+        type: "enchanteur Lotion",
+        class: "bodyLotion",
+        link: "body",
+        brand: "enchanteur",
+        target:"woman",
+        rank: "popular",
+        description: "the ultimate repair for all skin types, dry and damaged from enchanteur",
+        size: "300ml",
+        price: 12.80,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 100,
+        period: "try me",
+        img: body17,
+        type: "enchanteur Lotion",
+        class: "OTHERS",
+        link: "body",
+        brand: "enchanteur",
+        target:"woman",
+        rank: "popular",
+        description: "the ultimate repair for all skin types, dry and damaged from enchanteur",
+        size: "300ml",
+        price: 12.25,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 101,
+        period: "try me",
+        img: body18,
+        type: "enchanteur Lotion",
+        class: "OTHERS",
+        link: "body",
+        brand: "enchanteur",
+        target:"woman",
+        rank: "popular",
+        description: "the ultimate repair for all skin types, dry and damaged from enchanteur",
+        size: "200ml",
+        price: 8.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 102,
+        period: "try me",
+        img: body19,
+        type: "enchanteur Lotion",
+        class: "OTHERS",
+        link: "body",
+        brand: "enchanteur",
+        target:"woman",
+        rank: "popular",
+        description: "the ultimate repair for all skin types, dry and damaged from enchanteur",
+        size: "300ml",
+        price: 12.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 103,
+        period: "try me",
+        img: body20,
+        type: "enchanteur showerGel",
+        class: "showerGel",
+        link: "body",
+        brand: "enchanteur",
+        target:"woman",
+        rank: "popular",
+        description: "the ultimate repair for all skin types, dry and damaged from enchanteur",
+        size: "300ml",
+        price: 13.20,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 104,
+        period: "try me",
+        img: body21,
+        type: "enchanteur showerGel",
+        class: "showerGel",
+        link: "body",
+        brand: "enchanteur",
+        target:"woman",
+        rank: "popular",
+        description: "the ultimate repair for all skin types, dry and damaged from enchanteur",
+        size: "330ml",
+        price: 13.80,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 105,
+        period: "try me",
+        img: body22,
+        type: "enchanteur showerGel",
+        class: "showerGel",
+        link: "body",
+        brand: "enchanteur",
+        target:"woman",
+        rank: "popular",
+        description: "the ultimate repair for all skin types, dry and damaged from enchanteur",
+        size: "330ml",
+        price: 13.50,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 106,
+        period: "try me",
+        img: body23,
+        type: "enchanteur showerGel",
+        class: "showerGel",
+        link: "body",
+        brand: "enchanteur",
+        target:"woman",
+        rank: "popular",
+        description: "the ultimate repair for all skin types, dry and damaged from enchanteur",
+        size: "300ml",
+        price: 12.90,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 107,
+        period: "try me",
+        img: body24,
+        type: "enchanteur showerGel",
+        class: "showerGel",
+        link: "body",
+        brand: "enchanteur",
+        target:"woman",
+        rank: "popular",
+        description: "the ultimate repair for all skin types, dry and damaged from enchanteur",
+        size: "400ml",
+        price: 16.40,
+        inCart: false,
+        count: 0,
+        total: 0
+    },
+    {
+        id: 108,
+        period: "try me",
+        img: body25,
+        type: "enchanteur showerGel",
+        class: "showerGel",
+        link: "body",
+        brand: "enchanteur",
+        target:"woman",
+        rank: "popular",
+        description: "the ultimate repair for all skin types, dry and damaged from enchanteur",
+        size: "550ml",
+        price: 18.70,
         inCart: false,
         count: 0,
         total: 0
     },
 ];
+
+
+
+
+
 
 
 export const detailsProduct = {

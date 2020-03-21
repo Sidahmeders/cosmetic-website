@@ -199,7 +199,7 @@ body {
                         p {
                             position: absolute;
                             padding: 1em;
-                            font-size: 1.8em;
+                            font-size: 1.6em;
                             background: white;
                             color: #222;
                         }
@@ -223,14 +223,14 @@ body {
                         }
                         .perf {
                             top: 0;
-                            right: 0;
+                            right: 1%;
                             border-radius: 2em 0 10em 9em;
                             span {color: rgb(50, 81, 223);}
-                            font-size: 1.6em;
+                            font-size: 1.4em;
                         }
                         .drayer {
                             top: 0;
-                            right: 0;
+                            right: 2%;
                             font-size: 1.4em;
                             border-radius: 0 0 3em 3em;
                             color: rgb(71, 189, 130);
@@ -442,7 +442,7 @@ body {
                                     background-size: contain;
                                 }
                                 .poster.two {
-                                    background: url('../../cos-img/product-img/posters/calliderm_poster.jpg');
+                                    background: url('../../cos-img/product-img/posters/syoss_poster\ \(2\).jpg');
                                     background-size: contain;
                                 }
                                 .poster.three {

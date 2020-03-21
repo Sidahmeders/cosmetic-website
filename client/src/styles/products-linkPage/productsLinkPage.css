@@ -130,6 +130,10 @@
   letter-spacing: 1px;
 }
 
+.products-link-page .side-bar .check-boxes p label:hover {
+  cursor: pointer;
+}
+
 .products-link-page .side-bar .check-boxes p input[type=checkbox] {
   position: relative;
   width: 20px;
@@ -140,6 +144,10 @@
   outline: none;
   border: 1px solid grey;
   border-radius: 5px;
+}
+
+.products-link-page .side-bar .check-boxes p input[type=checkbox]:hover {
+  cursor: pointer;
 }
 
 .products-link-page .side-bar .check-boxes p input[type=checkbox]:checked:before {
@@ -163,6 +171,10 @@
      -moz-appearance: none;
           appearance: none;
   padding: 3px 10px;
+}
+
+.products-link-page .side-bar .select-box select:hover {
+  cursor: pointer;
 }
 
 .products-link-page .side-bar h1 {
@@ -201,9 +213,14 @@
 
 .products-link-page .products-list-item .detail h5 {
   position: absolute;
+  font-size: 12px;
+  font-weight: 100;
   margin: 2px 5px;
-  padding: 3px 7px;
-  color: #2e6833;
+  padding: 1px 3px;
+  color: #74705e;
+  border: 1px solid #b4a088;
+  border-radius: 4px;
+  background-color: white;
 }
 
 .products-link-page .products-list-item .detail img {

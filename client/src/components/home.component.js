@@ -13,18 +13,18 @@ import redlipstick from '../cos-img/redlipstick.jpg';
 import perf from '../cos-img/lamis.jpg';
 import hairbrush from '../cos-img/hairbrush.jpg';
 
-import blushOne from '../cos-img/product-img/products/blusher/blush (5).jpg';
-import blushTwo from '../cos-img/product-img/products/blusher/blush (28).jpg';
-import blushThree from '../cos-img/product-img/products/blusher/blush (35).jpg';
+import blushOne from '../cos-img/product-img/products/makeup/blusher/blush (5).jpg';
+import blushTwo from '../cos-img/product-img/products/makeup/blusher/blush (28).jpg';
+import blushThree from '../cos-img/product-img/products/makeup/blusher/blush (35).jpg';
 import hairOne from '../cos-img/product-img/products/shampoo/TRESemme/hair (1).jpg';
-import hairTwo from '../cos-img/product-img/products/shampoo/hair (52).jpg';
-import hairThree from '../cos-img/product-img/products/shampoo/hair (50).jpg';
+import hairTwo from '../cos-img/product-img/products/shampoo/garnier/hair (37).jpg';
+import hairThree from '../cos-img/product-img/products/shampoo/provost/hair (1).jpg';
 import hairFour from '../cos-img/product-img/products/shampoo/loreal/hair (25).jpg';
 import hairFive from '../cos-img/product-img/products/shampoo/loreal/hair (31).jpg';
-import suncremeOne from '../cos-img/product-img/products/sunCreme/sunCreme (6).jpg';
-import makeupOne from '../cos-img/product-img/makeup (6).jpg';
-import lipOne from '../cos-img/product-img/products/lipStick/lips (7).jpg';
-import faceCremeOne from '../cos-img/product-img/products/faceCreme/creme (2).jpg';
+import suncremeOne from '../cos-img/product-img/products/faceCreme/sun-creme/sunCreme (6).jpg';
+import makeupOne from '../cos-img/product-img/products/makeup/bridal-makeup/makeup (6).jpg';
+import lipOne from '../cos-img/product-img/products/makeup/lipStick/lips (7).jpg';
+import faceCremeOne from '../cos-img/product-img/products/faceCreme/face-creme/creme (2).jpg';
 
 
 

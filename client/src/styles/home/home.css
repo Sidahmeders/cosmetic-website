@@ -280,7 +280,7 @@ body {
 .home main .main-products .slider-section .slide .slide-item p {
   position: absolute;
   padding: 1em;
-  font-size: 1.8em;
+  font-size: 1.6em;
   background: white;
   color: #222;
 }
@@ -311,9 +311,9 @@ body {
 
 .home main .main-products .slider-section .slide .slide-item .perf {
   top: 0;
-  right: 0;
+  right: 1%;
   border-radius: 2em 0 10em 9em;
-  font-size: 1.6em;
+  font-size: 1.4em;
 }
 
 .home main .main-products .slider-section .slide .slide-item .perf span {
@@ -322,7 +322,7 @@ body {
 
 .home main .main-products .slider-section .slide .slide-item .drayer {
   top: 0;
-  right: 0;
+  right: 2%;
   font-size: 1.4em;
   border-radius: 0 0 3em 3em;
   color: #47bd82;
@@ -622,7 +622,7 @@ body {
 }
 
 .home main .main-products .main-slide-section .slide-container .slider .slide.slide3 .poster.two {
-  background: url("../../cos-img/product-img/posters/calliderm_poster.jpg");
+  background: url("../../cos-img/product-img/posters/syoss_poster (2).jpg");
   background-size: contain;
 }
 
