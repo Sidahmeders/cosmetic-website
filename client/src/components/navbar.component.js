@@ -134,7 +134,7 @@ function Navbar() {
                             </Link>
                             </li>
                             <li>
-                            <Link className="link" to="/">
+                            <Link className="link" to="/productspage" onClick={() => {filterPages("body","nivea"); toggleMenu()}}>
                                 <span style={{letterSpacing:"5px",color:"#18f"}}>
                                 NIVEA <i className="fa fa-female"></i> <i className="fa fa-male"></i>
                                 </span>

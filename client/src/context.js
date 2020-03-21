@@ -143,8 +143,8 @@ function ContextProvider(props) {
         body: {
             one: "showerGel",
             two: "bodyLotion",
-            three: "Vasline",
-            four: "OTHERS"
+            three: "bodyCreme",
+            four: "TALCUM"
         },
         creme: {
             one: "beauty creme",
