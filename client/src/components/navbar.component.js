@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 function Navbar() {
 
     const context = useContext(ContextConsumer);
-    const { cart } = context;
+    const {cart} = context;
 
     let productsCount = 0;
     cart.map(item => productsCount++);
@@ -136,10 +136,7 @@ function Navbar() {
                         </a>
                         <ul>
                             <li>
-                            <Link className="link" to="/productspage" onClick={() => {
-                                filterPages("body","vasline"); 
-                                toggleMenu();
-                                }}>
+                            <Link className="link" to="/">
                                 <span style={{letterSpacing:"4px",color:"#3f0"}}>
                                 Vaseline
                                 </span>

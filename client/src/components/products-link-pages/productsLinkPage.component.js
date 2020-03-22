@@ -53,6 +53,7 @@ function ProductsLinkPage() {
         filterPages(linkOf, brandOf, price.minPrice, price.maxPrice, productType, e.target.value);
     };
     
+
     return(
         <div className="products-link-page">
             <div className="side-bar">

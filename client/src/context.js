@@ -155,30 +155,26 @@ function ContextProvider(props) {
     });
 
     const onTypeChange = e => {
-        let isChecked = e.target.checked;
-        let typeValue = e.target.value;
-        let typeName = e.target.id;
         const { linkOf } = JSON.parse(localStorage.getItem('pageLink'));
 
-        if(!isChecked) {
-            setProductType(() => {
-                return {
-                    ...productType,
-                    [linkOf]: {
-                        ...productType[linkOf],
-                        [typeName]: typeValue
-                    }
+        console.log(linkOf);
+        console.log(e.target.value);
+
+        if(!e.target.checked) {
+            setProductType({
+                ...productType,
+                [linkOf]: {
+                    ...productType[linkOf],
+                    [e.target.id]: e.target.value
                 }
             });
         } else {
-            setProductType(() => {
-                return {
-                    ...productType,
-                    [linkOf]: {
-                        ...productType[linkOf],
-                        [typeName]: undefined
-                    } 
-                }
+            setProductType({
+                ...productType,
+                [linkOf]: {
+                    ...productType[linkOf],
+                    [e.target.id]: undefined
+                } 
             });
         }
     };
