@@ -133,7 +133,7 @@ function ContextProvider(props) {
         });
     };
 
-    const [productType, setProductType] = useState({
+    const productType = {
         hair: {
             one: "shampoo",
             two: "conditioner",
@@ -152,34 +152,37 @@ function ContextProvider(props) {
             three: "face lotion",
             four: "sun creme"
         }
+    };
+
+    const [productTypeCopy, setProductTypeCopy] = useState({
+        ...productType
     });
 
     const onTypeChange = e => {
         const { linkOf } = JSON.parse(localStorage.getItem('pageLink'));
 
-        console.log(linkOf);
-        console.log(e.target.value);
+        console.log(productTypeCopy[linkOf][e.target.id])
 
         if(!e.target.checked) {
-            setProductType({
-                ...productType,
+            setProductTypeCopy({
+                ...productTypeCopy,
                 [linkOf]: {
-                    ...productType[linkOf],
-                    [e.target.id]: e.target.value
+                    ...productTypeCopy[linkOf],
+                    [e.target.id]: productType[linkOf][e.target.id]
                 }
             });
         } else {
-            setProductType({
-                ...productType,
+            setProductTypeCopy({
+                ...productTypeCopy,
                 [linkOf]: {
-                    ...productType[linkOf],
+                    ...productTypeCopy[linkOf],
                     [e.target.id]: undefined
                 } 
             });
         }
     };
 
-    const filterPages = (linkOf = 'hair', brandOf, minPrice = 1, maxPrice = 100, classOf = productType, rank = 'new') => {
+    const filterPages = (linkOf = 'hair', brandOf, minPrice = 1, maxPrice = 100, classOf = productTypeCopy, rank = 'new') => {
         const linkProducts = products.productsListCopy.filter(p => {
             return p.link === linkOf && p.brand === brandOf
             && p.price > minPrice/2 && p.price < maxPrice/2;
@@ -218,7 +221,7 @@ function ContextProvider(props) {
             clearCart,
             filterPages,
             onTypeChange,
-            productType
+            productTypeCopy
         }}>
             {props.children}
         </ProductsContext.Provider>

@@ -7,9 +7,11 @@ import { ContextConsumer } from '../../context';
 function ProductsLinkPage() {
 
     const context = useContext(ContextConsumer);
-    const { filterPages, onTypeChange, productType, productsLinkPage, handleDetails } = context;
+    const { filterPages, onTypeChange, productTypeCopy, productsLinkPage, handleDetails } = context;
     const { linkOf, brandOf } = JSON.parse(localStorage.getItem('pageLink'));
-    const {one, two, three, four } = productType[linkOf];
+    const {one, two, three, four } = productTypeCopy[linkOf];
+
+    // console.log(one, two, three, four)
 
     const range = document.querySelector('.range');
     const leftThumb = document.querySelector('.thumb.left');
@@ -46,11 +48,11 @@ function ProductsLinkPage() {
     productsLinkPage.map(p => maxPrice = p.price <= maxPrice ? maxPrice : p.price);
     
     useEffect(() => { 
-        filterPages(linkOf, brandOf, price.minPrice, price.maxPrice, productType);
-    }, [productType]);
+        filterPages(linkOf, brandOf, price.minPrice, price.maxPrice, productTypeCopy);
+    }, [productTypeCopy]);
 
     const onRankChange = e => {
-        filterPages(linkOf, brandOf, price.minPrice, price.maxPrice, productType, e.target.value);
+        filterPages(linkOf, brandOf, price.minPrice, price.maxPrice, productTypeCopy, e.target.value);
     };
     
 

@@ -107,6 +107,7 @@
                     margin-left: 5px;
                     font-size: 18px;
                     letter-spacing: 1px;
+                    color: rgb(124, 76, 76);
                     &:hover {cursor: pointer;}
                 }
                 input[type=checkbox] {
@@ -115,7 +116,7 @@
                     height: 20px;
                     appearance: none;
                     outline: none;
-                    border: 1px solid grey;
+                    border: 1px solid rgb(148, 104, 104);
                     border-radius: 5px;
                     &:hover {cursor: pointer;}
                 }
