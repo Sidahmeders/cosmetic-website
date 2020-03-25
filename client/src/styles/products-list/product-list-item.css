@@ -34,5 +34,14 @@
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+  width: 300px;
+  height: 400px;
+}
+
+.products-list .product .product-item .item img {
+  width: 60%;
+  height: 180px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 /*# sourceMappingURL=product-list-item.css.map */

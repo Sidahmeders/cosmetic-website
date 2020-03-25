@@ -54,7 +54,7 @@ function Navbar() {
                         <ul>
                             <li>
                             <Link className="link" to="/productspage" onClick={() => {
-                                filterPages("hair","loreal"); 
+                                filterPages("hair", "loreal"); 
                                 toggleMenu();
                             }}>
                                 <span style={{color:"gold"}}>
@@ -64,7 +64,7 @@ function Navbar() {
                             </li>
                             <li>
                             <Link className="link" to="/productspage" onClick={() => {
-                                filterPages("hair","garnier"); 
+                                filterPages("hair", "garnier"); 
                                 toggleMenu();
                                 }}>
                                 <span style={{letterSpacing:"2px",color:"green"}}>
@@ -73,56 +73,60 @@ function Navbar() {
                             </Link>
                             </li>
                             <li>
-                            <Link className="link" to="/">
+                            <Link className="link" to="/productspage" onClick={() => {
+                                filterPages("hair", "tresemme");
+                                toggleMenu();
+                            }}>
                                 <span style={{color:"#d11"}}>
                                 TRESemme <i className="fa fa-tint"></i>
                                 </span>
                             </Link>
                             </li>
                             <li>
-                            <Link className="link" to="/">
+                            <Link className="link" to="/productspage" onClick={() => {
+                                filterPages("hair", "nivea");
+                                toggleMenu();
+                            }}>
                                 <span style={{letterSpacing:"4px",color:"#79f"}}>
                                 NIVEA <i className="fa fa-male"></i> <i className="fa fa-female"></i>
                                 </span>
                             </Link>
                             </li>
                             <li>
-                            <Link className="link" to="/">
-                                <span style={{letterSpacing:"3.5px",color:"#956"}}>
+                            <Link className="link" to="/productspage" onClick={() => {
+                                filterPages("hair", "provost");
+                                toggleMenu();
+                            }}>
+                                <span style={{letterSpacing:"3.5px",color:"#034"}}>
                                 PROVOST
                                 </span>
                             </Link>
                             </li>
                             <li>
-                            <Link className="link" to="/">
-                                <span style={{letterSpacing:"4px",color:"#555"}}>
+                            <Link className="link" to="/productspage" onClick={() => {
+                                filterPages("hair", "syoss");
+                                toggleMenu();
+                            }}>
+                                <span style={{letterSpacing:"4px",color:"#0d8"}}>
                                 SYOSS <i className="fa fa-bacon"></i>
                                 </span>
                             </Link>
                             </li>
                             <li>
-                            <Link className="link" to="/">
-                                <span style={{letterSpacing:"7px",color:"#2dd"}}>
-                                DOVE <i className="fa fa-dove"></i>
+                            <Link className="link" to="/productspage" onClick={() => {
+                                filterPages("hair", "H&sholders");
+                                toggleMenu();
+                            }}>
+                                <span style={{fontSize:".9em",color:"#65f"}}>
+                                head&sholders
                                 </span>
                             </Link>
                             </li>
                             <li>
-                            <Link className="link" to="/">
-                                <span style={{letterSpacing:"3px",color:"#2d2"}}>
-                                SWaLiS <i className="fa fa-check"></i>
-                                </span>
-                            </Link>
-                            </li>
-                            <li>
-                            <Link className="link" to="/">
-                                <span style={{color:"#972"}}>
-                                PALMOLIVE<i className="fab fa-500px"></i>
-                                </span>
-                            </Link>
-                            </li>
-                            <li>
-                            <Link className="link" to="/">
+                            <Link className="link" to="/productspage" onClick={() => {
+                                filterPages("hair", "OTHERS");
+                                toggleMenu();
+                            }}>
                                 <span style={{letterSpacing:"2px",color:"#70f"}}>
                                 OTHERS <i className="fa fa-diagnoses"></i>
                                 </span>
@@ -136,7 +140,10 @@ function Navbar() {
                         </a>
                         <ul>
                             <li>
-                            <Link className="link" to="/">
+                            <Link className="link" to="/productspage" onClick={() => {
+                                filterPages("body", "vaseline");
+                                toggleMenu();
+                            }}>
                                 <span style={{letterSpacing:"4px",color:"#3f0"}}>
                                 Vaseline
                                 </span>
@@ -144,7 +151,7 @@ function Navbar() {
                             </li>
                             <li>
                             <Link className="link" to="/productspage" onClick={() => {
-                                filterPages("body","nivea");
+                                filterPages("body", "nivea");
                                 toggleMenu();
                                 }}>
                                 <span style={{letterSpacing:"5px",color:"#18f"}}>
@@ -154,7 +161,7 @@ function Navbar() {
                             </li>
                             <li>
                             <Link className="link" to="/productspage" onClick={() => {
-                                filterPages("body","enchanteur"); 
+                                filterPages("body", "enchanteur"); 
                                 toggleMenu();
                                 }}>
                                 <span style={{letterSpacing:"1px",color:"#d10"}}>
@@ -163,9 +170,12 @@ function Navbar() {
                             </Link>
                             </li>
                             <li>
-                            <Link className="link" to="/">
-                                <span style={{letterSpacing:"7px",color:"#990"}}>
-                                VENUS<i className="fab fa-vuejs"></i>
+                            <Link className="link" to="/productspage" onClick={() => {
+                                filterPages("body", "oe / dove");
+                                toggleMenu();
+                            }}>
+                                <span style={{letterSpacing:"3px",color:"#f07"}}>
+                                OE / <span style={{color:"#1df"}}>DOVE</span>
                                 </span>
                             </Link>
                             </li>

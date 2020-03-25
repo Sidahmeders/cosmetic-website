@@ -161,8 +161,6 @@ function ContextProvider(props) {
     const onTypeChange = e => {
         const { linkOf } = JSON.parse(localStorage.getItem('pageLink'));
 
-        console.log(productTypeCopy[linkOf][e.target.id])
-
         if(!e.target.checked) {
             setProductTypeCopy({
                 ...productTypeCopy,
@@ -185,7 +183,7 @@ function ContextProvider(props) {
     const filterPages = (linkOf = 'hair', brandOf, minPrice = 1, maxPrice = 100, classOf = productTypeCopy, rank = 'new') => {
         const linkProducts = products.productsListCopy.filter(p => {
             return p.link === linkOf && p.brand === brandOf
-            && p.price > minPrice/2 && p.price < maxPrice/2;
+            && p.price > minPrice/3 && p.price < maxPrice/2;
         });
 
         const {one, two, three, four} = classOf[linkOf];

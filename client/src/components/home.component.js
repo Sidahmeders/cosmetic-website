@@ -19,12 +19,15 @@ import blushThree from '../cos-img/product-img/products/makeup/blusher/blush (35
 import hairOne from '../cos-img/product-img/products/shampoo/TRESemme/hair (1).jpg';
 import hairTwo from '../cos-img/product-img/products/shampoo/garnier/hair (37).jpg';
 import hairThree from '../cos-img/product-img/products/shampoo/provost/hair (1).jpg';
-import hairFour from '../cos-img/product-img/products/shampoo/loreal/hair (25).jpg';
-import hairFive from '../cos-img/product-img/products/shampoo/loreal/hair (31).jpg';
+import hairFour from '../cos-img/product-img/products/shampoo/loreal/hair (61).jpg';
+import hairFive from '../cos-img/product-img/products/shampoo/loreal/hair (59).jpg';
 import suncremeOne from '../cos-img/product-img/products/faceCreme/sun-creme/sunCreme (6).jpg';
 import makeupOne from '../cos-img/product-img/products/makeup/bridal-makeup/makeup (6).jpg';
 import lipOne from '../cos-img/product-img/products/makeup/lipStick/lips (7).jpg';
 import faceCremeOne from '../cos-img/product-img/products/faceCreme/face-creme/creme (2).jpg';
+
+import bodyOne from '../cos-img/product-img/products/body/nevia/body (4).jpg';
+import BodyTwo from '../cos-img/product-img/products/body/enchanteur/body (3).jpg';
 
 
 
@@ -78,26 +81,46 @@ const  Home = () => {
 
                 <div className="slide-container">
                     <div className="slider">
-                        <div className="slide slide1">
-                            <div className="undefined">
-                                <a href="/">x</a>
+                        <Link to="/kk">
+                            <div className="slide slide1">
+                                <div className="text-slide">
+                                    <p>
+                                        We've rounded up 24 stand-out moisturizers, serums, and 
+                                        treatmentsthat will help your skin snap back over time.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <div className="slide slide2">
-                            <div className="undefined">
-                                <a href="/">x</a>
+                        </Link> 
+                        <Link to="/kk">
+                            <div className="slide slide2">
+                                <div className="text-slide">
+                                    <p> 
+                                        express your unique artistic style. Colors and ingredients have changed 
+                                        over the centuries,but the purpose for wearing lipstick remains the same
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <div className="slide slide3">
-                            <div className="undefined">
-                            <a href="/">x</a>
+                        </Link>
+                        <Link to="/kk">
+                            <div className="slide slide3">
+                                <div className="text-slide">
+                                    <p>
+                                        Makeup does more than alter a woman’s attractiveness, it 
+                                        also plays a role in her ability to form new relationships
+                                    </p>
+                                </div>
                             </div>
-                        </div>
-                        <div className="slide slide1">
-                            <div className="undefined">
-                            <a href="/">x</a>
+                        </Link>
+                        <Link to="/kk">
+                            <div className="slide slide1">
+                                <div className="text-slide">
+                                    <p>
+                                        We've rounded up 24 stand-out moisturizers, serums, and 
+                                        treatmentsthat will help your skin snap back over time.
+                                    </p>
+                                </div>
                             </div>
-                        </div>
+                        </Link>
                     </div>
                 </div>
 
@@ -121,8 +144,8 @@ const  Home = () => {
                     </div>
                     <div className="text">
                         <p>
-                        Discover COSMETICA, the 1st retail shop of cosmetic products in Chlef, with
-                        our best influencer from L'ORAL PARIS to unilever and Ab reseller and many more.
+                            Discover COSMETICA, the 1st retail shop of cosmetic products in Chlef, with
+                            our best influencer from L'ORAL PARIS to unilever and Ab reseller and many more.
                         </p>
                     </div>
                 </div>
@@ -156,7 +179,7 @@ const  Home = () => {
                                     <a href="/">
                                         <img src={redlipstick} alt="redlipstick"/>
                                         <p className="red-lipstick">
-                                                Our rich, vivid, perfectly matte lip color
+                                            Our rich, vivid, perfectly matte lip color
                                         </p>
                                     </a>
                                 </div>
@@ -181,7 +204,7 @@ const  Home = () => {
                                     <a href="/">
                                         <img src={perf} alt="perfume"/>
                                         <p className="perf">
-                                                the one fragrance that deserve to<span> lead </span>all<span> man </span>and woman
+                                            the one fragrance that deserve to<span> lead </span>all<span> man </span>and woman
                                         </p>
                                     </a>
                                 </div>
@@ -255,7 +278,7 @@ const  Home = () => {
                                             <span>250ml / 400ml</span>
                                         </div>
                                     </Link>
-                                    <h4 className="price">5.25$</h4>
+                                    <h4 className="price">7.80$</h4>
                                 </div>
                             </div>
                             
@@ -270,22 +293,22 @@ const  Home = () => {
                                             <span>750ml/ 7500ml/ 300ml</span>
                                         </div>
                                     </Link>
-                                    <h4 className="price">14.10$</h4>
+                                    <h4 className="price">28.10$</h4>
                                 </div>
                                 <div className="product-item">
-                                    <Link className="detail" onClick={() => handleDetails(9)} to="/details">
+                                    <Link className="detail" onClick={() => handleDetails(42)} to="/details">
                                         <h5>take me</h5>
                                         <img src={hairFour} alt="hairFour" />
                                         <div className="text">
-                                            <span>shampo & oil repleacement</span>
-                                            <p>the new collection from elseve for tinted, or bleached and dry hair with keratin</p>
+                                            <span>shampo & conditioner</span>
+                                            <p>the new collection from LOREAL for tinted, or bleached and dry hair with keratin</p>
                                             <span>150ml</span>
                                         </div>
                                     </Link>
-                                    <h4 className="price">11.20$</h4>
+                                    <h4 className="price">35.80$</h4>
                                 </div>
                                 <div className="product-item">
-                                    <Link className="detail" onClick={() => handleDetails(10)} to="/details">
+                                    <Link className="detail" onClick={() => handleDetails(40)} to="/details">
                                         <h5>try me</h5>
                                         <img src={hairFive} alt="hairFive" />
                                         <div className="text">
@@ -306,7 +329,7 @@ const  Home = () => {
                                             <span>48ml</span>
                                         </div>
                                     </Link>
-                                    <h4 className="price">10.50$</h4>
+                                    <h4 className="price">16.50$</h4>
                                 </div>
                             </div>
 
@@ -463,34 +486,34 @@ const  Home = () => {
 
                     <section className="whats-popular-section">
                         <div>
-                            <h2>popular Products</h2>
+                            <h2>Popular Products</h2>
                             <div className="popular-products">
                                 <button className="pre" onClick={prev3}><i className="fa fa-angle-left"></i></button>
                                 <Swiper getSwiper={updateSwiper3}>
                                 <div className="products-slide one">
                                     <div className="product-item">
-                                        <Link className="detail" onClick={() => handleDetails(1)} to="/details">
-                                            <h5>New</h5>
-                                            <img src={faceCremeOne} alt="cremeOne"/>
+                                        <Link className="detail" onClick={() => handleDetails(112)} to="/details">
+                                            <h5>take me</h5>
+                                            <img src={bodyOne} alt="bodyOne"/>
                                             <div className="text">
-                                                <span>Night creme</span>
-                                                <p>L'OREAL Nutrition Intense, Age perfect cell renewal for everyday use</p>
-                                                <span>85ml</span>
+                                                <span>body Lotion</span>
+                                                <p>NIVEA Nutrition Intense, perfect moisturizers renewal for everyday use</p>
+                                                <span>380ml</span>
                                             </div>
                                         </Link>
-                                        <h4 className="price">12.75$</h4>
+                                        <h4 className="price">27.80$</h4>
                                     </div>
                                     <div className="product-item">
-                                        <Link className="detail" onClick={() => handleDetails(1)} to="/details">
-                                            <h5>New</h5>
-                                            <img src={faceCremeOne} alt="cremeOne"/>
+                                        <Link className="detail" onClick={() => handleDetails(86)} to="/details">
+                                            <h5>try me</h5>
+                                            <img src={BodyTwo} alt="cremeOne"/>
                                             <div className="text">
-                                                <span>Night creme</span>
-                                                <p>L'OREAL Nutrition Intense, Age perfect cell renewal for everyday use</p>
-                                                <span>85ml</span>
+                                                <span>showerGel & bodyLotion</span>
+                                                <p>the ultimate repair for all skin types, dry and damaged from enchanteur</p>
+                                                <span>350ml/380ml</span>
                                             </div>
                                         </Link>
-                                        <h4 className="price">12.75$</h4>
+                                        <h4 className="price">24.15$</h4>
                                     </div>
                                     <div className="product-item">
                                         <Link className="detail" onClick={() => handleDetails(1)} to="/details">

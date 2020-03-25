@@ -11,8 +11,6 @@ function ProductsLinkPage() {
     const { linkOf, brandOf } = JSON.parse(localStorage.getItem('pageLink'));
     const {one, two, three, four } = productTypeCopy[linkOf];
 
-    // console.log(one, two, three, four)
-
     const range = document.querySelector('.range');
     const leftThumb = document.querySelector('.thumb.left');
     const rightThumb = document.querySelector('.thumb.right');
