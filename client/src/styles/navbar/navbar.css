@@ -212,7 +212,7 @@ body.hide {
 
 @media (max-width: 1000px) {
   .navbar-container header {
-    padding: 0 100px !important;
+    padding: 1px 100px !important;
   }
   .navbar-container header .menu-lines {
     display: block;

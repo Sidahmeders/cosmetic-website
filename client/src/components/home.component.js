@@ -6,7 +6,7 @@ import { ContextConsumer } from '../context';
 import { Link } from 'react-router-dom';
 
 import brushes from '../cos-img/lipstick-liq.jpg';
-import lips from '../cos-img/lips.jpg';
+import palate from '../cos-img/palate.jpg';
 import pallete from  '../cos-img/pallete.jpg';
 import varni from '../cos-img/nailpol.jpg';
 import redlipstick from '../cos-img/redlipstick.jpg';
@@ -140,7 +140,7 @@ const  Home = () => {
                 </div>
                 <div className="head-body">
                     <div className="image">
-                        <img src={lips} alt="lips"/>
+                        <img src={palate} alt="palate"/>
                     </div>
                     <div className="text">
                         <p>

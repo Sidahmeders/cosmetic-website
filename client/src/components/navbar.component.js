@@ -180,7 +180,10 @@ function Navbar() {
                             </Link>
                             </li>
                             <li>
-                            <Link className="link" to="/">
+                            <Link className="link" to="/productspage" onClick={() => {
+                                filterPages("body", "OTHERS");
+                                toggleMenu();
+                            }}>
                                 <span style={{letterSpacing:"2px",color:"#70f"}}>
                                 OTHERS <i className="fa fa-diagnoses"></i>
                                 </span>
@@ -197,13 +200,6 @@ function Navbar() {
                             <Link className="link" to="/">
                                 <span style={{letterSpacing:"1px",color:"#36f"}}>
                                 NEVIA <span style={{fontSize:".8em"}}>creme</span>
-                                </span>
-                            </Link>
-                            </li>
-                            <li>
-                            <Link className="link" to="/">
-                                <span style={{letterSpacing:"6px",color:"orange"}}>
-                                VENUS<i className="fab fa-vuejs"></i>
                                 </span>
                             </Link>
                             </li>
