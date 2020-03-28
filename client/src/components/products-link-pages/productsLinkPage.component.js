@@ -135,7 +135,12 @@ function ProductsLinkPage() {
                     );
                 }) :
                 (<div className="no-products">
-                    <h1>no products has been selected</h1>
+                    <h1>
+                        no products has been selected
+                        <p>
+                            <i className="fa fa-none"></i>
+                        </p>
+                    </h1>
                 </div>)
                 }
             </div>

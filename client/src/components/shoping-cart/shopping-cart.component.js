@@ -15,10 +15,10 @@ function ShoppingCart() {
         <div className="shopping-cart">
             {cart.length ?
               (
-                <div className="cart">
+                <React.Fragment>
                     <CartProduct products={cart} value={context} />
                     <CartTotal totalPrice={totalPrice} value={context} />
-                </div>
+                </React.Fragment>
                 
               ) :
               (

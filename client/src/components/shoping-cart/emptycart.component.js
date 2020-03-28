@@ -1,14 +1,20 @@
 import React from 'react';
-
+import { Link } from 'react-router-dom';
 
 
 function EmptyCart() {
 
     return(
-        <div className="empty-cart" style={{marginTop:"9em"}}>
-            <h1>your cart is empty for now</h1>
-            <h2>if you lost your way please check the home page</h2>
-            <h3>there is always going to be new stuff</h3>
+        <div className="empty-cart">
+            <div className="empty-cart-container">
+                <h1>your cart is empty for now</h1>
+                <h2>please Check the Links or the home Page</h2>
+                <p>
+                    <Link to="/">
+                    <i id="fa" className="fa fa-th-list"></i>
+                    </Link>
+                </p>
+            </div>
         </div>
     );
 }

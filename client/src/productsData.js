@@ -6692,15 +6692,20 @@ export const productsList = [
 
 
 export const detailsProduct = {
-    id: 1,
-    period: "new",
-    img: faceCremeOne,
-    type: "Night creme",
-    description: "L'OREAL Nutrition Intense, Age perfect cell renewal for everyday use",
-    size: "85ml",
-    price: 12.75,
+    id: 295,
+    period: "try me",
+    img: hair216,
+    type: "head&sholders collection",
+    class: "collection",
+    link: "hair",
+    brand: "H&sholders",
+    target:"woman",
+    rank: "new",
+    description: "SUPREME collection is avalible now for dunDrruff normal & itchy brittle hair from head&sholders",
+    size: "400ml/350ml",
+    price: 33.50,
     inCart: false,
     count: 0,
-    total: 0
+    total: 0    
 };
 

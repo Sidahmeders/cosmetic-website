@@ -58,7 +58,7 @@ function Navbar() {
                                 toggleMenu();
                             }}>
                                 <span style={{color:"gold"}}>
-                                L'OREAL <span style={{fontSize:".8em",color:"red"}}>_paris</span>
+                                L'OREAL <span style={{fontSize:".8em",color:"red"}}>-paris</span>
                                 </span>
                             </Link>
                             </li>

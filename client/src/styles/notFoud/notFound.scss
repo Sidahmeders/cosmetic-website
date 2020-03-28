@@ -12,29 +12,29 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        border: 1px solid rgb(239, 155, 241);
+        background-color: rgb(87, 87, 87);
         border-radius: 7vw 0 7vw 0;
-        width: 70%;
-        height: 60%;
+        width: 75%;
+        height: 70%;
+        color: rgb(230, 230, 230);
 
         h1 {
-            color: violet;
             font-size: 5vw;
         }
         h2 {
-            color: violet;
             font-size: 3vw;
         }
         .link {
             color: rgb(255, 255, 255);
-            background-color: violet;
+            background-color: rgb(46, 46, 46);;
             text-decoration: none;
+            border-radius: 2px;
             padding: 7px 20px;
             margin-top: 4vh;
-            transition: .6s ease;
+            transition: .8s ease;
 
             &:hover {
-                background-color: rgb(243, 152, 243);
+                background-color: rgb(146, 146, 146);
             }
         }
     }

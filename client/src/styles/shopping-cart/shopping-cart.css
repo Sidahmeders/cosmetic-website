@@ -1,9 +1,9 @@
 .shopping-cart {
-  margin-top: 8em;
+  margin-top: 18vh;
 }
 
-.shopping-cart .cart .cart-products {
-  background-color: white;
+.shopping-cart .cart-products,
+.shopping-cart .cart-Total {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11,19 +11,252 @@
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+}
+
+.shopping-cart .cart-products {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-left: 18vw;
 }
 
-.shopping-cart .cart .cart-products .cart-product-item {
-  width: 300px;
+.shopping-cart .cart-products-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 330px;
+  height: 20vw;
+  margin: 5px;
+  border: 1px solid #dadada;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  padding: 2px;
 }
 
-.shopping-cart .cart .cart-Total .total-price {
+.shopping-cart .cart-products-item .image,
+.shopping-cart .cart-products-item .info {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.shopping-cart .cart-products-item .image {
+  padding-right: 15px;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+}
+
+.shopping-cart .cart-products-item .image p {
+  font-size: 18px;
+  white-space: nowrap;
+  width: 100%;
+  color: black;
+}
+
+.shopping-cart .cart-products-item .image h4 {
+  font-weight: lighter;
+  width: 100%;
+  color: #6e6e6e;
+  font-size: 13px;
+}
+
+.shopping-cart .cart-products-item .image img {
+  width: 80%;
+  height: 50%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.shopping-cart .cart-products-item .info {
+  background-color: #6e6e6e;
+}
+
+.shopping-cart .cart-products-item .info .description {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.shopping-cart .cart-products-item .info .description h4 {
+  color: #27fa0b;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
+.shopping-cart .cart-products-item .info .description p {
+  color: #ebebeb;
+  font-size: 15px;
+}
+
+.shopping-cart .cart-products-item .info .description p span {
+  color: #27fa0b;
+  padding-left: 3px;
+  font-size: 18px;
+}
+
+.shopping-cart .cart-products-item .info .buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.shopping-cart .cart-products-item .info .buttons button {
+  margin: 2px 0;
+  border: 0;
+  padding: 3px 6px;
+  background-color: #464646;
+  color: white;
+  border-radius: 2px;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.shopping-cart .cart-products-item .info .buttons button:hover {
+  cursor: pointer;
+  background-color: gray;
+}
+
+.shopping-cart .cart-Total {
+  background-color: #6e6e6e;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 18vw;
+  height: 92vh;
+}
+
+.shopping-cart .cart-Total-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+}
+
+.shopping-cart .cart-Total-container .info {
+  margin-bottom: 10vh;
+  text-align: center;
+}
+
+.shopping-cart .cart-Total-container .info h3 {
+  font-weight: lighter;
+}
+
+.shopping-cart .cart-Total-container .info p {
+  font-size: 3em;
+  letter-spacing: 10px;
+}
+
+.shopping-cart .cart-Total-container .total-price {
   font-size: 1.2em;
 }
 
-.shopping-cart .cart .cart-Total .stripe-btn {
-  margin-top: 10px;
+.shopping-cart .cart-Total-container .total-price p {
+  font-size: 1.3em;
+}
+
+.shopping-cart .cart-Total-container .total-price p span {
+  float: right;
+  margin-left: 2vw;
+  color: #06e035;
+}
+
+.shopping-cart .cart-Total-container .StripeElement,
+.shopping-cart .cart-Total-container .clear-cart {
+  margin-top: 3vh;
+  padding: 5px 1.5vw;
+  border: none;
+  border-radius: 2px;
+  background-color: #464646;
+  color: white;
+  font-size: .9em;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.shopping-cart .cart-Total-container .StripeElement:hover,
+.shopping-cart .cart-Total-container .clear-cart:hover {
+  cursor: pointer;
+  background-color: #818181;
+}
+
+.shopping-cart .empty-cart {
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.shopping-cart .empty-cart-container {
+  width: 60vw;
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #6e6e6e;
+  border-radius: 5px;
+}
+
+.shopping-cart .empty-cart-container h1, .shopping-cart .empty-cart-container h2 {
+  color: #3a3a3a;
+  padding: 10px 0;
+}
+
+.shopping-cart .empty-cart-container h1 {
+  font-size: 2.5em;
+}
+
+.shopping-cart .empty-cart-container p {
+  font-size: 3em;
+}
+
+.shopping-cart .empty-cart-container p #fa {
+  color: #109410;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.shopping-cart .empty-cart-container p #fa:hover {
+  color: #04c424;
 }
 /*# sourceMappingURL=shopping-cart.css.map */

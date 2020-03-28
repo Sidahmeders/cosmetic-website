@@ -251,12 +251,21 @@
   border: 1px solid #2cbd00;
   color: #399c00;
   letter-spacing: 2px;
+  margin: 0 5px;
 }
 
 .products-link-page .products-list .no-products h1 {
+  text-align: center;
   position: absolute;
   left: 40%;
   top: 50%;
+  font-size: 3vw;
+  color: #3a033b;
+}
+
+.products-link-page .products-list .no-products h1 .fa-none {
+  margin-top: 2vh;
+  font-size: 60px;
 }
 
 @media (max-width: 1000px) {
@@ -347,6 +356,8 @@
     margin-top: -2em;
   }
   .products-link-page .products-list .no-products {
+    width: 100%;
+    height: 70vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -360,6 +371,7 @@
   .products-link-page .products-list .no-products h1 {
     left: initial;
     top: 60%;
+    font-size: 4.5vw;
   }
 }
 /*# sourceMappingURL=productsLinkPage.css.map */

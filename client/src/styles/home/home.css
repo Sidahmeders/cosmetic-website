@@ -177,7 +177,7 @@ body {
 .home header .head-intro .square, .home main .head-intro .square {
   height: 400px;
   width: 150px;
-  background: linear-gradient(45deg, #5f072b, #ff7bd8);
+  background: linear-gradient(45deg, #057a0a, #8ec991);
   border-radius: 150px 0 150px 0;
   margin-left: 2vw;
 }
@@ -195,24 +195,22 @@ body {
   margin: 2em 0 0 5em;
   padding: 10px 2em;
   text-decoration: none;
-  background: #910968;
+  background: #08a343;
   color: white;
-  -webkit-box-shadow: 0 0 8px #5c0538;
-          box-shadow: 0 0 8px #5c0538;
   border-radius: 5px;
   -webkit-transition: 3s ease;
   transition: 3s ease;
 }
 
 .home header .head-intro .text a:hover, .home main .head-intro .text a:hover {
-  background-color: #d132a1;
+  background-color: #15d62f;
 }
 
 .home header .head-intro .image img, .home main .head-intro .image img {
   width: 400px;
   height: 500px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .home header .head-body, .home main .head-body {
@@ -262,7 +260,7 @@ body {
   width: 220px;
   height: 150px;
   border: none;
-  background-color: #c23b95;
+  background-color: #03a719;
   outline: none;
   color: white;
   font-size: 3.5em;
@@ -272,7 +270,7 @@ body {
 
 .home main .main-products .slider-section .pre:hover,
 .home main .main-products .slider-section .next:hover {
-  background-color: #740853;
+  background-color: #0bf016;
   cursor: pointer;
 }
 
@@ -411,7 +409,7 @@ body {
   font-size: 4em;
   background: transparent;
   border: 0;
-  color: black;
+  color: #258001;
 }
 
 .home main .main-products .whats-new-section .new-products button:hover,
@@ -419,7 +417,7 @@ body {
 .home main .main-products .whats-popular-section .new-products button:hover,
 .home main .main-products .whats-popular-section .popular-products button:hover {
   cursor: pointer;
-  color: #5f072b;
+  color: #23d300;
 }
 
 .home main .main-products .whats-new-section .new-products .products-slide,
@@ -565,7 +563,7 @@ body {
 }
 
 .home main .main-products .main-slide-section .slide-container .slider .slide a:active p {
-  color: #ea00ff;
+  color: #33ff00;
 }
 
 .home main .main-products .main-slide-section .slide-container .slider .slide .poster {
@@ -581,13 +579,13 @@ body {
   font-size: 24px;
   width: 22vw;
   padding: 3px;
-  border-top: 2px solid #ea00ff;
+  border-top: 2px solid white;
   position: absolute;
   bottom: 5%;
 }
 
 .home main .main-products .main-slide-section .slide-container .slider .slide .poster p:hover {
-  background-color: #ea00ff;
+  background-color: #1a9110;
 }
 
 .home main .main-products .main-slide-section .slide-container .slider .slide.slide1 {

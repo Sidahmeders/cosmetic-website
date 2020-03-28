@@ -38,7 +38,7 @@ body.hide {
 }
 
 .navbar-container header .logo .link {
-  color: #ce0000;
+  color: #505050;
   text-decoration: none;
   text-shadow: 1px 1px 1px #555454;
   height: 50px;
@@ -52,7 +52,7 @@ body.hide {
 }
 
 .navbar-container header .logo .link span {
-  color: #24a9ca;
+  color: #24ca56;
 }
 
 .navbar-container header nav {
@@ -145,7 +145,7 @@ body.hide {
   position: absolute;
   -webkit-transform: translate(36px, 0);
           transform: translate(36px, 0);
-  color: #ff416a;
+  color: black;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -155,15 +155,15 @@ body.hide {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-shadow: 0 0 3px #f79999;
-          box-shadow: 0 0 3px #f79999;
+  -webkit-box-shadow: 0 0 3px #c9c9c9;
+          box-shadow: 0 0 3px #c9c9c9;
   height: 22px;
   width: 30px;
   border-radius: 12px 0 12px 0;
 }
 
 .navbar-container header .shopping-cart .link {
-  color: #fda2ae;
+  color: #0ca007;
   display: block;
 }
 
@@ -187,7 +187,7 @@ body.hide {
   margin-top: 4px;
   width: 30px;
   height: 5px;
-  background: #e205c1;
+  background: #00b427;
   -webkit-transition: .5s ease;
   transition: .5s ease;
 }
@@ -229,7 +229,7 @@ body.hide {
     line-height: 25px;
     height: 35px;
     background-color: white;
-    border-bottom: 1px solid #fc9dcc;
+    border-bottom: 1px solid #565756;
   }
   .navbar-container header .shopping-cart .quantity {
     display: inline !important;
@@ -241,8 +241,8 @@ body.hide {
   .navbar-container header nav {
     position: fixed;
     width: 100%;
+    height: 100vh;
     overflow-y: scroll;
-    height: 100%;
     background: white;
     margin-top: 25px;
     left: -100%;
