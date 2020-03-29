@@ -258,5 +258,16 @@ body.hide {overflow-y: hidden !important;}
     }
 }
 
-
+@media (max-width: 550px) {
+    .navbar-container header {
+        .logo .link {
+            font-size: 1.5em;
+        }
+        .shopping-cart .link {
+            #fa {
+                font-size: 1.2em;
+            }
+        }
+    }
+}
 

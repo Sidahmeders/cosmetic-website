@@ -8,7 +8,7 @@
         height: 100%;
 
         h3 {
-            color: rgb(243, 112, 225);
+            color: rgb(28, 179, 86);
             font-weight: 100;
             margin-bottom: 10px;
             font-family: serif;
@@ -42,7 +42,7 @@
                     right: 0;
                     bottom: 0;
                     border-radius: 5px;
-                    background-color: rgb(247, 119, 178);
+                    background-color: rgb(155, 247, 170);
                 }
                 .range {
                     position: absolute;
@@ -310,4 +310,65 @@
     }
 }
 
-
+@media (max-width: 590px) {
+    .products-link-page {
+        .side-bar {
+            grid-template-rows: 50px 50px 30px !important;
+            .check-boxes,
+            .select-box,
+            .multi-range-slider {
+                h3 {
+                    font-size: .9em;
+                    margin-bottom: 2px;
+                }
+                input[type=checkbox] {
+                    width: 14px !important;
+                    height: 14px !important;
+                    &:checked:before {
+                        font-size: 11px !important;
+                        top: -16% !important;
+                    }
+                }
+                .items {
+                    p label{
+                        font-size: .7em !important;
+                    }
+                }
+                select {
+                    font-size: 12px !important;
+                    padding: 1px 5px !important;
+                }
+            }
+            .multi-range-slider {
+                margin-top: 5px !important;
+                font-size: .8em;
+                .items {
+                    width: 60% !important;
+                }
+            }
+            .brand-of h1 {
+                font-size: 1.2em;
+                margin: 3.3em !important;
+            }
+        }
+        .products-list-item {
+            width: 160px;
+            font-size: .5em;
+            h5 {
+                font-size: .9em !important;
+                padding: 1px 2px !important;
+            }
+            img {
+                width: 45% !important;
+                height: 90px !important;
+            }
+            .text {
+                height: 90px !important;
+                span {
+                    font-size: 8px !important;
+                    padding: 2px 0 !important;
+                }
+            }
+        }
+    }
+}

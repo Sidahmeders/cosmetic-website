@@ -156,7 +156,7 @@ const  Home = () => {
 
                 <div className="main-products">
                     <section className="slider-section">
-                        <button className="pre" onClick={prev1}><i className="fa fa-angle-left"></i></button>
+                        <button className="pre" onClick={prev1}><i className="fa fa-chevron-left"></i></button>
                         <Swiper getSwiper={updateSwiper1}>
                         <div className="slide">
                             <div className="slide-item">
@@ -223,7 +223,7 @@ const  Home = () => {
                             </div>
                         </div>
                         </Swiper>
-                        <button className="next" onClick={next1}><i className="fa fa-angle-right"></i></button>
+                        <button className="next" onClick={next1}><i className="fa fa-chevron-right"></i></button>
                     </section>
 
                     <section className="whats-new-section">

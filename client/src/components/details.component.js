@@ -9,7 +9,7 @@ function Details() {
     const {id, rank, img, type, description, size, price, brand, inCart} = context.detailsProduct;
 
     return (
-        <div className="details">    
+        <div className="details">  
             <div className="product-item">
                 <span className="brand">{brand}</span>
                 <h5>{rank}</h5>

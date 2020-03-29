@@ -9,7 +9,7 @@
 }
 
 .products-link-page .side-bar h3 {
-  color: #f370e1;
+  color: #1cb356;
   font-weight: 100;
   margin-bottom: 10px;
   font-family: serif;
@@ -47,7 +47,7 @@
   right: 0;
   bottom: 0;
   border-radius: 5px;
-  background-color: #f777b2;
+  background-color: #9bf7aa;
 }
 
 .products-link-page .side-bar .multi-range-slider .slider .range {
@@ -372,6 +372,72 @@
     left: initial;
     top: 60%;
     font-size: 4.5vw;
+  }
+}
+
+@media (max-width: 590px) {
+  .products-link-page .side-bar {
+    -ms-grid-rows: 50px 50px 30px !important;
+        grid-template-rows: 50px 50px 30px !important;
+  }
+  .products-link-page .side-bar .check-boxes h3,
+  .products-link-page .side-bar .select-box h3,
+  .products-link-page .side-bar .multi-range-slider h3 {
+    font-size: .9em;
+    margin-bottom: 2px;
+  }
+  .products-link-page .side-bar .check-boxes input[type=checkbox],
+  .products-link-page .side-bar .select-box input[type=checkbox],
+  .products-link-page .side-bar .multi-range-slider input[type=checkbox] {
+    width: 14px !important;
+    height: 14px !important;
+  }
+  .products-link-page .side-bar .check-boxes input[type=checkbox]:checked:before,
+  .products-link-page .side-bar .select-box input[type=checkbox]:checked:before,
+  .products-link-page .side-bar .multi-range-slider input[type=checkbox]:checked:before {
+    font-size: 11px !important;
+    top: -16% !important;
+  }
+  .products-link-page .side-bar .check-boxes .items p label,
+  .products-link-page .side-bar .select-box .items p label,
+  .products-link-page .side-bar .multi-range-slider .items p label {
+    font-size: .7em !important;
+  }
+  .products-link-page .side-bar .check-boxes select,
+  .products-link-page .side-bar .select-box select,
+  .products-link-page .side-bar .multi-range-slider select {
+    font-size: 12px !important;
+    padding: 1px 5px !important;
+  }
+  .products-link-page .side-bar .multi-range-slider {
+    margin-top: 5px !important;
+    font-size: .8em;
+  }
+  .products-link-page .side-bar .multi-range-slider .items {
+    width: 60% !important;
+  }
+  .products-link-page .side-bar .brand-of h1 {
+    font-size: 1.2em;
+    margin: 3.3em !important;
+  }
+  .products-link-page .products-list-item {
+    width: 160px;
+    font-size: .5em;
+  }
+  .products-link-page .products-list-item h5 {
+    font-size: .9em !important;
+    padding: 1px 2px !important;
+  }
+  .products-link-page .products-list-item img {
+    width: 45% !important;
+    height: 90px !important;
+  }
+  .products-link-page .products-list-item .text {
+    height: 90px !important;
+  }
+  .products-link-page .products-list-item .text span {
+    font-size: 8px !important;
+    padding: 2px 0 !important;
   }
 }
 /*# sourceMappingURL=productsLinkPage.css.map */

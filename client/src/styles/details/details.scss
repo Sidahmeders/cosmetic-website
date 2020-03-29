@@ -45,7 +45,7 @@
             margin: 0 20px;
 
             p:nth-of-type(2) {
-                color: rgb(64, 2, 70);
+                color: rgb(42, 45, 48);
                 font-size: 1.1em;
                 margin: 5px 0;
             }
@@ -69,6 +69,55 @@
             &:hover {
                 cursor: pointer;
                 background-color: rgb(138, 138, 138);
+            }
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .details {
+        .product-item {
+            width: 60% !important;
+            .brand {
+                left: -10%;
+                font-size: 3.2vw;
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    .details {
+        margin-top: 22vh;
+        height: 60vh !important;
+        .product-item {
+            width: 70% !important;
+            .brand {
+                left: -8%;
+            }
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .details {
+        .product-item {
+            font-size: .8em;
+            img {
+                width: 50%;
+                height: 28vh;
+            }
+        }
+    }
+}
+
+@media (max-width: 400px) {
+    .details {
+        .product-item {
+            font-size: .6em;
+            img {
+                width: 50%;
+                height: 24vh;
             }
         }
     }

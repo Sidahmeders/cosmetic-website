@@ -182,22 +182,20 @@ body {
 
                 .pre,
                 .next {
-                    width: 220px;
-                    height: 150px;
+                    width: 200px;
                     border: none;
-                    background-color: rgb(3, 167, 25);
+                    background-color: rgb(255, 255, 255);
                     outline: none;
-                    color: rgb(255, 255, 255);
-                    font-size: 3.5em;
+                    color: rgb(180, 180, 180);
+                    font-size: 4em;
                     transition: 1s ease;
 
                     &:hover {
-                        background-color: rgb(11, 240, 22);
+                        color: rgb(7, 207, 17);
                         cursor: pointer;
                     }
                 }
-                .pre {border-radius: 10em 0 10em 0;}
-                .next {border-radius: 0 10em 0 10em;}
+             
                 .slide {
                     width: 100%;
 
@@ -289,7 +287,7 @@ body {
                         font-size: 4em;
                         background: transparent;
                         border: 0;
-                        color: rgb(37, 128, 1);
+                        color: rgb(145, 145, 145);
 
                         &:hover {
                             cursor: pointer;

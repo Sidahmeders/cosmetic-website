@@ -29,11 +29,13 @@ function CartTotal(props) {
                     <p>Tax: <span>{cartTax}$</span></p>
                     <p>Total: <span>{cartTotal}$</span></p>
                 </div>
-                <StripeCheckout stripeKey="pk_test_CMCXgPpoZEsrGyGpR7XdKnLL00eUaQ4SFc" token={handleToken}
-                  billingAddress shippingAddress amount={cartTotal * 100} name={productName}>
-                    <button className="StripeElement">finalize my order</button>
-                </StripeCheckout>
-                <button className="clear-cart" onClick={() => clearCart()}>clear the cart</button>
+                <div className="buttons">
+                    <StripeCheckout stripeKey="pk_test_CMCXgPpoZEsrGyGpR7XdKnLL00eUaQ4SFc" token={handleToken}
+                    billingAddress shippingAddress amount={cartTotal * 100} name={productName}>
+                        <button className="StripeElement">finalize my order</button>
+                    </StripeCheckout>
+                    <button className="clear-cart" onClick={() => clearCart()}>clear the cart</button>
+                </div>
             </div>
         </div>
     );

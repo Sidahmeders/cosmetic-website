@@ -290,4 +290,13 @@ body.hide {
     border: 0;
   }
 }
+
+@media (max-width: 550px) {
+  .navbar-container header .logo .link {
+    font-size: 1.5em;
+  }
+  .navbar-container header .shopping-cart .link #fa {
+    font-size: 1.2em;
+  }
+}
 /*# sourceMappingURL=navbar.css.map */
