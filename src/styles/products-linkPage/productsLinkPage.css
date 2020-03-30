@@ -165,7 +165,8 @@
 }
 
 .products-link-page .side-bar .select-box select {
-  border: 1px solid #d8d8d8;
+  border: 1px solid #bebebe;
+  background-color: white;
   outline: none;
   font-size: 14px;
   -webkit-appearance: none;
