@@ -55,7 +55,7 @@ body {
 
 .home header .slide-container .slider .slide .text-slide p, .home main .slide-container .slider .slide .text-slide p {
   width: 60%;
-  color: #791b61;
+  color: #1b794a;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.85)), to(#fdfdfd));
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.85), #fdfdfd);
   font-size: 20px;
