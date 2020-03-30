@@ -544,3 +544,9 @@ body {
         }
     }
 }
+
+@media (max-width: 100px) {
+    .home header {
+        width: 100%;
+    }
+}

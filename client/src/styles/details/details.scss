@@ -78,6 +78,9 @@
     .details {
         .product-item {
             width: 60% !important;
+            p:nth-child(3) {
+                margin-left: 10vw;
+            }
             .brand {
                 left: -10%;
                 font-size: 3.2vw;
@@ -103,7 +106,9 @@
 @media (max-width: 600px) {
     .details {
         .product-item {
+            width: 85% !important;
             font-size: .8em;
+            margin-left: 3vw;
             img {
                 width: 50%;
                 height: 28vh;
@@ -126,6 +131,9 @@
             img {
                 width: 50%;
                 height: 24vh;
+            }
+            button {
+                padding: 6px 12px;
             }
         }
     }

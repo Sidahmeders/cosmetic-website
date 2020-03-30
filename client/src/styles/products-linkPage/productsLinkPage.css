@@ -377,66 +377,69 @@
 
 @media (max-width: 590px) {
   .products-link-page .side-bar {
-    -ms-grid-rows: 50px 50px 30px !important;
-        grid-template-rows: 50px 50px 30px !important;
+    -ms-grid-rows: 68px 68px 20px !important;
+        grid-template-rows: 68px 68px 20px !important;
   }
   .products-link-page .side-bar .check-boxes h3,
   .products-link-page .side-bar .select-box h3,
   .products-link-page .side-bar .multi-range-slider h3 {
-    font-size: .9em;
+    font-size: 1.1em;
     margin-bottom: 2px;
   }
   .products-link-page .side-bar .check-boxes input[type=checkbox],
   .products-link-page .side-bar .select-box input[type=checkbox],
   .products-link-page .side-bar .multi-range-slider input[type=checkbox] {
-    width: 14px !important;
-    height: 14px !important;
+    width: 16px !important;
+    height: 16px !important;
   }
   .products-link-page .side-bar .check-boxes input[type=checkbox]:checked:before,
   .products-link-page .side-bar .select-box input[type=checkbox]:checked:before,
   .products-link-page .side-bar .multi-range-slider input[type=checkbox]:checked:before {
-    font-size: 11px !important;
-    top: -16% !important;
+    font-size: 13px !important;
+    top: -20% !important;
   }
   .products-link-page .side-bar .check-boxes .items p label,
   .products-link-page .side-bar .select-box .items p label,
   .products-link-page .side-bar .multi-range-slider .items p label {
-    font-size: .7em !important;
+    font-size: .9em !important;
   }
   .products-link-page .side-bar .check-boxes select,
   .products-link-page .side-bar .select-box select,
   .products-link-page .side-bar .multi-range-slider select {
-    font-size: 12px !important;
+    font-size: 13px !important;
     padding: 1px 5px !important;
   }
   .products-link-page .side-bar .multi-range-slider {
     margin-top: 5px !important;
-    font-size: .8em;
+    font-size: .9em;
   }
   .products-link-page .side-bar .multi-range-slider .items {
     width: 60% !important;
   }
   .products-link-page .side-bar .brand-of h1 {
     font-size: 1.2em;
-    margin: 3.3em !important;
+    margin: 3.5em !important;
   }
   .products-link-page .products-list-item {
-    width: 160px;
-    font-size: .5em;
+    width: 70vw;
+    font-size: .7em;
   }
   .products-link-page .products-list-item h5 {
-    font-size: .9em !important;
-    padding: 1px 2px !important;
+    font-size: 1em !important;
   }
   .products-link-page .products-list-item img {
-    height: 90px !important;
+    height: 125px !important;
   }
   .products-link-page .products-list-item .text {
     height: 90px !important;
   }
   .products-link-page .products-list-item .text span {
-    font-size: 8px !important;
+    font-size: 12px !important;
     padding: 2px 0 !important;
+  }
+  .products-link-page .products-list-item .price {
+    margin: 5px 5vw;
+    font-size: 1.4em;
   }
 }
 /*# sourceMappingURL=productsLinkPage.css.map */

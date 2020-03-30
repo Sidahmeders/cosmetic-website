@@ -719,4 +719,10 @@ body {
     border: 2px solid white;
   }
 }
+
+@media (max-width: 100px) {
+  .home header {
+    width: 100%;
+  }
+}
 /*# sourceMappingURL=home.css.map */

@@ -90,6 +90,9 @@
   .details .product-item {
     width: 60% !important;
   }
+  .details .product-item p:nth-child(3) {
+    margin-left: 10vw;
+  }
   .details .product-item .brand {
     left: -10%;
     font-size: 3.2vw;
@@ -112,7 +115,9 @@
 
 @media (max-width: 600px) {
   .details .product-item {
+    width: 85% !important;
     font-size: .8em;
+    margin-left: 3vw;
   }
   .details .product-item img {
     width: 50%;
@@ -134,6 +139,9 @@
   .details .product-item img {
     width: 50%;
     height: 24vh;
+  }
+  .details .product-item button {
+    padding: 6px 12px;
   }
 }
 /*# sourceMappingURL=details.css.map */
