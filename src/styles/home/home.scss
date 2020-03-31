@@ -110,7 +110,7 @@ body {
 
             .square {
                 height: 400px;
-                width: 150px;
+                width: 180px;
                 background: linear-gradient(45deg,rgb(5, 122, 10), rgb(142, 201, 145));
                 border-radius: 150px 0 150px 0;
                 margin-left: 2vw;
@@ -118,6 +118,7 @@ body {
             .text {
                 width: 350px;
                 color: rgb(58, 58, 58);
+                margin-left: 2vw;
 
                 a {
                     display: block;
@@ -262,20 +263,20 @@ body {
 
                 h2 {
                     text-align: center;
-                    font-weight: 100;
-                    font-size: 1.7em;
+                    font-weight: 200;
+                    margin: 20px 0 25px 0;
 
                     &:before,
                     &:after {
                         content: "";
-                        width: 30%;
+                        width: 20%;
                         height: 1px;
                         background-color: #666;
                         position: absolute;
                         margin-top: 4vh;
                     }
-                    &:before {left: 7%;}
-                    &:after {right: 7%;}
+                    &:before {left: 15%;}
+                    &:after {right: 15%;}
                 }
                 .new-products, 
                 .popular-products {
@@ -321,7 +322,7 @@ body {
                                 img {
                                     width: 50%;
                                     height: 160px;
-                                    object-fit: cover;
+                                    object-fit: contain;
                                 }
                                 .text {
                                     width: 80%;
@@ -545,8 +546,121 @@ body {
     }
 }
 
-@media (max-width: 100px) {
+@media (max-width: 650px) {
     .home header {
-        width: 100%;
+        .slide-container .slider .slide .text-slide p {
+            font-size: 2.5vw;
+        }
+        .head-intro {
+            margin-top: 4vh;
+            .image {
+                border-radius: 12vw 0 8vw 0;
+                background-position: center;
+            }
+            .text {
+                margin-bottom: 3vh;
+            }
+            .square {
+                display: none;
+            }
+        }
+        .head-body {
+            .text {
+                font-size: 3.5vw !important;
+                padding: 2.5em;
+                border-radius: 0 12vw 0 8vw;
+            }
+            .image img {
+                border-radius: 12vw 0 8vw 0;
+            }
+        }
+    } 
+    .home main .main-products {
+        .slider-section .slide .slide-item {
+            img {
+                
+                height: 40vh !important;
+            }
+            p {
+                font-size: 2.8vw !important;
+                padding: 1.5vh 3vw !important;
+                text-align: center;
+                width: 70%;
+                border: 3px solid white;
+                background-color: rgb(94, 94, 94);
+                color: white !important;
+                border-radius: 0 !important;
+                span {
+                    color: rgb(122, 255, 140) !important;
+                }
+                &.varni span {
+                    color: rgb(255, 132, 245) !important;
+                }
+                &.perf span {
+                    color: rgb(132, 230, 255) !important;
+                }
+            }
+        } 
+        .whats-new-section,
+        .whats-popular-section {
+            .new-products,
+            .popular-products {
+                .products-slide {
+                    .product-item {
+                        width: 40vw;
+                        height: 33vh;
+                        margin-top: 2vh;
+                        background-color: rgb(255, 255, 255);
+                        .detail {
+                            color: black;
+                            text-decoration: none;
+                            
+                            h5 {
+                                font-size: 2vw;
+                            }
+                            img {
+                                width: 50%;
+                                height: 40%;
+                            }
+                            .text {
+                                font-size: 2.5vw;
+                                width: 90%;
+                                height: 30%;
+                                span {
+                                    font-size: 2vw;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .main-slide-section .slide-container .slider .slide .poster p {
+            font-size: 3.5vw;
+        }
+    } 
+   
+}
+
+@media (max-width: 500px) {
+    .home header .head-intro .text {
+        font-size: 3vw;
+        padding: 1vh 4vw 0 8vw;
+    }
+    main .main-products {
+        .slider-section {
+            .next, 
+            .pre {
+                font-size: 10vw !important;
+            }
+        }
+        .whats-new-section, 
+        .whats-popular-section {
+            .new-products button, 
+            .popular-products button{
+                font-size: 10vw !important;
+            }
+        }
+       
     }
 }

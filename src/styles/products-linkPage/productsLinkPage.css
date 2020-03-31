@@ -397,7 +397,7 @@
   .products-link-page .side-bar .select-box input[type=checkbox]:checked:before,
   .products-link-page .side-bar .multi-range-slider input[type=checkbox]:checked:before {
     font-size: 13px !important;
-    top: -20% !important;
+    top: -18% !important;
   }
   .products-link-page .side-bar .check-boxes .items p label,
   .products-link-page .side-bar .select-box .items p label,

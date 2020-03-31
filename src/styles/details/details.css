@@ -136,6 +136,9 @@
   .details .product-item p {
     font-size: 2.5vw;
   }
+  .details .product-item p:nth-child(3) {
+    margin-left: 0vw;
+  }
   .details .product-item img {
     width: 50%;
     height: 24vh;

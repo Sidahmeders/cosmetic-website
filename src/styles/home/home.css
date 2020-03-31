@@ -176,7 +176,7 @@ body {
 
 .home header .head-intro .square, .home main .head-intro .square {
   height: 400px;
-  width: 150px;
+  width: 180px;
   background: linear-gradient(45deg, #057a0a, #8ec991);
   border-radius: 150px 0 150px 0;
   margin-left: 2vw;
@@ -185,6 +185,7 @@ body {
 .home header .head-intro .text, .home main .head-intro .text {
   width: 350px;
   color: #3a3a3a;
+  margin-left: 2vw;
 }
 
 .home header .head-intro .text a, .home main .head-intro .text a {
@@ -353,15 +354,15 @@ body {
 .home main .main-products .whats-new-section h2,
 .home main .main-products .whats-popular-section h2 {
   text-align: center;
-  font-weight: 100;
-  font-size: 1.7em;
+  font-weight: 200;
+  margin: 20px 0 25px 0;
 }
 
 .home main .main-products .whats-new-section h2:before, .home main .main-products .whats-new-section h2:after,
 .home main .main-products .whats-popular-section h2:before,
 .home main .main-products .whats-popular-section h2:after {
   content: "";
-  width: 30%;
+  width: 20%;
   height: 1px;
   background-color: #666;
   position: absolute;
@@ -370,12 +371,12 @@ body {
 
 .home main .main-products .whats-new-section h2:before,
 .home main .main-products .whats-popular-section h2:before {
-  left: 7%;
+  left: 15%;
 }
 
 .home main .main-products .whats-new-section h2:after,
 .home main .main-products .whats-popular-section h2:after {
-  right: 7%;
+  right: 15%;
 }
 
 .home main .main-products .whats-new-section .new-products,
@@ -464,8 +465,8 @@ body {
 .home main .main-products .whats-popular-section .popular-products .products-slide .product-item .detail img {
   width: 50%;
   height: 160px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .home main .main-products .whats-new-section .new-products .products-slide .product-item .detail .text,
@@ -720,9 +721,115 @@ body {
   }
 }
 
-@media (max-width: 100px) {
-  .home header {
-    width: 100%;
+@media (max-width: 650px) {
+  .home header .slide-container .slider .slide .text-slide p {
+    font-size: 2.5vw;
+  }
+  .home header .head-intro {
+    margin-top: 4vh;
+  }
+  .home header .head-intro .image {
+    border-radius: 12vw 0 8vw 0;
+    background-position: center;
+  }
+  .home header .head-intro .text {
+    margin-bottom: 3vh;
+  }
+  .home header .head-intro .square {
+    display: none;
+  }
+  .home header .head-body .text {
+    font-size: 3.5vw !important;
+    padding: 2.5em;
+    border-radius: 0 12vw 0 8vw;
+  }
+  .home header .head-body .image img {
+    border-radius: 12vw 0 8vw 0;
+  }
+  .home main .main-products .slider-section .slide .slide-item img {
+    height: 40vh !important;
+  }
+  .home main .main-products .slider-section .slide .slide-item p {
+    font-size: 2.8vw !important;
+    padding: 1.5vh 3vw !important;
+    text-align: center;
+    width: 70%;
+    border: 3px solid white;
+    background-color: #5e5e5e;
+    color: white !important;
+    border-radius: 0 !important;
+  }
+  .home main .main-products .slider-section .slide .slide-item p span {
+    color: #7aff8c !important;
+  }
+  .home main .main-products .slider-section .slide .slide-item p.varni span {
+    color: #ff84f5 !important;
+  }
+  .home main .main-products .slider-section .slide .slide-item p.perf span {
+    color: #84e6ff !important;
+  }
+  .home main .main-products .whats-new-section .new-products .products-slide .product-item,
+  .home main .main-products .whats-new-section .popular-products .products-slide .product-item,
+  .home main .main-products .whats-popular-section .new-products .products-slide .product-item,
+  .home main .main-products .whats-popular-section .popular-products .products-slide .product-item {
+    width: 40vw;
+    height: 33vh;
+    margin-top: 2vh;
+    background-color: white;
+  }
+  .home main .main-products .whats-new-section .new-products .products-slide .product-item .detail,
+  .home main .main-products .whats-new-section .popular-products .products-slide .product-item .detail,
+  .home main .main-products .whats-popular-section .new-products .products-slide .product-item .detail,
+  .home main .main-products .whats-popular-section .popular-products .products-slide .product-item .detail {
+    color: black;
+    text-decoration: none;
+  }
+  .home main .main-products .whats-new-section .new-products .products-slide .product-item .detail h5,
+  .home main .main-products .whats-new-section .popular-products .products-slide .product-item .detail h5,
+  .home main .main-products .whats-popular-section .new-products .products-slide .product-item .detail h5,
+  .home main .main-products .whats-popular-section .popular-products .products-slide .product-item .detail h5 {
+    font-size: 2vw;
+  }
+  .home main .main-products .whats-new-section .new-products .products-slide .product-item .detail img,
+  .home main .main-products .whats-new-section .popular-products .products-slide .product-item .detail img,
+  .home main .main-products .whats-popular-section .new-products .products-slide .product-item .detail img,
+  .home main .main-products .whats-popular-section .popular-products .products-slide .product-item .detail img {
+    width: 50%;
+    height: 40%;
+  }
+  .home main .main-products .whats-new-section .new-products .products-slide .product-item .detail .text,
+  .home main .main-products .whats-new-section .popular-products .products-slide .product-item .detail .text,
+  .home main .main-products .whats-popular-section .new-products .products-slide .product-item .detail .text,
+  .home main .main-products .whats-popular-section .popular-products .products-slide .product-item .detail .text {
+    font-size: 2.5vw;
+    width: 90%;
+    height: 30%;
+  }
+  .home main .main-products .whats-new-section .new-products .products-slide .product-item .detail .text span,
+  .home main .main-products .whats-new-section .popular-products .products-slide .product-item .detail .text span,
+  .home main .main-products .whats-popular-section .new-products .products-slide .product-item .detail .text span,
+  .home main .main-products .whats-popular-section .popular-products .products-slide .product-item .detail .text span {
+    font-size: 2vw;
+  }
+  .home main .main-products .main-slide-section .slide-container .slider .slide .poster p {
+    font-size: 3.5vw;
+  }
+}
+
+@media (max-width: 500px) {
+  .home header .head-intro .text {
+    font-size: 3vw;
+    padding: 1vh 4vw 0 8vw;
+  }
+  main .main-products .slider-section .next,
+  main .main-products .slider-section .pre {
+    font-size: 10vw !important;
+  }
+  main .main-products .whats-new-section .new-products button,
+  main .main-products .whats-new-section .popular-products button,
+  main .main-products .whats-popular-section .new-products button,
+  main .main-products .whats-popular-section .popular-products button {
+    font-size: 10vw !important;
   }
 }
 /*# sourceMappingURL=home.css.map */

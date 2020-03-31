@@ -130,7 +130,7 @@ const  Home = () => {
                         <h1>the Home where every Woman wants to be</h1>
                         <h2>
                             let your beauty Shines through the day 
-                            <span style={{fontSize:".8em",color:"#85d"}}> be the queen</span>
+                            <span style={{fontSize:".8em",color:"#192"}}> be the queen</span>
                         </h2>
                         <a href="/">SHOP NOW</a>
                     </div> 
@@ -301,7 +301,7 @@ const  Home = () => {
                                         <img src={hairFour} alt="hairFour" />
                                         <div className="text">
                                             <span>shampo & conditioner</span>
-                                            <p>the new collection from LOREAL for tinted, or bleached and dry hair with keratin</p>
+                                            <p>the new collection from LOREAL for tinted, or bleached hair with keratin</p>
                                             <span>150ml</span>
                                         </div>
                                     </Link>

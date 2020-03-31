@@ -128,6 +128,9 @@
             p {
                 font-size: 2.5vw;
             }
+            p:nth-child(3) {
+                margin-left: 0vw;
+            }
             img {
                 width: 50%;
                 height: 24vh;
