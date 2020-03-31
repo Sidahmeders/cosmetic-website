@@ -265,6 +265,7 @@ body {
                     text-align: center;
                     font-weight: 200;
                     margin: 20px 0 25px 0;
+                    position: relative;
 
                     &:before,
                     &:after {
@@ -273,7 +274,7 @@ body {
                         height: 1px;
                         background-color: #666;
                         position: absolute;
-                        margin-top: 4vh;
+                        top: 50%;
                     }
                     &:before {left: 15%;}
                     &:after {right: 15%;}
@@ -355,6 +356,7 @@ body {
                     text-align: center;
                     font-weight: 200;
                     margin: 20px 0 25px 0;
+                    position: relative;
 
                     &:before, 
                     &:after {
@@ -363,7 +365,7 @@ body {
                         height: 1px;
                         background-color: #666;
                         position: absolute;
-                        margin-top: 4vh;
+                        top: 50%;
                     }
                     &:before {left: 15%;}
                     &:after {right: 15%;}
@@ -529,6 +531,18 @@ body {
     }
 
     .home main .main-products {
+        .whats-new-section, 
+        .whats-popular-section,
+        .main-slide-section {
+            h2 {
+                &:before,
+                &:after {
+                    width: 10% !important;
+                }
+                &:before {left: 5% !important;}
+                &:after {right: 5% !important;}
+            }
+        }
         .slider-section .slide .slide-item img {
             height: 50vh !important;
         }
@@ -617,6 +631,7 @@ body {
                             
                             h5 {
                                 font-size: 2vw;
+                                padding: 1.5px 3px;
                             }
                             img {
                                 width: 50%;
@@ -655,7 +670,11 @@ body {
             }
         }
         .whats-new-section, 
-        .whats-popular-section {
+        .whats-popular-section,
+        .main-slide-section {
+            h2 {
+                font-size: 5vw;
+            } 
             .new-products button, 
             .popular-products button{
                 font-size: 10vw !important;
